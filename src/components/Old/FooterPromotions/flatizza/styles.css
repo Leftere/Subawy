@@ -1,0 +1,32 @@
+.flatizza_price {
+  position: absolute;
+  font-size: 32px;
+  color: white;
+  font-family: 'Subway-Heavy';
+}
+
+.flatizza_price_cheese {
+  @extend .flatizza_price;
+  left: 245px;
+  top: 90px;
+}
+
+.flatizza_price_pepperoni {
+  @extend .flatizza_price;
+  top: 90px;
+  left: 685px;
+}
+
+.flatizza-alt-option {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  font-family: 'Subway-Heavy';
+  left: 415px;
+  bottom: 40px;
+}
+
+.flatizza-alt-calories {
+  font-family: 'Subway-Medium';
+  margin: 0px 8px;
+}

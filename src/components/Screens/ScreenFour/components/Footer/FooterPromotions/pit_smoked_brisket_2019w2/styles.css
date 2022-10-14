@@ -1,0 +1,38 @@
+.c-PitSmokedBrisketFooter19w2 {
+
+	.item-price {
+	  position: absolute;
+	  font-size: 28px;
+	  color: #fff;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+	  left: 25px;
+    top: 153px;
+
+	  .item-cals {
+	  	font-family: 'Subway-Medium';
+	  	font-size: 24px;
+	  }
+	}
+
+  .price-1 {
+    color: #cd4723;
+    left: 13px;
+    top: 155px;
+  }
+
+  .price-2 {
+    color: #cd4723;
+    left: 223px;
+    top: 155px;
+  }
+
+  &.c-Footer {
+    transform: scale(1) !important;
+    transform-origin: initial !important;
+    width: 960px  !important;
+    height: 200px  !important;
+  }
+
+}

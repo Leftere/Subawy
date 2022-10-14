@@ -1,0 +1,40 @@
+.c-MealTile {
+	display: inline-block;
+	width: 325px;
+	margin: 0 0 10px;
+
+	img {
+		margin: 0 0 5px -35px;
+	}
+
+	.name,
+	.price {
+		font-family: 'Subway-Heavy';
+		font-size: 36px;
+		line-height: 38px;
+	}
+
+	.name {
+		color: #fff;
+	}
+
+	.price {
+		color: #f2b700;
+	}
+
+  .sodiumIcon {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .name {
+    display: inline-block !important;
+  }
+}
+
+.bf_ham,
+.oven_roasted_chicken {
+	.name {
+		width: 80%;
+	}
+}

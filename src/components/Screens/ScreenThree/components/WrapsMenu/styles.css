@@ -1,0 +1,127 @@
+.c-WrapsMenu {
+  padding: 39px 20px 0px 15px;
+  height: 605px;
+
+  &.R2L {
+    padding: 40px 10px 0px 30px;
+  }
+
+  & .c-TableList_column:nth-child(1),
+  & .c-TableList_column:nth-child(2),
+  & .c-TableList_column:nth-child(3) {
+    padding-right: 20px;
+  }
+
+  & .c-Header_column:nth-child(1),
+  & .c-TableList_column:nth-child(1) {
+    width: 86%;
+    padding-left: 1%;
+  }
+
+  & .c-Header_column:nth-child(2),
+  & .c-TableList_column:nth-child(2) {
+    width: 13%;
+  }
+
+  & .c-Header_column:nth-child(3),
+  & .c-TableList_column:nth-child(3) {
+    width: 17%;
+
+    .c-Menus_title {
+      margin-left: 40px;
+    }
+  }
+
+  .wrapImage {
+    position: absolute;
+    right: 65px;
+    top: 15px;
+    width: 50%;
+    transition: all 500ms;
+  }
+
+  .c-Menus_caption {
+    /*font-size: 1.7rem;*/
+    font-size: 36px;
+    display: inline;
+  }
+
+  .c-rotisserie_chicken_caesar_wrap .c-Menus_title {
+    width: 54%;
+  }
+
+  /* legal updates for font size */
+  .c-Menus_title, .c-Menus_caption-highlight {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .c-Sub_caption {
+    width: 100%;
+    text-align: left;
+  }
+
+  .c-TableList_row {
+    padding: 5px 5px 0px 5px;
+    margin-bottom: 2px;
+  }
+
+  .headerCal {
+    padding-top: 23px;
+    margin-right: 3px;
+  }
+
+  .cals {
+    display: inline;
+  }
+
+  .c-Menus_header {
+    padding-right: 20px;
+    /* This is lame, but the header is not lining up with the line items */
+    margin-left: -3px;
+    color: #fff;
+  }
+
+
+  .glutenCalories {
+    font-family: 'Subway-Medium';
+    padding: 0rem 1rem;
+  }
+
+  .glutenLineItem {
+
+  }
+
+
+  .legalContent {
+    font-family: 'SubwayTest-Medium';
+    position: relative;
+    left: -13px;
+    font-size: 18px;
+  }
+}
+
+
+.r-showChicken {
+  .c-rotisserie_chicken_caesar_wrap span {color: #f7b301}
+
+  .imgChicken {opacity: 1}
+  .imgSteak   {opacity: 0}
+  .imgTurkey  {opacity: 0}
+}
+
+.r-showSteak {
+  .c-chipotle_southwest_steak_and_cheese_wrap span {color: #f7b301}
+
+  .imgChicken {opacity: 0}
+  .imgSteak   {opacity: 1}
+  .imgTurkey  {opacity: 0}
+}
+
+.r-showTurkey {
+  .c-turkey_bacon_guacamole_wrap span {color: #f7b301}
+
+  .imgChicken {opacity: 0}
+  .imgSteak   {opacity: 0}
+  .imgTurkey  {opacity: 1}
+}

@@ -1,0 +1,83 @@
+.HotDrinksMenu {
+
+  & .c-Menus_header {
+    display: inline-block;
+  }
+
+  & .c-Header_column:nth-child(1),
+  & .c-TableList_column:nth-child(1),
+  & .c-Menus_header:nth-child(1) {
+    width: 60%;
+  }
+
+  & .c-Header_column:nth-child(2),
+  & .c-TableList_column:nth-child(2),
+  & .c-Menus_header:nth-child(2) {
+    width: 20%;
+  }
+
+  & .c-Header_column:nth-child(3),
+  & .c-TableList_column:nth-child(3),
+  & .c-Menus_header:nth-child(3) {
+    width: 20%;
+  }
+
+  .coffeCupImage {
+    position: absolute; 
+    right: 40px;
+    bottom: 0px;
+    height: 280px;
+  }
+
+  .c-Promotion_item-tax {
+    position: absolute;
+    top: 1050px;
+    left: 530px;
+  }
+
+  .c-Menus_title-v-expand {
+    margin-bottom: 0;
+    line-height: 2.8rem;
+
+    & > span {
+      margin-bottom: 4px;
+    }
+  }
+
+  /* Legal updates */
+  .c-TableList_row {
+    padding: 0px;
+  }
+
+  .c-Menus_caption {
+    font-size: 36px;
+  }
+
+  /* legal updates for font size */
+  .c-Menus_title, .c-Menus_caption-highlight {
+    font-size: 36px;
+  }
+
+  .hotDrinkLineItem {
+    font-family: 'Subway-Medium';
+    padding-left: 40px;
+  }
+
+  .hotDrinksTitle {
+    margin-bottom: 15px;
+  }
+
+  .categorySpacer {
+    height: 25px;
+  }
+
+  .freshGround {
+    position: relative;
+    bottom: 280px;
+    left: 0px;
+    font-size: 36px;
+    color: #f3bd27;
+    font-family: 'Subway-Heavy';
+    line-height: 1.1;
+  }
+}

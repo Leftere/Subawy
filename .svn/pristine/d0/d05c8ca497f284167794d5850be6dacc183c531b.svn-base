@@ -1,0 +1,104 @@
+.c-SignatureWrapInterruptW2 {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+
+  .d-text {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #fff;
+  }
+
+  .innerWrap {
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 639px;
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .dn-bg,
+  .dn-text1,
+  .dn-text2,
+  .dn-text3,
+  .dn-text4 {
+    width: 639px;
+  }
+
+  .bg-wrapper, .text1-wrapper, .text3-wrapper {
+    display: block;
+    overflow: hidden;
+    height: 0px;
+    width: 639px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .dn-steakR, .dn-chickenR {
+    display: none;
+  }
+
+  .dn-steak, .dn-chicken {
+    display: block;
+    right: -350px;
+  }
+
+  .dn-sub_1 {
+    position: absolute;
+    top: 527px;
+    right: 50px;
+    white-space: pre;
+  }
+
+  .dn-sub_2 {
+    position: absolute;
+    top: 915px;
+    right: 50px;
+    white-space: pre;
+  }
+
+}
+
+.l-player-direction-R2L {
+  .c-SignatureWrapInterruptW2 {
+    position: absolute;
+    bottom: 0px;
+    left: 5760px;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+
+    .innerWrap {
+      position:absolute;
+      left: 0;
+      top: 0;
+    }
+  
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+    .dn-steakR, .dn-chickenR {
+      display: block;
+      left: -350px;
+    }
+  
+    .dn-steak, .dn-chicken {
+      display: none;
+    }
+
+  }
+}

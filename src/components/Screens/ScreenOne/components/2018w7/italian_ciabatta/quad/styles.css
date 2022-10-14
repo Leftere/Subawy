@@ -1,0 +1,52 @@
+.c-italian_ciabatta {
+
+  height: 1080px;
+  width: 1920px;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-family: 'Subway-Heavy';
+
+  * {
+    position: absolute;
+  }
+
+  .d-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .d-text {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #fff;
+  }
+
+  .d-bg {
+    left: -50px;
+    top: -50px;
+    width: calc(100% + 100px);
+    height: calc(100% + 100px);
+  }
+
+  .dn-sub1_price_6 {
+    top: 921px;
+    left: 1266px;
+    white-space: pre;
+  }
+
+  .dn-sub1_price_12 {
+    top: 921px;
+    left: 1494px;
+    white-space: pre;
+  }
+
+  .dn-sub1_price_base {
+    top: 692px;
+    left: 1585px;
+    white-space: pre;
+  }
+
+}

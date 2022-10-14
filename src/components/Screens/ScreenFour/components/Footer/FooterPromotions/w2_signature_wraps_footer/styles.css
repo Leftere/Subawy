@@ -1,0 +1,38 @@
+.c-SignatureWrapsFooter19w2 {
+
+	.item-price {
+	  position: absolute;
+	  font-size: 26px;
+	  color: #fff;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+	  left: 25px;
+    top: 153px;
+
+	  .item-cals {
+	  	font-family: 'Subway-Medium';
+	  	font-size: 24px;
+	  }
+	}
+
+  .price-1 {
+    color: #fff;
+    left: 11px;
+    top: 122px;
+  }
+
+  .price-2 {
+    color: #fff;
+    left: 533px;
+    top: 124px;
+  }
+
+  &.c-Footer {
+    transform: scale(1) !important;
+    transform-origin: initial !important;
+    width: 960px  !important;
+    height: 200px  !important;
+  }
+
+}

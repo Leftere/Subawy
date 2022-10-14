@@ -1,0 +1,43 @@
+.steakLoversFeaturedDual {
+  background-color: white;
+
+
+  .frame {
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+    height: auto;
+    bottom: 0px;
+    z-index: 2;
+  }
+
+  .title {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 3;
+    height: auto;
+  }
+
+  .otherSubs {
+    z-index: 3;
+    right: 0px;
+    left: auto;
+  }
+
+  .otherSub1 {
+    z-index: 1;
+  }
+
+  .otherSub2 {
+    z-index: 3;
+  }
+
+  .priceAndChoicemark {
+    z-index: 1;
+  }
+
+  .lto {
+    z-index: 4;
+  }
+}

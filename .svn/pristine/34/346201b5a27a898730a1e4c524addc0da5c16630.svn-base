@@ -1,0 +1,190 @@
+.breakfastMenu {
+
+	position: relative;
+	width: 100%;
+	height: 1080px;
+	color: #fff;
+
+  .c-TableList_row {
+    padding-bottom: 3px;
+  }
+
+	/**
+	 * Column sizing
+	 */
+	& .c-Header_column:nth-child(1),
+  & .c-TableList_column:nth-child(1) {
+    width: 80%;
+    padding-right: 0px;
+  }
+
+  & .c-Header_column:nth-child(2),
+  & .c-TableList_column:nth-child(2) {
+    width: 10%;
+  }
+
+  & .c-Header_column:nth-child(3),
+  & .c-TableList_column:nth-child(3) {
+    width: 10%;
+  }
+
+  .c-TableList_row * {
+    transition: all 200ms;
+  }
+
+	& sup {
+		position: relative;
+	}
+
+	& .bfastHeader {
+		font-family: 'Subway-Heavy';
+		font-size: 83px;
+    color: #fff;
+	}
+
+	& .bfastTagLine {
+		font-family: 'Subway-Heavy';
+		font-size: 30px;
+		margin-bottom: 0px;
+		margin-top: 5px;
+		color: #ff8200;
+	}
+
+	& .bfastLabel {
+		padding: 0 0 25px 0;
+	}
+
+	& .bfastContent {
+		position: relative;
+		padding: 37px 0px 40px 0px;
+	}
+
+	& .bfastItemTitle {
+		position: relative;
+		margin-bottom: 0.3rem;
+		font-family: 'Subway-Heavy';
+		font-size: 36px;
+		line-height: 1;
+	}
+
+	& .bfastItemCaption {
+		font-family: 'Subway-Medium';
+		font-size: 36px;
+		line-height: 1;
+    margin-left: 15px;
+	}
+
+	& .deductText {
+    position: relative;
+		width: 100%;
+		top: 35px;
+		overflow: visible;
+		font-family: 'Subway-Medium';
+		font-size: 30px;
+		color: #008938;
+
+		& .deductAsterisk {
+			position: absolute;
+			top: 0px !important;
+			left: -15px;
+		}
+	}
+
+	& .c-BreakfastMenu_legal_text {
+		position: absolute;
+		bottom: 25px;
+		.c-Promotion_item-tax {
+			color: #008938;
+			font-size: 18px;
+    	font-weight: 100;
+		}
+		.c-Menus_copyright {
+			color: #008938;
+		}
+	}
+
+	& .breakfastSandwichImage {
+		display: none;
+		position: absolute;
+		right: -50px;
+		bottom: 95px;
+	}
+
+
+	& .servedUntil11 {
+		position: absolute;
+		top: 30px;
+		right: 22px;
+	}
+
+  .bfastCombo {
+		position: absolute;
+		top: 500px;
+		left: 0px;
+
+		.comboDrink {
+			position: absolute;
+			left: 35px;
+			transition: all 500ms;
+		}
+
+    .comboJuice {
+      top: 50px;
+    }
+
+		.comboSandwich {
+			position: absolute;
+			left: 90px;
+			top: 200px;
+		}
+
+		.comboFg {
+			position: absolute;
+			left: 615px;
+			top: 60px;
+		}
+
+		.comboPrice {
+			position: absolute;
+			left: 1140px;
+			top: 100px;
+			font-family: 'Subway-Heavy';
+			font-size: 36px;
+			color: #f2b700;
+		}
+
+		.comboType {
+			position: absolute;
+	    left: 718px;
+	    top: 227px;
+	    font-family: 'Subway-Heavy';
+	    font-size: 30px;
+	    color: #fff;
+	    width: 500px;
+		}
+	}
+}
+
+.croissant-store {
+
+	& .c-Header_column:nth-child(1),
+  & .c-TableList_column:nth-child(1) {
+    width: 59%;
+    padding-right: 5px;
+	}
+
+	& .c-Header_column:nth-child(2),
+	& .c-TableList_column:nth-child(2) {
+    width: 14%;
+	}
+
+	& .c-Header_column:nth-child(3),
+	& .c-TableList_column:nth-child(3) {
+    width: 15%;
+	}
+
+	.c-Menus_title-v-expand {
+    /* line-height: 2.8rem; */
+		margin-bottom: 6px;
+	}
+}

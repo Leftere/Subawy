@@ -1,0 +1,24 @@
+.cubano-ending-frame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .ending-price {
+    font-family: 'Subway-Heavy';
+    font-size: 40px;
+    font-weight: 600;
+    color: #008938;
+  }
+
+  .cubano-price6 {
+    position: absolute;
+    bottom: 108px;
+    left: 1310px;
+  }
+
+  .cubano-price12 {
+    position: absolute;
+    bottom: 108px;
+    left: 1698px;
+  }
+}

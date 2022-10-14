@@ -1,0 +1,66 @@
+.c-DeviledEgg19w4Quad {
+
+  height: 1080px;
+  width: 1920px;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-family: 'Subway-Heavy';
+
+  * {
+    position: absolute;
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    width: 500px;
+  }
+
+  .d-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .d-text {
+    font-family: 'Subway-Heavy';
+    font-size: 42px;
+    line-height: 42px;
+    color: #fff;
+  }
+
+  .d-bg {
+    left: 0px;
+    top: 0px;
+    width: auto;
+    height: 100%;
+  }
+
+  .dn-sub1price6 {
+    top: 672px;
+    left: 809px;
+    white-space: pre;
+  }
+
+  .dn-sub1price12 {
+    top: 712px;
+    left: 809px;
+    white-space: pre;
+  }
+
+  .dn-sub2price6 {
+    top: 947px;
+    left: 809px;
+    white-space: pre;
+  }
+
+  .dn-sub2price12 {
+    top: 987px;
+    left: 809px;
+    white-space: pre;
+  }
+
+}

@@ -1,0 +1,90 @@
+.wrapDoubleMeatFeaturedTitleCopy {
+  opacity: 0;
+}
+
+.wrapDoubleMeatFeaturedDual {
+  background-color: white;
+  backface-visibility: hidden;
+
+  img {
+    position: absolute;
+    height: auto;
+  }
+
+  .wrap1 {
+    left: 0px;
+    bottom: 0px;
+  }
+
+  .wrap2 {
+    top: 90px;
+    right: 0px;
+  }
+
+  .titleCopy {
+    font-size: 88px;
+    font-family: 'Subway-Heavy';
+    color: #028940;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+  }
+
+  .titleCopySub {
+    position: absolute;
+    font-family: 'Subway-Heavy';
+    top: 160px;
+    left: 50px;
+    font-size: 118px;
+    color: #8bcd32;
+  }
+
+  .titleCopy1 {
+    @extend .wrapDoubleMeatFeaturedTitleCopy;
+  }
+
+  .titleCopy2 {
+    @extend .wrapDoubleMeatFeaturedTitleCopy;
+  }
+
+  .titleCopy3 {
+    @extend .wrapDoubleMeatFeaturedTitleCopy;
+  }
+
+  .titleCopy4 {
+    @extend .wrapDoubleMeatFeaturedTitleCopy;
+  }
+
+  .wrapNames {
+    opacity: 0;
+  }
+
+  .legal {
+    right: 10px;
+    bottom: 10px;
+    opacity: 0;
+  }
+
+  .ltv {
+    top: 40px;
+    right: 0px;
+  }
+
+  .choicemark {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .signatureWrapsTitle {
+    opacity: 0;
+    left: 350px;
+    top: 130px;
+  }
+
+  .priceBubble {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+  }
+}

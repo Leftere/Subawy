@@ -1,0 +1,214 @@
+.c-Promotion-w7steak {
+  height: 1080px;
+  width: 100%;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-size: 36px;
+  color: #008938;
+  font-family: 'Subway-Heavy';
+
+  backface-visibility: hidden;
+  perspective: 1000px;
+  transform: translate3d(0,0,0);
+
+  .club {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .titleCopy {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 70px;
+  }
+
+  .largeCopy {
+    font-size: 125px;
+  }
+
+  .mediumCopy {
+    font-size: 105px;
+  }
+
+  .frame1Copy {
+    will-change: opacity;
+    animation:
+      fadeSlideLeft 1.2s linear 2.0s forwards;
+  }
+
+  .frame2Copy {
+    transform: translate3d(200px, 0, 0);
+    opacity: 0;
+    will-change: opacity;
+    animation:
+      fadeInFromRight 1.2s linear 2.3s forwards,
+      fadeSlideLeft 1.2s linear 6s forwards;
+  }
+
+  .frame3Copy {
+    transform: translate3d(200px, 0, 0);
+    opacity: 0;
+    will-change: opacity;
+    animation:
+      fadeInFromRight 1.2s linear 6.3s forwards;
+  }
+
+  .steak {
+    top: 240px;
+    left: 0;
+    height: 80%;
+    width: auto;
+    transform: translate3d(-1000px, 0, 0);
+    will-change: transform;
+
+    animation:
+      steakClubAnimation1 1.2s linear 2s forwards,
+      steakClubAnimation2 1.2s linear 5s forwards,
+      steakClubAnimation3 1.2s linear 6s forwards;
+  }
+
+  .horse {
+    top: 0px;
+    height: 100%;
+    width: auto;
+    will-change: transform;
+    perspective: 1000px;
+    transform: translate3d(2000px, 0, 0);
+    animation:
+      horseAnimation1 1.2s linear 2.2s forwards,
+      horseAnimation2 1.15s linear 6s forwards;
+  }
+
+  .rotisserie {
+    top: 0px;
+    height: 100%;
+    width: auto;
+    transform: translate3d(-3800px, 390px, 0) scale(0.28);
+    will-change: transform;
+    perspective: 1000px;
+    animation:
+      rotisserieAnimation 1.2s linear 6s forwards;
+  }
+
+  .pricing {
+    position: absolute;
+    top: 280px;
+    right: 70px;
+    width: 630px;
+    display: block;
+    transform: translate3d(200px, 0, 0);
+    will-change: opacity;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    opacity: 0;
+    animation:
+      fadeInFromRight 1s linear 6.4s forwards;
+
+    .title {
+      font-size: 44px;
+    }
+
+    .subtitle {
+      font-size: 30px;
+    }
+
+    .limited {
+      color: #fa4c16
+    }
+
+    .size {
+      font-size: 36px;
+    }
+
+    .cal {
+      font-size: 34px;
+      font-family: 'Subway-Medium';
+    }
+
+    .subprice {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      .size, .price {
+        position: absolute;
+        top: 100px;
+      }
+
+      .cal {
+        position: absolute;
+        top: 140px;
+      }
+
+      .size-six {
+        position: absolute;
+        left: 0px;
+      }
+
+      .size-foot {
+        position: absolute;
+        left: 210px;
+      }
+
+      .price-six {
+        position: absolute;
+        left: 51px;
+      }
+
+      .price-foot {
+        position: absolute;
+        left: 380px;
+      }
+
+      .cal-six {
+        position: absolute;
+        left: 50px;
+      }
+
+      .cal-foot {
+        position: absolute;
+        left: 380px;
+      }
+
+    }
+
+    .steakPricing {
+      top: 0;
+    }
+
+    .horsePricing {
+      top: 250px;
+    }
+
+    .rotisseriePricing {
+      top: 540px;
+    }
+  }
+
+  .disclaimer {
+    position: absolute;
+    bottom: 5px;
+    right: -2px;
+    width: 650px;
+    display: block;
+    font-size: 18px;
+    font-family: 'Subway-Medium';
+    color: #666666;
+    line-height: 1;
+
+    /*transform: translate3d(200px, 0, 0);*/
+    opacity: 0;
+    animation: fadeIn 1.5s linear 6.2s forwards;
+      /*fadeInFromRight 1.7s linear 9.6s forwards;*/
+
+    small {
+      font-size: 10px;
+      transform: scale(0.8);
+      display: block;
+    }
+  }
+}

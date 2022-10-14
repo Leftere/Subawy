@@ -1,0 +1,29 @@
+.footer-price {
+  position: absolute;
+  padding: 0px 0px 3px 0px;
+  font-family: 'Subway-Heavy';
+  font-size: 2rem;
+  font-weight: 600;
+  color: #008938;
+  letter-spacing: 0.02rem;
+}
+
+.chick_cb_6in {
+  top: 146px;
+  left: 77px;
+}
+
+.chick_cb_12in {
+  top: 146px;
+  left: 333px;
+}
+
+.caprese_6in {
+  top: 146px;
+  left: 516px;
+}
+
+.caprese_12in {
+  top: 146px;
+  left: 772px;
+}

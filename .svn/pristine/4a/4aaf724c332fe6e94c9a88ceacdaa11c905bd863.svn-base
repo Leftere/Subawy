@@ -1,0 +1,29 @@
+.c-ucgb2-int {
+	background-image: url('./images/BG.jpg');
+	width: 7680px;
+	height: 1080px;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.BG-screen2 {
+		left: 1920px;
+	}
+
+	.sub-left, .sub-right {
+		mask-image: url('./images/Mask.svg');
+		mask-size: contain;
+		mask-repeat: no-repeat;
+		mask-position: 0 0;
+	}
+
+	.cheese {
+		transformOrigin: left;
+	}
+}

@@ -1,0 +1,64 @@
+.c-Promotion-2018w5-ChickenSignaturePromo {
+
+  height: 1080px;
+  width: 100%;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+
+  * {
+    position: absolute;
+  }
+
+  .frame {
+    width: 100%;
+    height: 100%;
+  }
+
+  .frame1 {
+    background: #00a7e9;
+  }
+
+  .frame2 .bg {
+    left: -100px;
+    top: -20px;
+  }
+
+  .frame3 .bg {
+    left: -50px;
+  }
+
+  .frame4 .bg {
+  }
+
+  .frame5 .bg {
+  }
+
+  .frame7 .bg {
+    top: 80px;
+  }
+
+  .frame8 .bg {
+    top: 30px;
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    text-align: left;
+    position: absolute;
+  }
+
+  .price1 {
+    left: 1441px;
+    top: 840px;
+  }
+
+  .price2 {
+    left: 792px;
+    top: 925px;
+  }
+
+}

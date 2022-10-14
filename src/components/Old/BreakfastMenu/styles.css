@@ -1,0 +1,107 @@
+.breakfastMenu {
+	background : #f3bd27;
+	position: relative;
+	width: 100%;
+	height: 1080px;
+	color: #006230;
+
+	/**
+	 * Column sizing
+	 */
+	& .c-Header_column:nth-child(1),
+  & .c-TableList_column:nth-child(1) {
+    width: 62%;
+    padding-right: 0px;
+  }
+
+  & .c-Header_column:nth-child(2),
+  & .c-TableList_column:nth-child(2) {
+    width: 19%;
+  }
+
+  & .c-Header_column:nth-child(3),
+  & .c-TableList_column:nth-child(3) {
+    width: 19%;
+  }
+
+	& sup {
+		position: relative;
+	}
+
+	& .bfastHeader {
+		font-family: 'Subway-Heavy';
+		font-size: 70px;
+	}
+
+	& .bfastTagLine {
+		font-family: 'Subway-Heavy';
+		font-size: 30px;
+		margin-bottom: 50px;
+		margin-top: 5px;
+	}
+
+	& .bfastContent {
+		position: relative;
+		padding: 37px 0px 40px 0px;
+	}
+
+	& .bfastItemTitle {
+		position: relative;
+		margin-bottom: 0.3rem;
+		font-family: 'Subway-Heavy';
+		font-size: 36px;
+		line-height: 1;
+		color: #006230;
+	}
+
+	& .bfastItemCaption {
+		font-family: 'Subway-Medium';
+		font-size: 36px;
+		line-height: 1;
+		color: #009132;
+    margin-left: 20px;
+	}
+
+	& .deductText {
+		position: absolute;
+		width: 54%;
+		left: 35px;
+		bottom: 102px;
+		overflow: visible;
+		font-family: 'Subway-Medium';
+		font-size: 30px;
+		color: #006230;
+
+		& .deductAsterisk {
+			position: absolute;
+			top: 0px !important;
+			left: -10px;
+		}
+	}
+
+	& .c-BreakfastMenu_legal_text {
+		position: absolute;
+		bottom: 25px;
+		.c-Promotion_item-tax {
+			color: #006230;
+			font-size: 18px;
+    	font-weight: 100;
+		}
+		.c-Menus_copyright {
+			color: #006230;
+		}
+	}
+
+	& .breakfastSandwichImage {
+		display: none;
+		position: absolute;
+		right: -50px;
+		bottom: 95px;
+	}
+
+	& .stickerServedUntil11 {
+		position: absolute;
+		bottom: 25px;
+		right: 39px;
+	}
+}

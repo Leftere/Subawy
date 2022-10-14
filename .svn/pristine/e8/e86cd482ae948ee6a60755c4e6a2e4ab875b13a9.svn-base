@@ -1,0 +1,206 @@
+
+[class^="icon-"] {
+ 	position       : relative;
+ 	top            : -3px;
+	font-size      : 1rem;
+	line-height    : 1rem;
+	vertical-align : middle;
+ }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family  : "dmb-icons";
+  font-style   : normal;
+  font-weight  : normal;
+  speak        : none;
+ 
+  display      : inline-block;
+  margin-right : .2em;
+  text-align   : center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant   : normal;
+  text-transform : none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height : 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left : .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  text-decoration: inherit;
+
+  /* Font smoothing. That was taken from TWBS */
+/*  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;*/
+}
+
+
+$color_primary_green         : #028940;
+$color_primary_yellow        : #FFC20D;
+$color_primary_white         : #FFFFFF;
+
+$color_secondary_blue        : #00A7E9;
+$color_secondary_green_light : #8BCD32;
+$color_secondary_green_dark  : #006230;
+$color_secondary_purple      : #4C006A;
+$color_secondary_orange      : #FF8200;
+$color_secondary_red         : #DE3804;
+
+
+
+$font_size_tiny    : ; /*copyright*/
+$font_size_small   : ; /*legal*/
+
+$font_size_medium  : ; /*details,notes*/
+$font_size_large   : 36px; /*menu,captions*/
+
+$font_size_huge    : ; /*headers*/
+$font_size_massive : ;
+
+
+
+.restricted {
+  font-size: 18px;
+  position: relative;
+  top: -15px;
+}
+
+.text {
+	/*PRIMARY COLOR CLASSES*/
+	&-primary-green {
+		color : $color_primary_green;
+	}
+	&-primary-yellow {
+		color : $color_primary_yellow;
+	}
+	&-primary-white {
+		color : $color_primary_white;
+	}
+
+	/*SECONDARY COLOR CLASSES*/
+	&-muted {
+		color : $color_muted;
+	}
+
+
+
+	/*FONT SIZE CLASSES*/
+	&-large {
+		font-size   : $font_size_large;
+		line-height : $font_size_large;
+	}
+
+
+
+	/*FONT WEIGHT CLASSES*/
+	&-heavy {
+		font-family : $font_family_heavy; 
+	}
+	&-medium {
+		font-family : $font_family_medium; 
+	}
+
+
+
+	&-align-h-left {
+		text-align : left;
+	}
+	&-align-h-center {
+		text-align : center;
+	}
+	&-align-h-right {
+		text-align : right;
+	}
+
+
+	&-align-v-top {
+		vertical-align : top; 
+	}
+	&-align-v-middle {
+		vertical-align : middle; 
+	}
+	&-align-v-bottom {
+		vertical-align : bottom; 
+	}
+}
+
+
+.txt {
+	/* START ==> colors */
+	&-default {
+		color : $color_default;
+	}
+	&-info {
+		color : $color_info;
+	}
+	&-brand {
+		color : $color_brand;
+	}
+	&-emphasis {
+		color : $color_emphasis;
+	}
+	&-muted {
+		color : $color_muted;
+	}
+	&-highlight {
+		color : $color_highlight;
+	}
+	&-callout {
+
+	}
+	/* END ==> colors */
+
+
+
+
+
+	/* START ==> alignment */
+	&-align-left {
+		text-align : left;
+	}
+	&-align-center {
+		text-align : center;
+	}
+	&-align-right {
+		text-align : right;
+	}
+	/* END ==> alignment */
+
+	&-title {
+		font-family : $font_family_heavy; 
+		font-size   : $font_title_size; 
+		line-height : $font_title_line_height;
+	}
+
+	&-caption {
+		font-family : $font_family_medium; 
+		font-size   : $font_caption_size; 
+		line-height : $font_caption_line_height;
+	}
+
+	&-legal {
+	    font-size   : 0.7rem;
+	    line-height : 1rem;
+	    font-family : 'SubwayTest-Medium';
+	}
+
+	&-copyright {
+		font-size   : 0.6rem;
+		font-family : 'MyriadPro-BoldCondensed';
+
+		~ .txt-copyright {
+			margin-top : 0px;
+		}
+	}
+
+}
+
+
+
+
+

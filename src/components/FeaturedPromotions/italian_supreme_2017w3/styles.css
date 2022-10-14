@@ -1,0 +1,86 @@
+.c-FeaturedPromotionItalianSupreme2017w3 {
+	position    : relative;
+	width       : 100%;
+    height      : 100%;
+    overflow    : hidden;
+    font-family : 'MarkOffcPro-Bold';
+    font-size   : 2.8rem;
+	line-height : 2.1rem;
+	color       : #6d6e71;
+	z-index  : 1;
+}
+
+.italian-supreme-price {
+	position       : absolute;
+	padding        : 0px 0px 3px 0px;
+	font-family    : 'Subway-Heavy';
+	font-size      : 2rem;
+	font-weight    : 600;
+	color          : #ffffff;
+	letter-spacing : 0.02rem;
+}
+
+$priceSandwichRow: 155px;
+$priceCheeseRow: 274px;
+
+$price6inCol: 462px;
+$price12inCol: 98px;
+
+
+/* Sammich prices */
+.italian-supreme-6in {
+	@extend .italian-supreme-price;
+	top: $priceSandwichRow;
+  right: $price6inCol;
+}
+
+.italian-supreme-12in {
+	@extend .italian-supreme-price;
+	top: $priceSandwichRow;
+  right: $price12inCol;
+}
+
+/* Cheese, yo */
+.italian-supreme-mozz-6in {
+	@extend .italian-supreme-price;
+	top: $priceCheeseRow;
+  right: $price6inCol;
+}
+
+.italian-supreme-mozz-12in {
+	@extend .italian-supreme-price;
+	top: $priceCheeseRow;
+  right: $price12inCol;
+}
+
+.c-FeaturedPromotionItalianSupreme2017w3_items {
+	z-index  : 2; 
+	position : absolute;
+	top      : 191px;
+	right    : 91px;
+}
+
+.c-FeaturedPromotionItalianSupreme2017w3_item {
+	position      : relative;
+	~ .c-FeaturedPromotionItalianSupreme2017w3_item {
+		margin-top : 71px;
+	}
+}
+
+.c-FeaturedPromotionItalianSupreme2017w3_item_price{
+	position    : relative;
+	padding-top : 30px;
+	white-space : nowrap;
+	
+	&-sodium{
+		top:245px;
+		left:1800px;
+		display:inline-block;
+	}
+}
+
+.c-FeaturedPromotionItalianSupreme2017w3_item_sodium {
+	position : absolute;
+	right    : 0px;
+	bottom   : 6px;
+}

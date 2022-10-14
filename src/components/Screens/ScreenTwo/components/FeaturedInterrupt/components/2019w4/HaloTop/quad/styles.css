@@ -1,0 +1,27 @@
+.c-HaloTop {
+    position: absolute;
+    width: 640px;
+    height: 1080px;
+    overflow: hidden;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+.dn-price {
+	position: absolute;
+  	left: 0;
+  	top: 0;
+
+  	span {
+  		font-size: 32px;
+	    font-family: 'Subway-Medium';
+	    color: #fff;
+  	}
+  }
+
+}
+
+

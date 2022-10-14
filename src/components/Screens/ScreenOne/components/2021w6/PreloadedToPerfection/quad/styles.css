@@ -1,0 +1,127 @@
+.preloaded-to-perfection-quad {
+    
+    z-index: 100;
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .green-bg {
+        width: 1280px;
+        height: 1080px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #008e46;
+    }
+
+    .sub-info {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 400px;
+        height: 400px;
+        font-family: 'Subway-Medium';
+        font-size: 36px;
+        line-height: 36px;
+
+        .sodium-icon {
+            position: absolute;
+            top: 37px;
+            left: 361px;
+        }
+
+        .sodium-icon-philly {
+            position: relative;
+            margin-right: 10px;
+        }
+
+        p {
+            margin: 5px;
+        }
+
+        .sub-name {
+            font-family: 'Subway-Bold';
+        }
+
+        .yellow {
+            color: #F2B700;
+        }
+
+        sup {
+            vertical-align: top;
+            top: 0 !important;
+        }
+
+        &.cali-steak {
+            left: 1575px;
+            top: 50px;
+        }
+
+        &.cali-turkey {
+            left: 1575px;
+            top: 750px;
+        }
+
+        &.baja-steak {
+            left: 1000px;
+            top: 415px;
+        }
+
+        &.baja-chicken {
+            left: 510px;
+            top: 235px;
+        }
+
+        &.chicken-bacon-ranch {
+            left: 510px;
+            top: 490px;
+        }
+
+        .sodium-text {
+            color: #F2B700;
+            font-family: 'Subway-Bold-Narrow';
+        }
+
+        .cal-container {
+            margin-right: 10px;
+        }
+
+        .cal-price-container {
+            display: flex;
+        }
+    }
+
+}
+
+.featured-promo-area {
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    span {
+        width: 1920px;
+        height: 1080px;
+    }
+
+    .dj-content {
+
+    }
+}
+
+.signature-wraps-area {
+    opacity: 0;
+}
+
+.l-screen-reverse .featured-promo-area {
+    left: 0px;
+}

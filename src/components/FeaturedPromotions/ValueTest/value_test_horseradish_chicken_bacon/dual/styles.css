@@ -1,0 +1,65 @@
+.valueTestHorseradishDual {
+  background-color: white;
+
+  img {
+    position: absolute;
+  }
+
+  .largeCopy {
+    font-size: 180px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+  }
+
+  .titleMainCopy {
+    height: auto !important;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    top: 39px;
+    padding-left: 50px;
+    font-size: 120px;
+  }
+
+  .frame1Copy {
+    opacity: 0;
+  }
+
+  .frame2Copy {
+    font-size: 117px;
+    opacity: 0;
+  }
+
+  .endingCopy {
+    opacity: 0;
+  }
+
+  .endingPrice {
+    position: absolute;
+    font-size: 36px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+    opacity: 0;
+  }
+
+  .horseradishPrice6 {
+    right: 369px;
+    top: 385px;
+  }
+
+  .horseradishPrice12 {
+    right: 59px;
+    top: 385px;
+  }
+
+  .chickenPrice6 {
+    bottom: 261px;
+    left: 422px;
+  }
+
+  .chickenPrice12 {
+    bottom: 174px;
+    left: 422px;
+  }
+}

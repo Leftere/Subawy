@@ -1,0 +1,70 @@
+---
+name: Screen 2 - Featured Interrupt
+menu: Components
+route: /components/screen2/featured-interrupt
+---
+
+<br />
+
+# Screen 2: Featured Interrupt
+
+This area is used to showcase a special promotion that typically repeats over and over, though it can be set to cycle between a set promotion and the fallback promo. This promotion 
+typically changes slightly less often than the promotion on panel one.
+
+<br />
+
+![Promo Area](./promoPanel.jpg)
+
+## Creating a new component
+
+#### Path for new components:
+```
+src/components/Screens/ScreenTwo/FeaturedInterrupt/components
+```
+
+If one does not already exist, create a new folder and name it with the year and window number (ex. 2020w2). Within this folder is where you will 
+create all the new promotions for that window. Each promotion should be contained within its own folder and within that folder should be folders called "dual" and "quad"
+for the respective js and css files for both dual and quad screen store setups. There should also be a folder for images that can be shared between the two configurations.
+
+It is also important that you copy the "index.js" file from the root of another screen one component and paste it in the root of your new component's folder. This will ensure that
+the component can swap between quad and dual screen setups.
+
+In order for them to appear, new promos need to be added to the playlist lineup in
+```
+src/components/Screens/ScreenTwo/playlists/interrupts.js
+```
+by importing them at the top of the file, then adding the new component to the "rotation" object.
+
+<br />
+
+## Animation
+
+Animation is done using gsap. Make sure to include gsap at the top of your file. Documentation for gsap can be found [here](https://greensock.com/docs/).
+
+```
+import 'gsap'
+import 'gsap-then'
+```
+For more details on how to set up your component for animation, see [here](/animation-tips).
+
+Note: Due to performace issues, it is important that when animating components for a dual screen setup, the only value that should be animated is the opacity of each image, via gsap's `autoAlpha` command.
+
+<br />
+
+## Key
+
+```
+one_third_promo_area
+```
+
+Go to
+```
+src/neocast/local-data.js
+```
+and set this key to the value provided by the project manager in order to see the corresponding promotion appear on the boards.
+
+<br />
+
+## Setting price or other variable data
+
+See [setting data](/setting-data)

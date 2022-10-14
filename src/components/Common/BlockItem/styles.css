@@ -1,0 +1,120 @@
+.c-TableList_row {
+  position: relative;
+
+  .decal {
+    position: absolute;
+    height: 66px;
+    width: 66px;
+    top: -20px;
+    border-radius: 33px;
+    text-align: center;
+    line-height: normal;
+
+    .price {
+      margin: 15px 0 0 0 !important;
+
+      .sign,
+      .dollars,
+      .cents {
+        color: #fff;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .sign {
+        font-size: 18.5px;
+        margin: 1px -4px 0 0;
+      }
+
+      .dollars {
+        font-size: 33px;
+      }
+
+      .cents {
+        font-size: 18.5px;
+        margin: 1px 0 0 -4px;
+      }
+    }
+
+    .label {
+      margin: -8px 0 0 0 !important;
+      color: #fff;
+      font-size: 10.5px;
+    }
+  }
+
+  .decal6 {
+    background-color: #8ece2f;
+    color: #000;
+    font-size: 32px;
+    display: inline-block;
+    width: 66px;
+    height: 35px;
+    border-radius: 11px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    font-family: 'Subway-Heavy';
+
+    .sign,
+    .dollars,
+    .cents {
+      color: #000;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .sign {
+      font-size: 18.5px;
+      margin-top: 3px;
+    }
+
+    .cents {
+      font-size: 18px;
+      margin-top: 3px;
+      margin-left: -6px;
+    }
+  }
+
+  .decal12 {
+    right: 10px;
+  }
+
+  .shift-decal {
+    left: 330px;
+  }
+
+  .strikethrough-price {
+    position: relative;
+  }
+
+  .strikethrough-price::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-bottom: 7px solid #8ece2f;
+    left: 0;
+    top: 25%;
+  }
+
+  .blue {
+    background: #00a5de;
+  }
+
+  .green {
+    background: #85c441;
+  }
+
+  .sodiumIcon {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .sub_title {
+    display: inline-block !important;
+  }
+}
+
+.c-Menus_title span {
+  padding-right: 3px;
+}

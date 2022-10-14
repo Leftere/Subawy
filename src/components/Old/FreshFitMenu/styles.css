@@ -1,0 +1,94 @@
+.FreshFitMenu {
+  /*padding: 55px 35px 30px 35px;*/
+  padding: 40px 35px 0px 35px;
+  position: relative;
+  height: 100%;
+
+  & .c-Header_column:nth-child(1),
+  & .c-TableList_column:nth-child(1) {
+    width: 76%;
+  }
+
+  & .c-Header_column:nth-child(2),
+  & .c-TableList_column:nth-child(2) {
+    width: 9.3%;
+  }
+
+  & .c-Header_column:nth-child(3),
+  & .c-TableList_column:nth-child(3) {
+    width: 13%;
+
+    .c-Menus_title {
+      margin-left: 28px;
+    }
+  }
+
+  .c-Menus_title-v-expand {
+    margin-bottom: 10px;
+  }
+
+  .c-Menus_header sup {
+    top: -12px !important;
+  }
+
+  .restricted {
+    top: -10px;
+  }
+
+  .c-Menus_tagline {
+    color: white;
+    font-family: 'Subway-Heavy';
+    font-size: 32px;
+    line-height: 1.2;
+    padding: 5px 0 25px 0;
+  }
+
+  .c-TableList_row {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .c-Promotion_item-tax {
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .c-Menus_title > sup {
+    top: 0 !important;
+  }
+
+  .c-Menus_copyright {
+    font-size: 18px;
+    line-height: 1;
+
+    br {
+      line-height: initial;
+      font-size: initial;
+    }
+
+    sup {
+      position: relative;
+      font-size: 20px;
+      top: -10px;
+    }
+  }
+
+  .glutenCalories {
+    font-family: 'Subway-Medium';
+    padding: 0rem 1rem;
+  }
+
+  .glutenLineItem {
+    position: absolute;
+    bottom: 90px;
+  }
+
+  .c-Menus_footer {
+    padding-left: 20px;
+  }
+
+  .legalContent {
+    position: relative;
+    left: -13px;
+  }
+}

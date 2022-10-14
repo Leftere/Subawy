@@ -1,0 +1,279 @@
+/************************************************************************************************************************
+CORE MODULE STYLES
+************************************************************************************************************************/
+.mealdeal-kidsmeal-interrupt {
+	position  : absolute;
+	top       : 0px;
+	left      : 0px;
+	width     : 1920px;
+	height    : 1080px;
+	overflow : hidden;
+	transform : translateZ(0px);
+
+	* {
+		transform : translateZ(0px);
+	}
+}
+.mealdeal-kidsmeal-interrupt img {
+	position : absolute;
+}
+
+.int-watercup {
+	z-index   : 99996;
+	transform : scale(0.5);
+	top       : 55px;
+	left      : -2123px;
+}
+.int-watercup {
+	top  : 37px;
+	left : -2071px
+}
+.int-watersplash {
+	z-index   : 99997;
+	transform : scale(0.5);
+	top       : -169px;
+	left      : -229px;
+	opacity   : 0;
+}
+.int-watersplash {
+	top  : -66px;
+	left : -168px
+}
+.int-splash {
+	z-index   : 99999;
+	transform : scale(0.5)
+}
+.ice-1 {
+	z-index   : 99999;
+	left      : 603px;/* was 203px*/
+	top       : 165px;
+	opacity   : 0;
+	transform : scale(0.45);
+}
+.ice-2 {
+	z-index   : 99999;
+	left      : 478px;/* was 203px*/
+	top       : 205px;
+	opacity   : 0;
+	transform : scale(0.4) scaleX(-1);
+}
+.int-chips {
+	z-index   : 99996;
+	top       : 204px;
+	left      : 1430px;
+	opacity   : 0;
+	transform : scale(0.65);
+}
+.int-chip {
+	z-index   : 99995;
+	transform : scale(0.3)
+}
+.int-chip-1 {
+	left    : 962px;/* was 462px*/
+	top     : 176px;
+	opacity : 0;
+}
+.int-chip-2 {
+	left    : 800px;/* was 384px*/
+	top     : 176px;
+	opacity : 0;
+}
+.int-chip-3 {
+	left    : 800px;/* was 305px*/
+	top     : 154px;
+	opacity : 0;
+}
+
+
+
+
+
+
+/************************************************************************************************************************
+STATE => TRANSITION:IN:OPACITYIN
+************************************************************************************************************************/
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:opacityIn"] {
+	transform  : translate3d(0,0,1px);
+	transition : transform 1000ms linear 0.2s;
+	.int-chips {
+		opacity          : 1;
+		transition       : opacity 1000ms;
+		transition-delay : 0.2s;
+	}
+	/* .to($intWatersplash, 1, {opacity:1, delay:0.2},"opacityIn") */
+	.int-watersplash {
+		opacity          : 1;
+		transition       : opacity 1000ms;
+		transition-delay : 0.2s;
+	}
+}
+
+
+
+
+/************************************************************************************************************************
+STATE => TRANSITION:IN:BUMPIN1
+************************************************************************************************************************/
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn1"] {
+	transform  : translate3d(0,0,0);
+	transition : transform 1000ms linear 0s;
+}
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn1"] .int-chips {
+	opacity          : 1;
+	transform        : translateX(-635px) scale(0.65);/*was -1135px * GN*/
+	transition       : transform 1000ms ease-in;
+	transition-delay : 0.0s;
+}
+/* .to($intWatersplash, 0.2, {opacity:1,delay:1},"bumpIn") */
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn1"] .int-watersplash {
+	opacity          : 1;
+	transform        : translateX(500px) scale(0.5);/*was 35px * GN*/
+	transition       : transform 1000ms;
+	transition-delay : 0.0s;
+}
+/* .to($ice1, 0.4, {opacity:0.9,delay:1},"bumpIn") */
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn1"] .ice-1 {
+	opacity          : 0.9;
+	transition       : opacity 200ms;
+	transition-delay : 1.0s;
+}
+/* .to($ice2, 0.4, {opacity:0.7,delay:1},"bumpIn") */
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn1"] .ice-2 {
+	opacity          : 0.7;
+	transition       : opacity 200ms;
+	transition-delay : 1.0s;
+}
+/* .to($intchip1, 0.4, {opacity:1,delay:1.1},"bumpIn") */
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn1"] .int-chip-1 {
+	opacity          : 1;
+	transition       : opacity 200ms;
+	transition-delay : 1.0s;
+}
+/* .to($intchip2, 0.4, {opacity:1,delay:1.1},"bumpIn") */
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn1"] .int-chip-2 {
+	opacity          : 1;
+	transition       : opacity 200ms;
+	transition-delay : 1.0s;
+}
+/* .to($intchip3, 0.4, {opacity:1,delay:1.1},"bumpIn") */
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn1"] .int-chip-3 {
+	opacity          : 1;
+	transition       : opacity 200ms;
+	transition-delay : 1.0s;
+}
+
+
+
+
+/************************************************************************************************************************
+STATE => TRANSITION:IN:BUMPIN2
+************************************************************************************************************************/
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn2"] {
+	transform  : translate3d(0,0,1px);
+	transition : transform 4000ms linear 0s;
+}
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn2"] .int-chips {
+	opacity          : 1;
+	transform        : translateX(-635px) scale(0.65);/*was -1115px * GN*/
+	transition       : transform 4000ms ease-out; /*was 4000ms * GN*/
+	transition-delay : 0.0s;
+}
+/* .to($intWatersplash, 1, {left:-115,delay:.1, ease: Sine.easeOut},"bumpIn") */
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn2"] .int-watersplash {
+	opacity          : 1;
+	transform        : translateX(500px) scale(0.5);/*was 20px * GN*/
+	transition       : transform 4000ms ease-out;
+	transition-delay : 0.0s;
+}
+/* .to($ice1, 4, {left:162, top:47, delay:1.15, ease: Sine.easeOut},"bumpIn") */
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn2"] .ice-1 {
+	opacity          : 0.9;
+	transform        : translateX(19px) translateY(-220px) scale(0.45);/*was -221px * GN*/
+	transition       : transform 4000ms ease-out;
+	transition-delay : 0.0s;
+}
+/* .to($ice2, 4, {left:-40, top:151, delay:1.15, ease: Sine.easeOut},"bumpIn") */
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn2"] .ice-2 {
+	opacity          : 0.7;
+	transform        : translateX(-20px) translateY(-150px) scale(0.4) scaleX(-1);/*was -150px * GN*/
+	transition       : transform 4000ms ease-out;
+	transition-delay : 0.0s;
+}
+/* .to($intchip1, 4, {left:615, top:34, delay:1.15, ease: Sine.easeOut},"bumpIn") */
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn2"] .int-chip-1 {
+	opacity          : 1;
+	transform        : translateX(90px) translateY(-171px) scale(0.3);
+	transition       : transform 4000ms ease-out;
+	transition-delay : 0.0s;
+}
+/* .to($intchip2, 4, { top:-50, left:443, delay:1.15, ease: Sine.easeOut},"bumpIn") */
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn2"] .int-chip-2 {
+	opacity          : 1;
+	transform        : translateX(100px) translateY(-231px) scale(0.3);/*was tx 0px * GN*/
+	transition       : transform 4000ms ease-out;
+	transition-delay : 0.0s;
+}
+/* .to($intchip3, 4, {left:267, top:-13, delay:1.15, ease: Sine.easeOut},"bumpIn") */
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:bumpIn2"] .int-chip-3 {
+	opacity          : 1;
+	transform        : translateX(-20px) translateY(-120px) scale(0.3);/*was -40px * GN*/
+	transition       : transform 4000ms ease-out;
+	transition-delay : 0.0s;
+}
+
+
+
+
+/************************************************************************************************************************
+STATE => TRANSITION:IN:BUMPIN2
+************************************************************************************************************************/
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:opacityOut"] {
+	transform  : translate3d(0,0,0);
+	transition : transform 500ms linear 0s;
+}
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:opacityOut"] .int-chips {
+	opacity          : 0.0;
+	transition       : opacity 500ms;
+	transition-delay : 0.0s;
+	transform        : translateX(-635px) scale(0.65);/*was -1115px * GN*/
+}
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:opacityOut"] .int-watersplash {
+	opacity          : 0.0;
+	transition       : opacity 500ms;
+	transition-delay : 0.0s;
+	transform        : translateX(500px) scale(0.5);/*was -20px * GN*/
+}
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:opacityOut"] .ice-1 {
+	opacity          : 0.0;
+	transition       : opacity 500ms;
+	transition-delay : 0.0s;
+	transform        : translateX(19px) translateY(-220px) scale(0.45);
+}
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:opacityOut"] .ice-2 {
+	opacity          : 0.0;
+	transition       : opacity 500ms;
+	transition-delay : 0.0s;
+	transform        : translateX(-20px) translateY(-150px) scale(0.4) scaleX(-1);
+}
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:opacityOut"] .int-chip-1 {
+	opacity          : 0.0;
+	transition       : opacity 500ms;
+	transition-delay : 0.0s;
+	transform        : translateX(90px) translateY(-171px) scale(0.3);
+}
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:opacityOut"] .int-chip-2 {
+	opacity          : 0.0;
+	transition       : opacity 500ms;
+	transition-delay : 0.0s;
+	transform        : translateX(100px) translateY(-231px) scale(0.3);/*was tx 0px * GN*/
+}
+.mealdeal-kidsmeal-interrupt[data-ui-state~="transition:in:opacityOut"] .int-chip-3 {
+	opacity          : 0.0;
+	transition       : opacity 500ms;
+	transition-delay : 0.0s;
+	transform        : translateX(-20px) translateY(-120px) scale(0.3);/*was -40px * GN*/
+}
+
+
+
+

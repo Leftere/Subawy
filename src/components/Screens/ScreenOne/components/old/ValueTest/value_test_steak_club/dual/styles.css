@@ -1,0 +1,28 @@
+.valueTestSteakClubDual {
+  background-color: white;
+  backface-visibility: hidden;
+
+  img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: auto !important;
+  }
+
+  .endingPrice {
+    position: absolute;
+    bottom: 88px;
+    font-size: 36px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+    opacity: 0;
+  }
+
+  .price6 {
+    right: 412px;
+  }
+
+  .price12 {
+    right: 79px;
+  }
+}

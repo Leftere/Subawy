@@ -1,0 +1,24 @@
+.med-wraps-ending-frame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .ending-price {
+    font-family: 'Subway-Heavy';
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .med-wraps-price1 {
+    position: absolute;
+    top: 746px;
+    left: 72px;
+  }
+
+  .med-wraps-price2 {
+    position: absolute;
+    top: 916px;
+    left: 1013px;
+  }
+}

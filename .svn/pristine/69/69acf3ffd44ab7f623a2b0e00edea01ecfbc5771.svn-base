@@ -1,0 +1,151 @@
+.c-Promotion {
+  position : relative;
+  height   : 1080px;
+  width    : auto;
+  display: block;
+  margin: 0 auto;
+  background: #ffffff;
+
+  img {
+    height: 1080px;
+  }
+}
+
+.c-Promotion_background {
+  z-index  : 1;
+  position : relative;
+  height   : 100%;
+  width    : auto;
+  margin: 0 auto; 
+  display: block;
+}
+
+.c-Promotion_content {
+  z-index  : 2; 
+  position : absolute;
+  left     : 114px;
+  width    : 756px;
+
+  &-constrained-xs {
+    padding : 0px 12px;
+  }     
+  &-constrained-sm {
+    padding : 0px 30px;
+  } 
+  &-constrained-md {
+    padding : 0px 45px;
+  } 
+  &-constrained-lg {
+    padding : 0px 80px;
+  } 
+
+  &-bottom-xs {
+    bottom : 12px;
+  }
+  &-bottom-sm {
+    bottom : 30px;
+  }
+  &-bottom-md {
+    bottom : 45px;
+  }
+  &-bottom-lg {
+    bottom : 80px;
+  }
+
+  &-align-left {
+    text-align : left; 
+  }
+  &-align-center {
+    text-align : center; 
+  }
+  &-align-right {
+    text-align : right; 
+  }
+}
+
+.c-Promotion_item {
+  position  : relative;
+  display   : inline-block; 
+  height    : 100%;
+  font-size : 0px;
+}
+
+.c-Promotion_item_option {
+  position : relative;
+  display  : inline-block;
+  ~ .c-Promotion_item_option {
+    padding-left : 20px;
+  }
+}
+
+.c-Promotion_item_altlabel {
+  position : relative;
+  display  : inline-block;
+}
+
+.c-Promotion_item_info {
+  position : relative;
+  display  : inline-block;
+
+  ~ .c-Promotion_item_copy {
+    padding-left : 13px;
+  }
+}
+.c-Promotion_item_label {
+  position : relative;
+  display  : inline-block;
+}
+
+.c-Promotion_item_copy {
+  position : relative;
+  display  : inline-block;
+
+  &-light {
+    font-family : $font_family_light; 
+  }
+  &-medium {
+    font-family : $font_family_medium; 
+  }
+  &-heavy {
+    font-family : $font_family_heavy; 
+  }
+
+  &-xs {
+    font-size   : 2.3rem;
+    line-height : 2.3rem; 
+  }
+  &-sm {
+    font-size   : 2.3rem;
+    line-height : 2.3rem; 
+  }
+  &-md {
+    font-size   : 2.3rem;
+    line-height : 2.3rem; 
+  }
+  &-lg {
+    font-size   : 2.3rem;
+    line-height : 2.3rem; 
+  }
+  &-xlg {
+    font-size   : 2.3rem;
+    line-height : 2.3rem; 
+  }
+}
+
+.c-Promotion_item_price {
+  color       : #ffffff;
+  position    : absolute;
+  font-family : $font_family_heavy;
+  line-height : 2.3rem;
+  top         : -690px;
+  white-space : nowrap;
+  margin-left:-10px;
+}
+
+.c-Promotion_item-tax {
+  color       : #ffffff;
+  font-family : $font_family_medium;
+  font-size   : 1rem;
+  font-weight: bold;
+  line-height: 1.3rem;
+}

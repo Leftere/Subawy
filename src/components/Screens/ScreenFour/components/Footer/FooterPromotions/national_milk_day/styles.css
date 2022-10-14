@@ -1,0 +1,43 @@
+.c-NationalMilkDay {
+
+	.item-price {
+	  position: absolute;
+	  font-size: 26px;
+	  color: #fff;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+	  left: 25px;
+    top: 153px;
+
+
+	  .item-cals {
+	  	font-family: 'Subway-Medium';
+	  	font-size: 24px;
+	  }
+	}
+
+  .price-1 {
+    left: 15px;
+    top: 117px;
+  }
+
+  .price-2 {
+    left: 164px;
+    top: 117px;
+  }
+
+  .price-3 {
+    color: #dd3705;
+    left: 662px;
+    top: 49px;
+  }
+
+  &.c-Footer {
+    transform: scale(1) !important;
+    transform-origin: initial !important;
+    width: 960px  !important;
+    height: 200px  !important;
+  }
+
+}

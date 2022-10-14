@@ -1,0 +1,87 @@
+.c-PizzaSubDual {
+
+  height: 1080px;
+  width: 1920px;
+  display: block;
+  background: #005;
+  background: transparent;
+  position: relative;
+  font-family: 'Subway-Heavy';
+
+  * {
+    position: absolute;
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    width: 500px;
+  }
+
+  .d-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .d-text {
+    font-family: 'Subway-Heavy';
+    font-size: 38px;
+    line-height: 38px;
+    color: #fff;
+  }
+
+  .d-bg {
+    left: -50px;
+    top: -50px;
+    width: calc(100% + 100px);
+    height: calc(100% + 100px);
+  }
+
+
+  .dn-sub1Price6 {
+    top: 566px;
+    left: 813px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub1Price12 {
+    top: 602px;
+    left: 813px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub2Price6 {
+    top: 726px;
+    left: 21px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub2Price12 {
+    top: 762px;
+    left: 21px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub3Price6 {
+    top: 1008px;
+    left: 618px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub3Price12 {
+    top: 1008px;
+    left: 874px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+
+}

@@ -1,0 +1,359 @@
+@keyframes fadeInOpen {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.kids-dual  {
+
+  * {
+    animation: none !important;
+  }
+}
+
+.c-KidsMeal {
+  position: relative;
+  padding: 15px 35px 0 15px;
+  height: 100%;
+  color: #05010a;
+  /*opacity: 0;
+  animation: fadeInOpen 2s linear forwards;*/
+
+  &.R2L {
+    padding: 15px 15px 0 30px;
+  }
+
+  img {
+      position: absolute;
+  }
+
+  * {
+    color: #008938;
+  }
+
+  .bg {
+    left: 0;
+    top: 0;
+  }
+
+  .frame1 {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    opacity: 1;
+    padding: 38px 20px 0px 15px;
+  }
+
+  .kidsMeal {
+    position: absolute;
+    bottom: 220px;
+    right: 15px;
+  }
+
+  .c-Menus_header {
+      color: #008938;
+  }
+
+  .c-Menus_subheader {
+    margin-left: 2rem;
+    position: absolute;
+    right: -17px;
+    top: 80px;
+  }
+
+  .c-KidsMeal_body {
+    margin-top: 20px;
+  }
+
+  .c-KidsMeal_sticker {
+    position: absolute;
+    right: 10px;
+    right: 28px;
+    bottom: 150px;
+    width: 210px;
+    &.R2L {
+      right: 10px;
+    }
+
+    img {
+      position: absolute;
+      right: 0px;
+      bottom: -15px;
+    }
+
+    img.meal-evergreen {
+      bottom: 200px;
+      right: 100px;
+    }
+
+    &-evergreen {
+      position: absolute;
+      bottom: 120px;
+      left: 430px;
+
+      img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .kids-meal-mmlm-meal {
+    position: absolute;
+    bottom: 100px;
+    width: 250px;
+    right: 190px;
+  }
+
+  .kids-meal-cars-meal {
+    position: absolute;
+    bottom: 50px;
+    /*height: 275px;*/
+    right: 205px;
+  }
+
+  .c-List_item {
+    padding: 0px 0px 14px 0px;
+  }
+
+  /* Legal updates */
+  .c-Header_sub {
+    font-size: 27px;
+    font-family: 'Subway-Heavy';
+    color: #008938;
+  }
+
+  .c-Menus_title {
+    font-size: 32px;
+    color: #008938;
+  }
+
+  .deduct-wording {
+    left: 32px;
+    line-height: 1;
+    font-size: 22px;
+    bottom: 86px;
+    color: #000;
+    opacity: 0.7;
+    text-shadow: 0 0 3px #eee7e8, 0 0 3px #eee7e8,;
+
+
+    * {
+      color: #000;
+    }
+
+    .deduct-asterisk {
+      position: absolute;
+      left: -10px;
+      top: 0px;
+      font-size: 26px;
+      opacity: 0.7;
+    }
+  }
+
+  .c-Menus_footer {
+    bottom: 0px;
+    left: 0px;
+    &.R2L {
+      left: 15px;
+    }
+    /*width: 772px;*/
+
+    .little-people-logo {
+      position: absolute;
+      right: -10px;
+      bottom: 40px;
+
+    }
+
+    .c-Menus_copyright {
+      position: absolute;
+      bottom: -20px;
+      font-size: 22px;
+      text-align: left;
+      padding-left: 15px;
+
+    }
+
+    .txt-copyright {
+      font-family: 'Subway-Medium';
+      font-size: 16px;
+      line-height: 1;
+      position: absolute;
+      bottom: -56px;
+      left: 15px;
+
+      br {
+        line-height: 0.4;
+      }
+    }
+
+    .mealCaption {
+      position: absolute;
+      bottom: -35px;
+      right: 95px;
+      font-size: 30px;
+      font-family: 'Subway-Heavy';
+    }
+  }
+
+  .restricted {
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+  }
+
+  .c-Menus_subheader {
+    font-size: 50px;
+    color: #ff8200;
+
+    .price-currency {
+      font-size: 38px;
+      position: relative;
+      top: -7px;
+      color: #ff8200;
+    }
+  }
+
+
+  .overlay {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+
+    .cocoBig {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    .overlayCaption {
+      position: absolute;
+      top: 70px;
+      right: 45px;
+      font-size: 68px;
+      font-family: 'Subway-Heavy';
+      text-align: center;
+    }
+
+    .toy {
+      position: absolute;
+      transform-origin: center top;
+    }
+
+  }
+
+  .toys {
+    position: absolute;
+    top: 400px;
+
+    .toy1 {
+      position: absolute;
+      left: 730px;
+      top: 310px;
+    }
+
+    .toy2 {
+      position: absolute;
+      left: 610px;
+      top: 330px;
+    }
+
+    .toy3 {
+      position: absolute;
+      left: 520px;
+      top: 310px;
+    }
+
+    .toy4 {
+      position: absolute;
+      left: 410px;
+      top: 290px;
+    }
+
+    .text1 {
+      position: absolute;
+      left: 0px;
+      top: 10px;
+    }
+
+    .text2 {
+      position: absolute;
+      left: 0px;
+      top: 338px;
+    }
+
+    .logo {
+      position: absolute;
+      left: 70px;
+      top: 100px;
+    }
+
+    .ticket {
+      position: absolute;
+      left: 320px;
+      top: 188px;
+    }
+
+    .logos {
+      position: absolute;
+      left: 619px;
+      top: 337px;
+    }
+
+    .toyMini {
+      bottom: 320px;
+    }
+
+    .toyWatches {
+      bottom: 140px;
+      left: 180px;
+    }
+
+    .toyPlanes {
+      left: 180px;
+      bottom: 150px;
+    }
+
+    .toySky {
+      left: -20px;
+      bottom: 280px;
+    }
+
+    .toyText {
+      bottom: 222px;
+    }
+
+  }
+
+  .little {
+    position: absolute;
+    left: 517px;
+    bottom: 93px;
+  }
+
+  .cover, .covers {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .covers {
+    background: #14aeeb;
+    width: 100%;
+    height: 100%;
+  }
+
+  .frame-2 {
+    left: 50px;
+  }
+
+  .cover {
+  }
+
+}

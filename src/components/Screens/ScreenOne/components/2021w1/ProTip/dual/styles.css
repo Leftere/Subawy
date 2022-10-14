@@ -1,0 +1,23 @@
+.pro-tip-quad {
+    
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .price {
+        position: absolute;
+        left: 165px;
+        top: 330px;
+        color: #fff200;
+        font-size: 30px;
+        font-family: 'GraphikCondensed-Medium';
+
+        span {
+            color: white;
+            margin-right: 13px;
+        }
+    }
+
+}

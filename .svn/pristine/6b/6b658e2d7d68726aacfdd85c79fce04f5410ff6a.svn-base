@@ -1,0 +1,108 @@
+import { Component } from 'react'
+import PropTypes from 'prop-types'
+
+// import SignatureMenu from './components/Menu'
+// import SignatureFooter from './components/Footer'
+import SignatureFeaturedInterrupt from './components/FeaturedInterrupt'
+// import SignatureFeatured from './components/Featured'
+// import FeaturedW3 from './components/FeaturedW3'
+
+import MealMenu from './components/MealMenu'
+import BigFooter from './components/BigFooter'
+//import MiniPromo from './components/MiniPromo'
+
+import './styles.css'
+
+let TimerLength = 6000
+
+export default class PanelTwo extends Component {
+  static propTypes = {
+    player: PropTypes.oneOf(['quad', 'dual'])
+  }
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      intervalId: null,
+      currentFrameCount: 0
+    }
+  }
+
+  componentDidMount() {
+    this.state.intervalId = setInterval(this.timer.bind(this), TimerLength)
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.state.intervalId)
+  }
+
+  timer() {
+    this.setState({ currentFrameCount: this.state.currentFrameCount + 1 })
+  }
+
+  /* Currently replaced by the featured interrupt
+  <section className={`s-Featured`}>
+    <SignatureFeatured {...this.props} currentFrameCount={this.state.currentFrameCount}/>
+  </section>
+  */
+  render() {
+    return (
+      <div className={this.props.screenClass}>
+
+        <section className="s-Meal">
+
+          <div className="meals">
+            <MealMenu
+              {...this.props}
+              currentFrameCount={this.state.currentFrameCount}
+            />
+          </div>
+
+          <div className="disclaimer">2,000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.</div>
+
+          <div className="footer">
+            <BigFooter
+              {...this.props}
+              currentFrameCount={this.state.currentFrameCount}
+            />
+          </div>
+
+        </section>
+
+        <section className="s-MiniPromo">
+          <SignatureFeaturedInterrupt
+              {...this.props}
+              currentFrameCount={this.state.currentFrameCount}
+            />
+        </section>
+
+        {/* Screen content */}
+        <div className={`c-signatureContent`}>
+
+          {/*
+          <section className={`s-Menu`}>
+            <SignatureMenu
+              {...this.props}
+              currentFrameCount={this.state.currentFrameCount}
+            />
+          </section>
+          */}
+
+          {/*
+          <section className={`s-FeaturedInterrupt`}>
+            <FeaturedW3
+              {...this.props}
+              currentFrameCount={this.state.currentFrameCount}
+            />
+          </section>
+          */}
+
+          
+
+          
+
+        </div>
+      </div>
+    )
+  }
+}

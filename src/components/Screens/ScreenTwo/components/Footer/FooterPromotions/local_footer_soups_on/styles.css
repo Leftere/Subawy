@@ -1,0 +1,17 @@
+sup {
+  top: -5px !important;
+  font-size: 71% !important;
+  vertical-align: middle;
+}
+
+.soups-on-price {
+  position: absolute;
+  font-family: "BrooklynSamuels5-Fat";
+  font-size: 34px;
+  letter-spacing: -1px;
+  bottom: 28px;
+  z-index: 10;
+  right: 525px;
+  color: #6e6f71;
+  text-transform: uppercase;
+}

@@ -1,0 +1,116 @@
+.c-MealMenu {
+	padding: 40px 40px 0 40px;
+
+	.featured {
+		position: absolute;
+		width: 45%;
+
+		.c-Menus_header {
+			font-size: 66px;
+			line-height: 59px;
+		}
+
+		.c-Menus_note {
+			position: absolute;
+			left: 3px;
+			top: 70px;
+			color: #ffc20d;
+			width: 1000px;
+		}
+
+		.hero {
+			position: absolute;
+			margin-top: 80px;
+			width: 491px;
+			height: 539px;
+			transition: all 1s;
+
+			.price,
+			.name {
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				font-family: 'Subway-Heavy';
+				color: #fff;
+			}
+
+			.price {
+				top: 52px;
+				padding-right: 46px;
+				font-size: 57px;
+			}
+
+			.name {
+				top: 550px;
+				font-size: 36px;
+			}
+		}
+	}
+
+	.meals {
+		position: absolute;
+		top: 30px;
+		left: 610px;
+		width: calc(100% - 610px);
+
+		.c-MealTile {
+			position: absolute;
+			transition: all 1s;
+
+			&.tuna,
+			&.oven_roasted_chicken,
+			&.spicy_italian {
+				left: 325px;
+			}
+
+			&.oven_roasted_chicken,
+			&.bf_ham {
+				top: 235px;
+			}
+
+			&.spicy_italian,
+			&.steak_cheese,
+			&.turkey_breast {
+				top: 515px;
+			}
+
+			&.tuna,
+						 {
+				top: 0px;
+			}
+
+		}
+	}
+}
+
+.r-ShowTurkey {
+	.hero {
+		&.turkey_breast {opacity: 1}
+		&.steak_cheese 	{opacity: 0}
+	}
+	.c-MealTile {
+		&.turkey_breast {opacity: 0}
+		&.steak_cheese 	{opacity: 1}
+	}
+}
+
+.r-ShowSteak {
+	.hero {
+		&.turkey_breast {opacity: 0}
+		&.steak_cheese 	{opacity: 1}
+	}
+	.c-MealTile {
+		&.turkey_breast {opacity: 1}
+		&.steak_cheese 	{opacity: 0}
+	}
+}
+
+.isSKU {
+  .oven_roasted_chicken {
+    display: none;
+  }
+
+  .meatball_marinara {
+    top: 0px !important;
+  }
+}

@@ -1,0 +1,29 @@
+.c-Footer_background-LmdpItalHero {
+  line-height: 1.5rem;
+  font-size: 1.65rem;
+  padding: 0px 0px 3px 0px;
+  color: #797a7d;
+  letter-spacing: 0.02rem;
+}
+
+sup {
+  top: -5px !important;
+  font-size: 71% !important;
+  vertical-align: middle;
+}
+
+.lmdp_ital_hero_6in {
+  position: absolute;
+  top: 137px;
+  left: 59px;
+  font-family: 'BrooklynSamuels5-Fat';
+  font-weight: 600;
+}
+
+.lmdp_ital_hero_12in {
+  position: absolute;
+  top: 137px;
+  left: 290px;
+  font-family: 'BrooklynSamuels5-Fat';
+  font-weight: 600;
+}

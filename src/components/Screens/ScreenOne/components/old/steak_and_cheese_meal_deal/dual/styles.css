@@ -1,0 +1,82 @@
+$panScale: 1.09;
+
+.dual-player-full-promo {
+	height: 1080px;
+
+	.c-FeaturedPromotionSteakAndCheeseMealDeal2017w1 {
+		position    : relative;
+		width       : 100%;
+	    height      : 100%;
+	    overflow    : hidden;
+	    font-family : 'KGSecondChancesSolid';
+	    font-size   : 100px;
+	    color       : #ffffff;
+	}
+
+	.c-FeaturedPromotionSteakAndCheeseMealDeal2017w1_frame {
+		z-index  : 7; 
+		position : absolute; 
+		top      : 0px;
+		left     : 0px;
+		opacity  : 0;
+	}
+
+	.c-FeaturedPromotionSteakAndCheeseMealDeal2017w1_frame:nth-child(2) .c-FeaturedPromotionSteakAndCheeseMealDeal2017w1_frame_caption {
+		top : 13px !important;
+	}
+
+	/*hearty portions of corned beef*/
+	.c-FeaturedPromotionSteakAndCheeseMealDeal2017w1_frame_background {
+		position : relative;
+	}
+
+	.c-FeaturedPromotionSteakAndCheeseMealDeal2017w1_frame_caption {
+		position : absolute;
+		top      : -600px;
+		left     : 14px;
+		padding  : 0px 0px 54px 0px;
+	}
+
+}
+
+
+
+
+
+
+.c-FeaturedPromotionSteakAndCheeseMealDeal2017w1_static {
+	z-index     : 3;
+	position    : absolute;
+	top         : 0px;
+	left        : 0px;
+	width       : 100%;
+  height      : 100%;
+}
+
+.c-FeaturedPromotionSteakAndCheeseMealDeal2017w1_static_background {
+	z-index  : 1;
+	position : relative;
+	width    : 100%;
+	height   : 100%;
+}
+
+.c-FeaturedPromotionSteakAndCheeseMealDeal2017w1_static_value {
+	z-index     : 2;
+	position    : absolute;
+	top         : 16%;
+	right       : 26px;
+	width       : 237px;
+	font-size   : 3rem;
+	line-height : 2.5rem;
+	font-family : 'BrooklynSamuelsFive-Bold';
+	color       : #ffffff;
+	text-align  : center;
+
+	> span {
+		height: auto !important;
+		position  : relative;
+		top       : 7px;
+		font-size : 2.3rem;
+	}
+}
+

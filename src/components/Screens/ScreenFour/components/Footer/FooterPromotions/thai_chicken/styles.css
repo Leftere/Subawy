@@ -1,0 +1,27 @@
+.c-ThaiChickenFooter {
+
+	.item-price {
+	  position: absolute;
+	  font-size: 28px;
+	  color: #dd3705;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+	  left: 13px;
+    top: 172px;
+
+
+	  .item-cals {
+	  	font-family: 'Subway-Medium';
+	  	font-size: 28px;
+	  }
+	}
+
+  &.c-Footer {
+    transform: scale(1) !important;
+    transform-origin: initial !important;
+    width: 960px  !important;
+    height: 200px  !important;
+  }
+
+}

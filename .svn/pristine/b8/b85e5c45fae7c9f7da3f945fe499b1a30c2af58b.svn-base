@@ -1,0 +1,69 @@
+.SignatureMenu {
+  /*padding: 55px 35px 30px 35px;*/
+  padding: 40px 35px 30px 35px;
+  position: relative;
+  height: 1080px;
+
+  & .c-Header_column:nth-child(1),
+  & .c-TableList_column:nth-child(1) {
+    width: 74%;
+    padding-right: 0px;
+  }
+
+  & .c-Header_column:nth-child(2),
+  & .c-TableList_column:nth-child(2) {
+    width: 11%;
+  }
+
+  & .c-Header_column:nth-child(3),
+  & .c-TableList_column:nth-child(3) {
+    width: 15%;
+
+    .c-Menus_title {
+      margin-left: 28px;
+    }
+  }
+
+  .restricted {
+    position: absolute;
+    top: -10px;
+    width: 20px;
+  }
+
+  .c-TableList_row {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .kidsArea {
+    height: 432px;
+    span {
+      height: 432px;
+    }
+  }
+
+  /* Legal update */
+  .calorieFooterInfo {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.1;
+    /*margin-bottom: 10px;*/
+    /*width: 860px;*/
+  }
+
+  .taxLine {
+    position: relative;
+    font-size: 18px;
+    line-height: 1.3;
+    top: 3px;
+  }
+
+  .c-Menus_footer {
+    bottom: 25px;
+    padding-left: 20px;
+  }
+
+  br {
+    line-height: initial;
+    font-size: initial;
+  }
+}

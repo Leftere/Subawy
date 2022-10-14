@@ -1,0 +1,310 @@
+@keyframes confetti-slow {
+  0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
+  
+  100% { transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(250deg); }
+}
+
+@keyframes confetti-medium {
+  0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
+  
+  100% { transform: translate3d(100px, 105vh, 0) rotateX(250deg) rotateY(360deg); }
+}
+
+@keyframes confetti-fast {
+  0% { transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
+  
+  100% { transform: translate3d(-50px, 105vh, 0) rotateX(-360deg) rotateY(-250deg); }
+}
+
+
+
+@keyframes beats {
+	0%   { transform : scale(1)   translateZ(0px); opacity : 1; }
+	30%  { transform : scale(1.2) translateZ(0px); opacity : 1; }
+	100% { transform : scale(1)   translateZ(0px); opacity : 1; }
+}
+
+
+
+
+
+.c-FeatPromoSixDollarAnyFootlong2017w2 {
+	contain         : strict;
+	position        : relative;
+	width           : 100%;
+	height          : 100%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+	background      : #ffffff;
+	transform       : translateZ(0px);
+	transition      : transform 8s ease-out;
+
+	&[data-ui-state="transition:in:frame1"] {
+		.c-FeatPromoSixDollarAnyFootlong2017w2_confetti_piece {
+			&[data-ui-state="animate:slow"] {
+				animation: confetti-slow 4s ease-in 1 forwards;
+			}
+
+			&[data-ui-state="animate:medium"] {
+				animation: confetti-medium 3s ease-in 1 forwards;
+			}
+
+			&[data-ui-state="animate:fast"] {
+				animation: confetti-fast 2s ease-in 1 forwards;
+			}
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_confettiForeground {
+			opacity   : 0;
+			transform : translate3d(0,100%,0);
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_confettiMiddleground {
+			opacity   : 0;
+			transform : translate3d(0,100%,0);
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_confettiBackground {
+			opacity   : 0;
+			transform : translate3d(0,100%,0);
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_introCaption {
+			opacity   : 1;
+			transform : scale(1) translateZ(0px);
+		}
+
+
+		.c-FeatPromoSixDollarAnyFootlong2017w2_subs {
+			transition : transform 0s ease-out 0s;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_subStage {
+			transition : transform 0ms ease-out 0s;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_outroCaption {
+			transition : opacity 0ms ease-out 0s;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_legal {
+			transition : opacity 600ms ease-out 0s;
+		}
+	}
+
+	&[data-ui-state="transition:in:frame2"] {
+		.c-FeatPromoSixDollarAnyFootlong2017w2_confettiForeground {
+			transform  : scale(1.1) translate3d(0,-100%,0);
+			transition : transform 0s ease-in;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_confettiMiddleground {
+			transform  : translate3d(0,-100%,0);
+			transition : transform 0s ease-in;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_confettiBackground {
+			transform  : translate3d(0,-100%,0);
+			transition : transform 0s ease-in;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_introCaption {
+			z-index    : 5;
+			position   : relative;
+			width      : 80%;
+			opacity    : 0;
+			transform  : scale(0.8) translateZ(0px);
+			transition : opacity 600ms cubic-bezier(0.31, 2.5, 0.35, 0.96) 0s, transform 600ms cubic-bezier(0.31, 2.5, 0.35, 0.96) 0s;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_heart {
+			opacity   : 1;
+			transform : scale(1) translate3d(0,0,0);
+		}
+			.c-FeatPromoSixDollarAnyFootlong2017w2_heart_img {
+				animation : beats 800ms linear 5 forwards;
+			}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_messageCaption {
+			opacity : 1;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_subs {
+			transform : translate3d(0,0,0);
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_subStage {
+			transform : translate3d(0,0,0);
+		}
+	}
+
+	&[data-ui-state="transition:in:frame3"] {	
+		transform  : translateZ(1px);	
+
+		.c-FeatPromoSixDollarAnyFootlong2017w2_confettiForeground {
+			transform  : scale(1.2) translate3d(0,0,0);
+			transition : transform 2100ms ease-in, opacity 800ms ease-out 2000ms;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_confettiMiddleground {
+			transform  : translate3d(0,0,0);
+			transition : transform 2500ms ease-in, opacity 800ms ease-out 2000ms;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_confettiBackground {
+			transform  : translate3d(0,0,0);
+			transition : transform 2900ms ease-in, opacity 800ms ease-out 2000ms;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_confetti_piece {
+			&[data-ui-state="animate:slow"] {
+				animation: confetti-slow 6s linear 1 forwards;
+			}
+
+			&[data-ui-state="animate:medium"] {
+				animation: confetti-medium 4s linear 1 forwards;
+			}
+
+			&[data-ui-state="animate:fast"] {
+				animation: confetti-fast 3s linear 1 forwards;
+			}
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_messageCaption {
+			transition : opacity 600ms ease-out 0s;    
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_heart {
+			transition : opacity 600ms cubic-bezier(0.31, 2.5, 0.35, 0.96) 0s, transform 600ms cubic-bezier(0.31, 2.5, 0.35, 0.96) 0s;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_subs {
+			transform : translate3d(0,0,0);
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_subStage {
+			transform : translate3d(0,0,0);
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_outroCaption {
+			opacity    : 1;
+			transition : opacity 600ms ease-out 1s;
+		}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_legal {
+			opacity : 1;
+		}
+	}
+}
+
+
+	.c-FeatPromoSixDollarAnyFootlong2017w2_introCaption {
+		z-index    : 5;
+		position   : relative;
+		width      : 80%;
+		opacity    : 0;
+		transform  : scale(0.8) translateZ(0px);
+		transition : opacity 600ms cubic-bezier(0.31, 2.5, 0.35, 0.96), transform 600ms cubic-bezier(0.31, 2.5, 0.35, 0.96);
+	}
+
+
+
+
+
+	.c-FeatPromoSixDollarAnyFootlong2017w2_heart {
+		z-index    : 6; 
+		position   : absolute;
+		height     : 210px;
+		width      : 244px;
+		right      : 78px;
+		top        : 144px;
+		opacity    : 0;
+		transform  : scale(0.8) translate3d(0,0,0);
+		transition : opacity 600ms cubic-bezier(0.31, 2.5, 0.35, 0.96), transform 600ms cubic-bezier(0.31, 2.5, 0.35, 0.96);
+	}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_heart_img {
+			position : relative;
+			height   : 210px;
+			width    : 244px;
+			width    : 100%;
+		}
+	.c-FeatPromoSixDollarAnyFootlong2017w2_messageCaption {
+		z-index    : 6;
+		position   : absolute;
+		top        : 100px;
+		left       : 120px;
+		width      : 75%;
+		opacity    : 0;
+		transition : opacity 600ms ease-out;    
+	}
+	.c-FeatPromoSixDollarAnyFootlong2017w2_subs {
+		z-index    : 5;
+		position   : absolute;
+		bottom     : 72px;
+		right      : 280px;
+		transform  : translate3d(110%,0,0);
+		transition : transform 18s ease-out 2s;
+	}
+	.c-FeatPromoSixDollarAnyFootlong2017w2_subStage {
+		z-index    : 4;
+		position   : absolute;
+		bottom     : -200px;
+		left       : 0px;
+		height     : 400px;
+		width      : 100%;
+		background : #008d43;
+		transform  : translate3d(0,100%,0);
+		transition : transform 600ms ease-out 1s;
+	}
+
+
+
+
+
+	.c-FeatPromoSixDollarAnyFootlong2017w2_outroCaption {
+		z-index    : 3;
+		position   : absolute;
+		top        : -110px;
+		left       : 155px;
+		width      : 80%;
+		opacity    : 0; 
+		transition : opacity 600ms ease-out 3s;
+	}
+	.c-FeatPromoSixDollarAnyFootlong2017w2_legal {
+		z-index    : 4;
+		position   : absolute;
+		bottom     : 15px;
+		left       : 10px;
+		opacity    : 0; 
+		transition : opacity 600ms ease-out 3s;
+	}
+
+
+
+
+	.c-FeatPromoSixDollarAnyFootlong2017w2_confettiForeground {
+		z-index     : 2; 
+		position    : absolute;
+		top         : 0;
+		left        : 0;
+		width       : 100%;
+		height      : 100%;
+		opacity     : 0.5;
+		transform   : scale(1.2) translate3d(0,-100%,0);
+		transition  : transform 2100ms ease-in, opacity 800ms ease-out 2000ms;
+	}
+	.c-FeatPromoSixDollarAnyFootlong2017w2_confettiMiddleground {
+		z-index     : 2; 
+		position    : absolute;
+		top         : 0;
+		left        : 0;
+		width       : 100%;
+		height      : 100%;
+		transform   : translate3d(0,-100%,0);
+		transition  : transform 2500ms ease-in, opacity 800ms ease-out 2000ms;
+	}
+	.c-FeatPromoSixDollarAnyFootlong2017w2_confettiBackground {
+		z-index     : 2; 
+		position    : absolute;
+		top         : 0;
+		left        : 0;
+		width       : 100%;
+		height      : 100%;
+		transform   : translate3d(0,-100%,0);
+		transition  : transform 2900ms ease-in, opacity 800ms ease-out 2000ms;
+	}
+	.c-FeatPromoSixDollarAnyFootlong2017w2_confetti {
+		contain     : strict;
+		z-index     : 2; 
+		position    : absolute;
+		overflow    : hidden;
+		top         : 0;
+		left        : 0;
+		width       : 100%;
+		height      : 100%;
+		perspective : 1200px;
+	}
+		.c-FeatPromoSixDollarAnyFootlong2017w2_confetti_piece {
+			z-index       : 1;
+			position      : absolute;
+			top           : -20px;
+			border-radius : 0%;
+		}

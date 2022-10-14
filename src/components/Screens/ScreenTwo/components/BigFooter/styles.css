@@ -1,0 +1,151 @@
+.bigFooter {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #008938;
+
+  .footer-title {
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    font-family: 'Subway-Heavy';
+    font-size: 82px;
+    line-height: 68px;
+    color: #ffc20d;
+  }
+
+  .f-col {
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+
+    .wrapper {
+      position: relative;
+    }
+
+    .image {
+      position: relative;
+      width: 100%;
+      height: 110px;
+
+      img {
+        position: absolute;
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+    }
+
+    .title {
+      position: absolute;
+      display: block;
+      top: 105px;
+      width: 100%;
+      text-align: center;
+      font-family: 'Subway-Heavy';
+      font-size: 36px;
+      color: #fff;
+    }
+
+    .pricing {
+      position: absolute;
+      display: block;
+      top: 145px;
+      width: 100%;
+      text-align: center;
+      font-family: 'Subway-Medium';
+      font-size: 18px;
+      color: #fff;
+
+      strong {
+        font-family: 'Subway-Heavy';
+      }
+    }
+  }
+
+  .f-1 {
+    left: 385px;
+  }
+
+  .f-2 {
+    left: 685px;
+  }
+
+  .f-3 {
+    left: 985px;
+  }
+
+  .moz {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+
+  .f-bread {
+    position: absolute;
+    left: 685px;
+    top: 14px;
+    display: block;
+    width: 930px;
+    height: 100%;
+
+    .title {
+      position: absolute;
+      top: 20px;
+      display: block;
+      width: 235px;
+      text-align: left;
+      font-family: 'Subway-Heavy';
+      font-size: 36px;
+      color: #fff;
+    }
+
+    .pricing {
+      position: absolute;
+      display: block;
+      top: 98px;
+      font-family: 'Subway-Medium';
+      font-size: 18px;
+      color: #fff;
+
+      strong {
+        font-family: 'Subway-Heavy';
+      }
+    }
+
+    img {
+      position: absolute;
+      left: 120px;
+      bottom: 14px;
+    }
+
+    .disclaimer {
+      position: absolute;
+      top: 10px;
+      left: 295px;
+      width: 290px;
+      font-family: 'Subway-Medium';
+      font-size: 18px;
+      line-height: 1;
+      color: #fff;
+    }
+  }
+
+  .footer-1,
+  .footer-2,
+  .footer-3 {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}

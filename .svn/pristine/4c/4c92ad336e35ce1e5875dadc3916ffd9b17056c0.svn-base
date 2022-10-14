@@ -1,0 +1,135 @@
+.WrapFeature {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 7680px;
+  height: 1080px;
+
+  img {
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+
+
+    &.f1 {
+      left:0;
+    }
+
+    &.f2 {
+      left: 1920px;
+    }
+
+    &.q3 {
+      left: 3840px;
+    }
+
+    &.f4 {
+      left: 5760px;
+    }
+  }
+
+  .R2Lq3 {
+    display: none;
+  }
+
+  .border {
+    position: absolute;
+    left: 4799px;
+    height: 525px;
+    width: 961px;
+    border: 10px solid #4c006a;
+  }
+
+  .white {
+    position: absolute;
+    left: 4800px;
+    width: 420px;
+    height: 180px;
+    background: #fff;
+  }
+
+  .try {
+    position: absolute;
+    left: 4830px;
+    top: 46px;
+    margin: 0px;
+    font-family: 'Subway-Heavy';
+    font-size: 60px;
+    color: #008938;
+    line-height: 0.82;
+  }
+
+}
+
+.l-player-direction-R2L {
+  .WrapFeature {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 7680px;
+    height: 1080px;
+
+    .L2Rq3 {
+      display: none;
+    }
+
+    .R2Lq3 {
+      display: block;
+    }
+
+    img {
+      position: absolute;
+      z-index: 99;
+      top: 0px;
+      left: 0px;
+      opacity: 0.5;
+
+
+      &.f1 {
+        left:0;
+      }
+
+      &.f2 {
+        left: 3840px;
+      }
+
+      &.q3 {
+        left: 1920px;
+      }
+
+      &.f4 {
+        left: 5760px;
+      }
+    }
+
+    .border {
+      position: absolute;
+      left: 1920px;
+      height: 525px;
+      width: 961px;
+      border: 10px solid #4c006a;
+    }
+
+    .white {
+      position: absolute;
+      left: 1920px;
+      width: 420px;
+      height: 180px;
+      background: #fff;
+    }
+
+    .try {
+      position: absolute;
+      left: 1950px;
+      top: 46px;
+      margin: 0px;
+      font-family: 'Subway-Heavy';
+      font-size: 60px;
+      color: #008938;
+      line-height: 0.82;
+    }
+
+  }
+}

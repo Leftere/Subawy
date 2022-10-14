@@ -1,0 +1,1049 @@
+import API from 'api' // NeoCast API
+
+import BreakfastFeature from '../components/2017w8/Breakfast'
+
+// // //
+import FreshFit_2019w1 from '../components/2019w1/fresh_fit'
+import CrispyChicken_2019w1 from '../components/2019w1/crispy_chicken'
+import StaticTest from '../components/2019w2/static_template'
+import FootlongFavesStatic from '../components/2019w2/footlong_faves'
+import UCGB from '../components/2019w2/uc_garlic_bread'
+
+// import ThaiChickenSub from '../components/2019w2/thai_chicken'
+// import ItalianCiabatta from '../components/2019w2/italian_ciabatta'
+
+import ChickenWrap from '../components/2019w2b/chicken_wrap'
+import CroissantsMinis from '../components/2019w2c/croissant_minis'
+
+// 2019w3
+import ClubCollection from '../components/2019w3/club_collection'
+import UCGB2 from '../components/2019w3/ucgb2'
+import PizzaSub from '../components/2019w3/pizza_sub'
+
+// 2019w4
+import CiabataThree from '../components/2019w4/ciabata-3'
+import CiabataFour from '../components/2019w4/ciabata-4'
+import CiabataThreeStop from '../components/2019w4/ciabata-3-stop'
+import CiabataFourStop from '../components/2019w4/ciabata-4-stop'
+
+import DeviledEggSalad from '../components/2019w4/deviled-egg-salad'
+import KingsHawaiian from '../components/2019w4/kings-hawaiian'
+
+//2019w5
+import PitSmokedBrisket from '../components/2019w5/pit_smoked_brisket'
+import BeyondMeatballMarinara from '../components/2019w5/beyond_meatball_marinara'
+import WrapsContingency from '../components/2019w5/wraps_contingency'
+
+//2019w6
+import Cheesesteak from '../components/2019w6/cheesesteak'
+import UCGB3 from '../components/2019w6/ucgb3'
+import NashvilleAvocadoWraps from '../components/2019w6/nashville_avocado_wraps'
+import FrenchDip from '../components/2019w6/french_dip'
+import GEAH from '../components/2019w6/geah'
+//
+
+//2020w1
+import CauliflowerFritters from '../components/2020w1/cauliflower_fritters'
+import SignatureWrapsW1 from '../components/2020w1/signature_wraps'
+import Sliders from '../components/2020w1/sliders'
+
+import TurkeyBaconGuac from '../components/2020w2/turkey_bacon_guac'
+
+//2020w4 
+import Coke2020W4 from '../components/2020w4/coke/'
+
+//2020w5
+import FanFaves from '../components/2020w5/fanFaves'
+
+//2021w1
+import GoPro from '../components/2021w1/Gopro';
+import ProTip from '../components/2021w1/ProTip';
+
+//2021w2
+import FreshlyMade from '../components/2021w2/FreshlyMade';
+
+// Side Loaders
+import SideLoaded from '../components/SideLoaded'
+
+// Import Conditions
+import {
+  isDualPlayer,
+  isBreakfastTime,
+  servesBreakfast,
+  servesBreakfastAllDay,
+  isAfter3pm,
+  isLateAfternoon,
+  isWeekday,
+  isWeekend,
+  isLAMarket
+} from 'components/Common/PlaylistDJ/conditions'
+
+// Make components available using a key
+const components = {
+
+  static_test: <StaticTest />,
+
+  fresh_fit: <FreshFit_2019w1 />,
+  crispy_chicken: <CrispyChicken_2019w1 />,
+  footlong_faves: <FootlongFavesStatic />,
+  ultimate_cheesy_garlic_bread: <UCGB />,
+
+  //thai_chicken_sub: <ThaiChickenSub />,
+  //italian_ciabatta: <ItalianCiabatta />,
+  chicken_wrap: <ChickenWrap />,
+
+  // 2019w2c
+  croissant_minis: <CroissantsMinis />,
+
+  // 2019w3
+  club_collection: <ClubCollection />,
+  ucgb_2: <UCGB2 />,
+  pizza_sub_collection: <PizzaSub />,
+
+  // 2019w4
+  ciabatta_collection: <CiabataThree />,
+  ciabatta_collection_caprese: <CiabataFour />,
+
+  ciabatta_collection_stop: <CiabataThreeStop />,
+  ciabatta_collection_caprese_stop: <CiabataFourStop />,
+
+  kings_hawaiian: <KingsHawaiian />,
+  deviled_egg_salad: <DeviledEggSalad />,
+
+  // 2019w5
+  pit_smoked_brisket: <PitSmokedBrisket />,
+  beyond_meatball: <BeyondMeatballMarinara />,
+  wraps_contingency: <WrapsContingency />,
+  //
+
+  // 2019w6
+  cheesesteaks: <Cheesesteak />,
+  ucgb_w6: <UCGB3 />,
+  w6_wraps: <NashvilleAvocadoWraps />,
+  french_dip: <FrenchDip />,
+  geah_la_ny: <GEAH />,
+
+  // 2020w1
+  cauliflower_fritters_wraps: <CauliflowerFritters />,
+  signature_wraps_w1: <SignatureWrapsW1 />,
+  sliders_meal_upsell: <Sliders />,
+
+  // 2020w2
+  turkey_breast_footlong: <TurkeyBaconGuac />,
+
+  //2020w4
+  coke_promo_w4: <Coke2020W4 />,
+
+  //2020w5
+  footlong_season: <FanFaves />,
+
+  //2021w1
+  go_pro: <GoPro />,
+  pro_tip: <ProTip />,
+
+  //2021w2
+  w2_steak_turkey: <FreshlyMade />,
+
+  //FixedPromo
+
+  // Side Loaders
+  sideloaded_feature_promotion1: <SideLoaded baseKey={'sideloaded_feature_promotion1'} />,
+  sideloaded_feature_promotion2: <SideLoaded baseKey={'sideloaded_feature_promotion2'} />,
+  sideloaded_feature_promotion3: <SideLoaded baseKey={'sideloaded_feature_promotion3'} />
+}
+
+// Get Location Feature Keys
+let promo1 = API.loc('feature_promotion1')
+let promo2 = API.loc('feature_promotion2')
+let promo3 = API.loc('feature_promotion3')
+
+// Fixed promo always plays and cant be turned off
+let fixed_promo;
+if (API.loc('serves_coca_cola')) {
+  fixed_promo = 'coke_promo_w4';
+} else {
+  fixed_promo = 'turkey_breast_footlong';
+  
+  //fixed_promo = 'turkey_breast_footlong';
+}
+
+// Croissant Minis Test
+const hasCroissantSelected = () => ({
+  name: `Checks that Croissants are selected`,
+  predicate: function()
+  {
+    const selector = 'croissant_minis_menu'
+    const selector2 = 'croissant_minis_menu_no_soup'
+    let selected = false
+
+    if (API.loc('value_menu_content') == selector ||
+        API.loc('value_menu_content') == selector2) selected = true;
+
+    return selected;
+  }
+})
+
+// Coke or turkey sub
+let servesCoke = API.loc('serves_coca_cola');
+
+
+// Fallback test
+// promo1 = promo2 = promo3 = false;
+
+// Fallback promo
+if ((!promo1 || promo1 === 'no_choice') &&
+    (!promo2 || promo2 === 'no_choice') &&
+    (!promo3 || promo3 === 'no_choice')) {
+  promo1 = 'rotisserie_chicken_2017';
+}
+
+// Lookup for skipIfNoPromoSetFor
+const numToPromo = {
+  1: promo1,
+  2: promo2,
+  3: promo3
+};
+
+// How long these frames should play for.
+// NOTE: This will prevent other playlists from switching in the animation queue.
+const animationDurations = {
+  autumn_carved: 30000,
+  value_test_steak_club: 14000,
+  rotisserie_chicken_2017: 30000,
+  value_test_w7_steak_club: 15000,
+  pizza_sub_collection: 24000,
+  go_pro: 30000,
+  pro_tip: 30000
+}
+
+// Subway HQ wants these to play longer than other feature promos. Typically they're 30s.
+const frameDurations = {
+  rotisserie_chicken_2017: 30000,
+  autumn_carved: 30000,
+  value_test_w7_steak_club: 15000,
+  steak_and_cheese: 13000,
+  steak_collection_club: 14000,
+  steak_collection_peppercorn: 14000,
+  steak_collection_cheesesteak: 14000,
+  turkey: 14000,
+  rotisserie_chicken_caesar_wrap: 22000,
+  sesame_ginger_glazed_chicken_wrap: 24000,
+  sweet_n_smoky_steak_and_guac_wrap: 22000,
+  harvest_collection: 24000,
+  sunflower_crunch: 25000,
+  signature_wraps_collection: 26000,
+  italian_collection: 24000,
+  buffalo_rotisserie_chicken_wrap: 20000,
+  footlong_season: 30000,
+  go_pro: 30000,
+  pro_tip: 30000
+}
+
+// Predicate for skipping featured promos if the franchise has not selected an option
+const skipIfNoPromoSetFor = (number) => ({
+  name: `Skips Promo ${number}`,
+  predicate: () => (typeof(components[numToPromo[number]]) !== 'undefined')
+})
+
+// w2 Wraps check - signature_wraps_w2
+const prevIsW2WrapPromo = (promoNum) => ({
+  name: `Adds chicken after steak`,
+  predicate: () => (numToPromo[promoNum] == 'signature_wraps_w2')
+})
+
+// Obnoxious methods of creating conditions since we cannot seem
+// to use logical statements directly in conditions
+const isPromoCiabatta = (promoNum) => ({
+  name: `Show if promo is Ciabatta`,
+  predicate: () => (numToPromo[promoNum] == 'ciabatta_collection')
+})
+
+const isPromoCiabattaCaprese = (promoNum) => ({
+  name: `Show if promo is Ciabatta Caprese`,
+  predicate: () => (numToPromo[promoNum] == 'ciabatta_collection_caprese')
+})
+
+const isNotPromoCiabatta = (promoNum) => ({
+  name: `Show if promo is not Ciabatta`,
+  predicate: () => (
+    numToPromo[promoNum] != 'ciabatta_collection' &&
+    numToPromo[promoNum] != 'ciabatta_collection_caprese'
+  )
+})
+
+/*
+---------
+-- LOG --
+---------
+10/25/17 - SW requests all panels move to 20 seconds, but we can't quite do that with the time we have. Animations were requested to be 30 seconds.
+
+---------
+*/
+export default [
+  // {
+  //   id: 'test1wefsdf',
+  //   frames: [
+  //     {
+  //       component: <BreakfastFeature />,
+  //       duration: 21000,
+  //       animationDuration: 21000
+  //     },
+  //     {
+  //       component: <BreakfastFeature />,
+  //       duration: 21000,
+  //       animationDuration: 21000
+  //     },
+  //   ]
+  // },
+  /**
+   * Breakfast all day playlist
+   */
+  {
+    id: 'd202c828-daed-490c-ad43-c611b411efb4',
+    conditions: [
+      servesBreakfast,
+      servesBreakfastAllDay,
+      isBreakfastTime
+    ],
+    frames: [
+      // // //  First Loop
+      {
+        component: components[fixed_promo],
+        animationDuration: 20000,
+        duration: 20000
+      },
+      {
+        component: components[promo1],
+        duration: frameDurations[promo1] || 30000
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(1)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo2],
+        duration: 20000
+      },
+      {
+        component: components[promo2],
+        duration: frameDurations[promo2] || 30000
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(2)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo3],
+        duration: 20000,
+        conditions: [
+          skipIfNoPromoSetFor(2)
+        ]
+      },
+      {
+        component: components[promo3],
+        duration: frameDurations[promo3] || 30000
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(3)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          skipIfNoPromoSetFor(3)
+        ]
+      },
+      // // // Second Loop to alternate ciabata promos
+      {
+        component: components[fixed_promo],
+        animationDuration: 20000,
+        duration: 20000
+      },
+      {
+        component: components[promo1],
+        duration: frameDurations[promo1] || 30000,
+        conditions: [
+          isNotPromoCiabatta(1)
+        ]
+      },
+      {
+        component: <CiabataThreeStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabatta(1)
+        ]
+      },
+      {
+        component: <CiabataFourStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabattaCaprese(1)
+        ]
+      },
+
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(1)
+        ]
+      },
+
+
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo2],
+        duration: 20000
+      },
+
+
+
+      {
+        component: components[promo2],
+        duration: frameDurations[promo2] || 30000,
+        conditions: [
+          isNotPromoCiabatta(2)
+        ]
+      },
+      {
+        component: <CiabataThreeStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabatta(2)
+        ]
+      },
+      {
+        component: <CiabataFourStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabattaCaprese(2)
+        ]
+      },
+
+
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(2)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo3],
+        duration: 20000,
+        conditions: [
+          skipIfNoPromoSetFor(2)
+        ]
+      },
+
+
+      {
+        component: components[promo3],
+        duration: frameDurations[promo3] || 30000,
+        conditions: [
+          isNotPromoCiabatta(3)
+        ]
+      },
+      {
+        component: <CiabataThreeStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabatta(3)
+        ]
+      },
+      {
+        component: <CiabataFourStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabattaCaprese(3)
+        ]
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(3)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          skipIfNoPromoSetFor(3)
+        ]
+      },
+    ]
+  },
+
+  /**
+   * Breakfast playlist
+   */
+  {
+    id: 'ae8642d3-c082-4a3b-914d-b85a11ceb4ba',
+    conditions: [
+      servesBreakfast,
+      isBreakfastTime
+    ],
+
+    frames: [
+
+      // // //  First Loop
+      {
+        component: components[fixed_promo],
+        animationDuration: 20000,
+        duration: 20000
+      },
+      {
+        component: components[promo1],
+        duration: frameDurations[promo1] || 30000
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(1)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo2],
+        duration: 20000
+      },
+      {
+        component: components[promo2],
+        duration: frameDurations[promo2] || 30000
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(2)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo3],
+        duration: 20000,
+        conditions: [
+          skipIfNoPromoSetFor(2)
+        ]
+      },
+      {
+        component: components[promo3],
+        duration: frameDurations[promo3] || 30000
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(3)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          skipIfNoPromoSetFor(3)
+        ]
+      },
+
+      // // //  Second Loop
+      {
+        component: components[fixed_promo],
+        animationDuration: 20000,
+        duration: 20000
+      },
+      {
+        component: components[promo1],
+        duration: frameDurations[promo1] || 30000,
+        conditions: [
+          isNotPromoCiabatta(1)
+        ]
+      },
+      {
+        component: <CiabataThreeStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabatta(1)
+        ]
+      },
+      {
+        component: <CiabataFourStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabattaCaprese(1)
+        ]
+      },
+
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(1)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo2],
+        duration: 20000
+      },
+
+
+      {
+        component: components[promo2],
+        duration: frameDurations[promo2] || 30000,
+        conditions: [
+          isNotPromoCiabatta(2)
+        ]
+      },
+      {
+        component: <CiabataThreeStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabatta(2)
+        ]
+      },
+      {
+        component: <CiabataFourStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabattaCaprese(2)
+        ]
+      },
+
+
+
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(2)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo3],
+        duration: 20000,
+        conditions: [
+          skipIfNoPromoSetFor(2)
+        ]
+      },
+
+      {
+        component: components[promo3],
+        duration: frameDurations[promo3] || 30000,
+        conditions: [
+          isNotPromoCiabatta(3)
+        ]
+      },
+      {
+        component: <CiabataThreeStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabatta(3)
+        ]
+      },
+      {
+        component: <CiabataFourStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabattaCaprese(3)
+        ]
+      },
+
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(3)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          skipIfNoPromoSetFor(3)
+        ]
+      },
+
+    ]
+  },
+
+  {
+    id: 'd202c828-daed-490c-ad43-c611b411efb4-b',
+    conditions: [
+      servesBreakfast,
+      servesBreakfastAllDay,
+      isDualPlayer
+    ],
+
+    frames: [
+
+      // // // Loop One
+      {
+        component: components[fixed_promo],
+        animationDuration: 20000,
+        duration: 20000
+      },
+      {
+        component: components[promo1],
+        duration: frameDurations[promo1] || 30000
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(1)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo2],
+        duration: 20000
+      },
+      {
+        component: components[promo2],
+        duration: frameDurations[promo2] || 30000
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo3],
+        duration: 20000,
+        conditions: [
+          skipIfNoPromoSetFor(2)
+        ]
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(2)
+        ]
+      },
+      {
+        component: components[promo3],
+        duration: frameDurations[promo3] || 30000
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(3)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          skipIfNoPromoSetFor(3)
+        ]
+      },
+      
+      // // // Loop Two
+      {
+        component: components[fixed_promo],
+        animationDuration: 20000,
+        duration: 20000
+      },
+      {
+        component: components[promo1],
+        duration: frameDurations[promo1] || 30000,
+        conditions: [
+          isNotPromoCiabatta(1)
+        ]
+      },
+      {
+        component: <CiabataThreeStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabatta(1)
+        ]
+      },
+      {
+        component: <CiabataFourStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabattaCaprese(1)
+        ]
+      },
+
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(1)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo2],
+        duration: 20000
+      },
+
+
+      {
+        component: components[promo2],
+        duration: frameDurations[promo2] || 30000,
+        conditions: [
+          isNotPromoCiabatta(2)
+        ]
+      },
+      {
+        component: <CiabataThreeStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabatta(2)
+        ]
+      },
+      {
+        component: <CiabataFourStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabattaCaprese(2)
+        ]
+      },
+
+
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo3],
+        duration: 20000,
+        conditions: [
+          skipIfNoPromoSetFor(2)
+        ]
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(2)
+        ]
+      },
+
+      {
+        component: components[promo3],
+        duration: frameDurations[promo3] || 30000,
+        conditions: [
+          isNotPromoCiabatta(3)
+        ]
+      },
+      {
+        component: <CiabataThreeStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabatta(3)
+        ]
+      },
+      {
+        component: <CiabataFourStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabattaCaprese(3)
+        ]
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(3)
+        ]
+      },
+      {
+        component: <BreakfastFeature />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          skipIfNoPromoSetFor(3)
+        ]
+      },
+    ]
+  },
+
+  /**
+   * Default playlist
+   */
+  {
+    id: 'a5d8815c-7356-49f9-a5db-63c353cbe89c',
+    frames: [
+      // // // Loop One
+      {
+        component: components[fixed_promo],
+        animationDuration: 20000,
+        duration: 20000
+      },
+      {
+        component: components[promo1],
+        animationDuration: animationDurations[promo2],
+        duration: frameDurations[promo1] || 30000
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(1)
+        ]
+      },
+      {
+        component: components[promo2],
+        animationDuration: animationDurations[promo3],
+        duration: frameDurations[promo2] || 30000
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(2)
+        ]
+      },
+      {
+        component: components[promo3],
+        animationDuration: animationDurations[promo1],
+        duration: frameDurations[promo3] || 30000
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(3)
+        ]
+      },
+
+      // // // Loop Two
+      {
+        component: <TurkeyBaconGuac />,
+        duration: frameDurations[promo1] || 30000
+      },
+
+      {
+        component: components[promo1],
+        duration: frameDurations[promo1] || 30000,
+        conditions: [
+          isNotPromoCiabatta(1)
+        ]
+      },
+      {
+        component: <CiabataThreeStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabatta(1)
+        ]
+      },
+      {
+        component: <CiabataFourStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabattaCaprese(1)
+        ]
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(1)
+        ]
+      },
+
+      {
+        component: components[promo2],
+        duration: frameDurations[promo2] || 30000,
+        conditions: [
+          isNotPromoCiabatta(2)
+        ]
+      },
+      {
+        component: <CiabataThreeStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabatta(2)
+        ]
+      },
+      {
+        component: <CiabataFourStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabattaCaprese(2)
+        ]
+      },
+
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(2)
+        ]
+      },
+
+      {
+        component: components[promo3],
+        duration: frameDurations[promo3] || 30000,
+        conditions: [
+          isNotPromoCiabatta(3)
+        ]
+      },
+      {
+        component: <CiabataThreeStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabatta(3)
+        ]
+      },
+      {
+        component: <CiabataFourStop />,
+        duration: 21000,
+        conditions: [
+          isPromoCiabattaCaprese(3)
+        ]
+      },
+      {
+        component: <ClubCollection />,
+        animationDuration: animationDurations[promo1],
+        duration: 20000,
+        conditions: [
+          prevIsW2WrapPromo(3)
+        ]
+      },
+
+    ]
+  }
+]

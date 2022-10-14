@@ -1,0 +1,253 @@
+.c-SOTW {
+	position   : relative; 
+	height     : 1080px;
+	overflow   : hidden;
+	padding    : 30px 0px 0px 0px;
+	background : #f7f7f7; 
+}
+
+.c-SOTW_header {
+	position    : relative;
+	height      : 38%;
+	width       : 100%;
+	padding     : 0px;
+	overflow    : hidden; 
+	font-family : 'MarkOffcPro-Black';
+	color       : #008938;
+}
+
+.c-SOTW_header_content {
+	width : 90%;
+}
+
+.c-SOTW_header_option {
+	position       : relative;
+	left           : -44px;
+	height         : 64%;
+	letter-spacing : 0.01rem;
+}
+
+.c-SOTW_header_option_value {
+	position       : relative;
+	display        : inline-block;
+	vertical-align : top;
+	width          : 50%;
+	height         : 100%;
+	line-height    : 1;
+	overflow       : hidden;
+	text-align     : right;
+}
+
+.c-SOTW_header_option_value_dollar {
+	position       : relative;
+	vertical-align : top;
+	right          : -22px;
+	line-height    : 0.82;
+	font-size      : 8rem;
+}
+
+.c-SOTW_header_option_value_price {
+	position       : relative;
+	font-size      : 20.5rem;
+	line-height    : 0.65;
+	vertical-align : top;
+}
+
+.c-SOTW_header_option_info {
+	position       : relative;
+	display        : inline-block;
+	left           : -2px;
+	width          : 50%;
+	height         : 100%;
+	line-height    : 1;
+	overflow       : hidden;
+	vertical-align : top;
+	text-align     : left;
+}
+
+.c-SOTW_header_option_info_footlong {
+	position       : relative;
+	line-height    : 0.7;
+	left           : 3px;
+	font-size      : 2.88rem;
+	padding        : 5px 0px 5px 0px;
+	vertical-align : top;
+}
+
+.c-SOTW_header_option_info_sub {
+	position       : relative;
+	left           : 8px;
+	padding        : 5px 0px;
+	font-size      : 8rem;
+	line-height    : 0.75;
+	vertical-align : top;
+}
+
+.c-SOTW_header_option_info_type {
+	position       : relative;
+	padding        : 3px 0px;
+	line-height    : 1; 
+	vertical-align : text-top;
+}	
+
+.c-SOTW_header_option_info_type_ofthe {
+	position       : relative;
+	top            : 6px;
+	vertical-align : top;
+	line-height    : 1.35;
+	span {
+		position    : relative;
+		top         : -7px;
+		font-size   : 2rem;
+		line-height : 1;
+		&:nth-child(1) {
+			top         : 0px;
+			font-size   : 2.9rem;
+			line-height : 0.9;
+		}
+	}
+}
+
+.c-SOTW_header_option_info_type_name {
+	position       : relative;
+		padding        : 0px 0px 0px 5px;						
+		vertical-align : top;
+	line-height    : 0;
+	font-size      : 6rem;
+	letter-spacing : -1px !important;
+	span {
+		position : relative;
+		left     : -10px;
+	}
+}
+
+.c-SOTW_header_context {
+	position   : relative;
+	padding    : 20px 0px 20px 0px;
+	text-align : center;
+}
+
+.c-SOTW_accent {
+	background : #ffc30d;
+	position   : relative;
+	display    : inline-block;
+	height     : 10px;
+	width      : 62%;
+	&:before,&:after {
+		content       : ' ';
+		position      : absolute;
+		height        : 10px;
+		width         : 10px;
+		border-radius : 50%;
+		background    : #ffc30d;
+	}
+	&:before {
+		left: -5px;
+	}
+	&:after {
+		right: -5px;
+	}
+}
+
+.c-SOTW_header_context_title {
+	font-size: 2.2rem;
+}
+
+.c-SOTW_header_context_subtitle {
+	font-size: 1.7rem;
+}
+
+.c-SOTW_header_context_name {
+	font-size      : 1.5rem;
+	line-height    : 1.3rem;
+	padding-bottom : 10px;
+}
+
+.c-SOTW_body {
+	padding   : 0px 20px;
+	overflow  : hidden;  
+	font-size : 0px;
+}
+
+.c-SOTW_sotd {
+	width       : 100%;
+	margin-left : -20px;
+	padding     : 10px 0px 20px 0px;
+}
+
+.c-SOTW_tile {
+	position       : relative; 
+	display        : inline-block;
+	height         : 100%; 
+	width          : 50%;
+	padding        : 12px 16px;
+	vertical-align : top;
+	font-family    : 'MarkOffcPro-Black';
+
+	&-offset {
+		top : 28px;
+	}
+	&-inverted {
+		padding : 3px 45px;
+		.c-SOTW_tile_body {
+			padding    : 16px 20px;
+			color      : #ffffff;
+			background : #008938;
+		}
+	}
+	&-selected {
+		.c-SOTW_tile_body {
+			padding : 16px 12px;
+		}
+		.c-SOTW_tile_header {
+			background : #ffc30d;
+			color      : #008938; 
+		}
+	}
+}
+
+.c-SOTW_tile_body {
+	position      : relative; 
+	width         : 100%;
+	padding       : 0px 30px;
+	text-align    : center;
+	border-radius : 4px;
+	color         : #008938;
+	background    : transparent; 
+	word-wrap     : break-word;
+
+	&-flush {
+		padding : 0px;
+	}
+}
+
+.c-SOTW_tile_header {
+	padding        : 5px 0px;
+	border-radius  : 4px;
+	text-transform : uppercase;
+	font-size      : 2.15rem;
+	line-height    : 1.8rem;
+}
+
+.c-SOTW_tile_subheader {
+	padding        : 5px 0px;
+	text-transform : uppercase;
+	font-size      : 1.7rem;
+	line-height    : 2.1rem;
+}
+
+.c-SOTW_tile_content {
+	margin      : 2px 0px;
+	font-size   : 1.5rem;
+	line-height : 1.95rem;
+}
+
+.c-SOTW_footer {
+	position    : absolute;
+	bottom      : 0px; 
+	font-family : 'MarkOffcPro-Light';
+	color       : #7e7d7d;
+	font-size   : 1rem;
+	padding     : 10px 39px;
+	-webkit-font-smoothing: subpixel-antialiased;
+}

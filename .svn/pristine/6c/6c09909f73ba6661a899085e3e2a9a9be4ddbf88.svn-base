@@ -1,0 +1,65 @@
+.c-UCGB {
+
+  height: 1080px;
+  width: 1920px;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-family: 'Subway-Heavy';
+
+  * {
+    position: absolute;
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    width: 500px;
+  }
+
+  .d-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .d-text {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #fff;
+  }
+
+  .d-bg {
+    left: -50px;
+    top: -50px;
+    width: calc(100% + 100px);
+    height: calc(100% + 100px);
+  }
+
+  .dn-sub1Price6 {
+    top: 962px;
+    left: 0px;
+    white-space: pre;
+  }
+
+  .dn-sub1Price12 {
+    top: 962px;
+    left: 200px;
+    white-space: pre;
+  }
+  .dn-sub_1 {
+    top: 129px;
+    left: 45px;
+    white-space: pre;
+  }
+
+  .dn-sub_2 {
+    top: 977px;
+    left: 45px;
+    white-space: pre;
+  }
+
+}

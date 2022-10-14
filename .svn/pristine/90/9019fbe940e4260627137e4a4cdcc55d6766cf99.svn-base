@@ -1,0 +1,10 @@
+import './styles.css'
+import API from 'api'
+
+let warning = API.loc('store_plus_sodium_warning')
+
+const SodiumWarning = () => (
+	warning ? <span className="sodium-warning">SODIUM WARNING</span> : <span></span>
+)
+
+export default SodiumWarning

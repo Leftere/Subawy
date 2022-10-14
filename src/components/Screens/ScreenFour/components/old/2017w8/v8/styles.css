@@ -1,0 +1,32 @@
+.c-ValueClassic2017w8 {
+
+  .price {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Subway-Heavy';
+    font-size: 50px;
+    text-align: center;
+    color: #008938;
+    z-index: 2;
+    width: 50%;
+  }
+
+  .upper {
+    top: 486px;
+  }
+
+  .bottom {
+    top: 895px;
+  }
+
+  .left {
+    left: 0px;
+  }
+
+  .right {
+    left: 50%;
+  }
+
+
+}

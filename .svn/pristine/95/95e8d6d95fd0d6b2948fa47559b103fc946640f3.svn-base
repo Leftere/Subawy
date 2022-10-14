@@ -1,0 +1,31 @@
+.fritos-ench-ending-frame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .ending-price {
+    font-family: 'Subway-Heavy';
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .fritos-ench-price6 {
+    position: absolute;
+    bottom: 153px;
+    left: 1310px;
+  }
+
+  .fritos-ench-price12 {
+    position: absolute;
+    bottom: 153px;
+    left: 1699px;
+  }
+}
+
+.fritos-restricted {
+  font-size: 2.2rem;
+  position: absolute;
+  left: 310px;
+  bottom: 50px;
+}

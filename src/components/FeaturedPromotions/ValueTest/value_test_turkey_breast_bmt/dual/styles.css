@@ -1,0 +1,61 @@
+
+.valueTestTurkeyBmtDual {
+  background-color: white;
+
+  img {
+    position: absolute;
+  }
+
+  .largeCopy {
+    font-size: 180px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+  }
+
+  .titleMainCopy {
+    height: auto !important;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    top: 39px;
+    padding-left: 50px;
+    font-size: 120px;
+  }
+
+  .frame1Copy {
+    opacity: 0;
+  }
+
+  .frame2Copy {
+    font-size: 117px;
+  }
+
+  .endingPrice {
+    position: absolute;
+    font-size: 36px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+    opacity: 0;
+  }
+
+  .bmtPrice6 {
+    right: 85px;
+    top: 208px;
+  }
+
+  .bmtPrice12 {
+    right: 85px;
+    top: 293px;
+  }
+
+  .turkeyPrice6 {
+    bottom: 366px;
+    left: 450px;
+  }
+
+  .turkeyPrice12 {
+    bottom: 279px;
+    left: 450px;
+  }
+}

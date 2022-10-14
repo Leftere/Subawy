@@ -1,0 +1,13 @@
+.featured-promo-area {
+  > span {
+    height: 1080px;
+    width: 100%;
+    display: inline-block;
+
+    > span {
+      height: 1080px;
+      width: 100%;
+      display: inline-block;
+    }
+  }
+}

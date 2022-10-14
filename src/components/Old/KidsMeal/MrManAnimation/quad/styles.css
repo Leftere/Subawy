@@ -1,0 +1,326 @@
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInSlideLeft {
+  0% {
+    opacity: 0.8;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-185px, 0, 0);
+  }
+}
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 530px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -40px, 0);
+  }
+
+  85% {
+    transform: translate3d(0, 15px, 0);
+  }
+
+  to {
+    transform: translate3d(0, -20px, 0);
+  }
+}
+
+
+@keyframes slideLeft {
+  from {
+    transform: translate3d(900px, 0, 0);
+  }
+  to {
+    transform: translate3d(-103px, 0, 0);
+  }
+}
+
+
+@keyframes slideToysUp {
+  from {
+    transform: translate3d(-103px, 0, 0);
+  }
+  to {
+    transform: translate3d(-103px, -145px, 0);
+  }
+}
+
+
+@keyframes wiggle1 {
+  0% {transform:rotate(22deg);}
+  50% {transform:rotate(10deg);}
+  100% {transform:rotate(22deg);}
+}
+
+@keyframes wiggle2 {
+  0% {transform:rotate(14deg);}
+  50% {transform:rotate(-14deg);}
+  100% {transform:rotate(14deg);}
+}
+
+@keyframes wiggle3 {
+  0% {transform:rotate(3deg);}
+  50% {transform:rotate(-3deg);}
+  100% {transform:rotate(3deg);}
+}
+
+
+@keyframes moveAndScaleToy1 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: rotate(11deg) translate3d(-5px, -50px, 0) scale(0.78);
+  }
+}
+
+@keyframes moveAndScaleToy2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: rotate(-12deg) translate3d(-35px, -52px, 0) scale(0.78);
+  }
+}
+
+@keyframes moveAndScaleToy3 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: rotate(13deg) translate3d(-115px, -19px, 0) scale(0.78);
+  }
+}
+
+@keyframes moveAndScaleToy4 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: rotate(-15deg) translate3d(-150px, -77px, 0) scale(0.78);
+  }
+}
+
+@keyframes moveAndScaleToy5 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: rotate(5deg) translate3d(-245px, 27px, 0) scale(0.78)
+  }
+}
+
+
+.c-KidsMeal_animation {
+  overflow: hidden;
+  transform: translate3d(0px, 0px, 0px);
+  perspective: 1000px;
+  width: 100%;
+  min-width: 760px;
+  /*height: 432px;*/
+  -webkit-backface-visibility: hidden;
+  padding: 0 35px;
+  overflow: hidden;
+
+  .figures {
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    right: 250px;
+    bottom: 40px;
+    height: 200px;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .toy {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    margin-bottom: 20px;
+  }
+
+
+  /* Frame 1 */
+  .you-can-win {
+    animation: fadeIn 600ms ease-in 300ms forwards;
+    text-align: center;
+    opacity: 0;
+  }
+
+  /* Frame 2 */
+  .fire-tablet {
+    animation: bounceInUp 600ms cubic-bezier(0.215, 0.610, 0.355, 1.000) 1000ms forwards;
+    z-index: 4;
+    transform: translate3d(0, 500px, 0);
+    position: absolute;
+    right: 120px;
+    bottom: 0px;
+    -webkit-backface-visibility: hidden;
+  }
+
+  /* Frame 3 */
+  .mmlm-step1 {
+    animation: fadeInSlideLeft 450ms ease-in 1750ms forwards,
+               fadeOut 50ms ease-out 2520ms forwards;
+  }
+
+  /* Frame 4 */
+  .mmlm-step2 {
+    animation: fadeIn 75ms linear 2700ms forwards,
+               fadeOut 75ms linear 2900ms forwards;
+    right: 470px;
+  }
+
+  /* Frame 5 */
+  .mmlm-step3 {
+    animation: fadeIn 75ms linear 3000ms forwards;
+    right: 515px;
+  }
+
+  /* Frame 6 */
+  .sequence-1 {
+    animation: fadeOut 500ms ease-out 4600ms forwards;
+    height: 432px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0 35px;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+  }
+
+  .sequence-2 {
+    animation: fadeIn 500ms ease-out 5150ms forwards,
+               fadeOut 400ms ease-out 13900ms forwards;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0 35px;
+    height: 432px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  /* Frame 6 */
+  .toy1 {
+    z-index: 5;
+    animation: wiggle1 300ms ease-out 5750ms infinite,
+               moveAndScaleToy1 500ms ease-in 7500ms forwards;
+  }
+
+  .toy2 {
+    z-index: 4;
+    animation: wiggle2 400ms ease-out 5750ms infinite,
+               moveAndScaleToy2 500ms ease-in 7500ms forwards;
+  }
+
+  .toy3 {
+    z-index: 3;
+    animation: wiggle3 340ms ease-out 5750ms infinite,
+               moveAndScaleToy3 500ms ease-in 7500ms forwards;
+  }
+
+  .toy4 {
+    z-index: 2;
+    animation: wiggle1 300ms ease-out 5750ms infinite,
+               moveAndScaleToy4 500ms ease-in 7500ms forwards;
+  }
+
+  .toy5 {
+    z-index: 2;
+    animation: wiggle2 500ms ease-out 5750ms infinite,
+               moveAndScaleToy5 500ms ease-in 7500ms forwards;
+  }
+
+  .toys {
+    animation: slideLeft 1000ms ease-out 5750ms forwards,
+               slideToysUp 400ms ease-in 9100ms forwards;
+    position: absolute;
+    top: 220px;
+    right: 0px;
+    transform: translate3d(900px, 0, 0);
+  }
+
+  .meal {
+    position: absolute;
+    /*left: 380px;*/
+    left: 360px;
+    /*bottom: 20px;*/
+    bottom: 15px;
+    /*height: 250px;*/
+    height: 269px;
+    z-index: 0;
+    opacity: 0;
+    animation: fadeIn 500ms ease-out 8000ms forwards;
+  }
+
+  .findKeepersText {
+    font-family: 'Subway-Heavy';
+    animation: fadeOut 400ms ease-out 9100ms forwards;
+
+    .find-title {
+      font-family: 'Subway-Heavy';
+      color: #fff;
+      font-size: 2.64rem;
+      line-height: 1.2;
+      margin-top: 10px;
+    }
+
+    .find-characters {
+      color: #f3bd27;
+      font-size: 2.45rem;
+      margin-top: 5px;
+      line-height: 1.35;
+    }
+  }
+
+  .mmlm-kids-legal {
+    position: absolute;
+    opacity: 0;
+    left: 0px;
+    bottom: 20px;
+    font-size: 20px;
+    padding: 0 35px;
+    animation: fadeIn 500ms ease-out 9600ms forwards;
+  }
+
+  .kids-menu-resting {
+    opacity: 0;
+    animation: fadeIn 500ms ease-out 14500ms forwards;
+    /**
+     * The kids meal already has padding
+     */
+    margin: 0 -35px;
+  }
+
+}

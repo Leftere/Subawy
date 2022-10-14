@@ -1,0 +1,169 @@
+import API from 'api'
+import isNil from 'lodash/isNil'
+
+/// OLD
+import MakeMealEvergreen   from '../components/old/make_meal_evergreen'
+
+// 2019 w1
+import Bubbler from '../components/2019w1/Bubbler'
+
+// 2019 w2
+//import RaspLemonCookie from '../components/2019w2/RaspLemonCookie'
+import CroissantMiniSoup from '../components/2019w2/CroissantMiniSoup'
+import CroissantMiniNoSoup from '../components/2019w2/CroissantMiniNoSoup'
+
+//2019 w4
+import HubertsLemonade from '../components/2019w4/HubertsLemonade'
+import HaloTop from '../components/2019w4/HaloTop'
+
+//2019 w5
+import CaramelAppleCookie from '../components/2019w5/CaramelAppleCookie'
+
+//2019 w6
+import ChocolateCherryCookie from '../components/2019w6/ChocolateCherryCookie'
+
+//2020 w2
+import CarrotCakeCookie from '../components/2020w2/CarrotCakeCookie'
+
+//2021 w2
+import MealUpsellGatorade from '../components/2021w2/MealUpsellGatorade';
+
+// Sideloaders
+import SideLoaded from '../components/SideLoaded'
+import SideLoadedOld from '../components/SideLoadedOld'
+import SideLoadedHalf from '../components/SideLoadedHalf'
+
+const components = {
+  // Sideloaded content
+  // // new
+  // sideloaded_value_promotion1: <SideLoaded baseKey={'sideloaded_value_promotion1'} />,
+  // // old
+  // local_value_one_custom: <SideLoadedOld baseKey={'local_value_one_custom'} />,
+
+  /// OLD
+  make_meal_evergreen: <MakeMealEvergreen />,
+
+  // Bubbler
+  bubbler_drinks_promo: <Bubbler />,
+
+
+  // 2019w2 c
+  croissant_minis_menu: <CroissantMiniSoup />,
+  croissant_minis_menu_no_soup: <CroissantMiniNoSoup />,
+
+  meal_upsell_gatorade: <MealUpsellGatorade />,
+
+  //
+  sideloaded_value_promotion1: <SideLoaded baseKey={'sideloaded_value_promotion1'} />,
+  local_value_one_custom: <SideLoadedOld baseKey={'local_value_one_custom'} />,
+  sideloaded_half: <SideLoadedHalf baseKey={'sideloaded_half'} />
+}
+
+const classicPromos = [
+  '499_FVM_with_steak_classic_meals_price_classic',
+  '499_FVM_without_steak_classic_meals_price_classic',
+  '499_FVM_with_299_sub_no_steak_classic_meals_price_classic',
+  '499_FVM_with_299_sub_with_steak_classic_meals_price_classic',
+  '579_FVM_with_299_sub_classic_meals_price_classic',
+  '499_FVM_with_299_sub_LA_only_classic_meals_price_classic',
+  '499_FVM_with_349_sub_250_upsell_classic_meals_price_classic',
+  'houston_classic_meals_price_classic',
+  '499_FVM_with_199_upsell_price_classic'
+]
+
+const valueIsClassicPromo = key => ({
+  name: `Key '${key}' is a classic promo`,
+  predicate: () => classicPromos.indexOf(API.loc(key) + '_classic') > -1
+})
+
+let oneThirdPromoArea = API.loc('one_third_promo_area');
+// Based on that key, show a component based on the mapping above
+let valueComponent = components[oneThirdPromoArea]
+
+console.log('onethird: ' + API.loc('non_flatizza_option'))
+
+
+// If the franchise doesn't have a value promotion selected, then fallback to showing this
+const fallbackComponent = <Bubbler />
+
+// Predicate for skipping guac if no guac
+const skipIfNoGuac = () => ({
+  name: `Skips Guac`,
+  predicate: function()
+  {
+    const guacSelector = 'extras_guacamole'
+    let isGuac = false
+
+    if (API.loc('extras_local_option_one') == guacSelector) isGuac = true;
+    if (API.loc('extras_local_option_two') == guacSelector) isGuac = true;
+    if (API.loc('extras_local_option_three') == guacSelector) isGuac = true;
+
+    return isGuac;
+  }
+})
+
+//one_third_promo_area
+const skipIfNoCookie = () => ({
+  name: `Skips Cookie`,
+  predicate: function()
+  {
+    const selector = 'disable_cookie_animation'
+    let disabled = false
+
+    if (oneThirdPromoArea == selector) disabled = true;
+
+    return !disabled;
+  }
+})
+
+//check date
+
+let rotation = {
+    id: 'valueMenuRotation',
+    frames: [
+      {
+        component: valueComponent,
+        duration: 15000,
+        fallbackComponent
+      },
+      {
+        component: valueComponent,
+        duration: 15000,
+        fallbackComponent
+      },
+    ]
+  };
+
+
+let disableLemonade = API.loc('disable_lemonade');
+let servesCocaCola = API.loc('serves_coca_cola');
+let displayHaloTop = API.loc('display_halo_top');
+
+let showsCookie = skipIfNoCookie().predicate();
+let showsLemonade = !disableLemonade && servesCocaCola;
+let showsHaloTop = (oneThirdPromoArea == "halo_top" && displayHaloTop);
+
+/*
+
+if (!disableMiam) {
+    rotation = {
+    id: 'valueMenuRotation',
+    frames: [
+      {
+        component: <MealUpsellGatorade />,
+        duration: 20000,
+        fallbackComponent
+      },
+      {
+        component: <MealUpsellGatorade />,
+        duration: 20000,
+        fallbackComponent
+      }
+    ]
+  };
+}
+*/
+/*
+Value1, Guac, Value2, Sandwich (repeat with another sandwich)
+*/
+export default [rotation]

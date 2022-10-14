@@ -1,0 +1,42 @@
+.SunflowerInterrupt {
+  position: absolute;
+  bottom: 0px;
+  left: 1920px;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+
+  .flowers, .bottom, .bread {
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+  }
+
+  .bottom {
+    width: 1920px;
+    overflow:hidden;
+  }
+
+  .breadWrapper {
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 253px;
+    overflow: hidden;
+    border-radius: 68px 68px 0 0;
+
+      
+    .bread {
+      bottom: -30px;
+    }
+
+  }
+}
+
+.l-player-direction-R2L {
+
+  .SunflowerInterrupt {
+    left: 3840px;
+  }
+}

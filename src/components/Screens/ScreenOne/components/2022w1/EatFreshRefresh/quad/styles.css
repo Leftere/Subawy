@@ -1,0 +1,161 @@
+.eat-fresh-refresh-quad {
+    
+    z-index: 100;
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .green-bg {
+        width: 1280px;
+        height: 1080px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #008e46;
+    }
+
+    .sub-info {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 400px;
+        height: 400px;
+        font-family: 'Subway-Medium';
+        font-size: 30px;
+        line-height: 30px;
+
+        .sodium-icon {
+            position: absolute;
+            top: 37px;
+            left: 361px;
+            height: 23px;
+        }
+
+        .sodium-icon-philly {
+            position: relative;
+            margin-right: 10px;
+            height: 23px;
+        }
+
+        p {
+            margin: 0px;
+        }
+
+        .sub-name {
+            font-family: 'Subway-Medium';
+            font-weight: bold;
+        }
+
+        .yellow {
+            color: #F2B700;
+        }
+
+        .yellow--new {
+            color: #F2B700;
+            font-family: 'Subway-Bold';
+            font-weight: normal;
+        }
+
+        sup {
+            vertical-align: top;
+            top: 0 !important;
+        }
+
+        &.honey-mustard-chicken {
+            left: 50px;
+            top: 350px;
+
+            .sodium-icon {
+                left: 310px;
+                top: 36px;
+            }
+        }
+
+        &.cali-turkey {
+            left: 1130px;
+            top: 820px;
+
+            .sodium-icon {
+                left: 132px;
+                top: 37px;
+            }
+        }
+
+        &.baja-steak {
+            left: 1130px;
+            top: 50px;
+
+            .sodium-icon {
+                left: 290px;
+                top: 6px;
+            }
+        }
+
+        &.baja-chicken {
+            left: 1130px;
+            top: 600px;
+
+            .sodium-icon {
+                left: 210px;
+                top: 36px;
+            }
+        }
+
+        &.baja-turkey {
+            left: 720px;
+            top: 820px;
+            
+            .sodium-icon {
+                left: 200px;
+                top: 36px;
+            }
+        }
+
+        .sodium-text {
+            color: #F2B700;
+            font-family: 'Subway-Bold-Narrow';
+        }
+
+        .cal-container {
+            margin-right: 10px;
+        }
+
+        .cal-price-container {
+            display: flex;
+        }
+    }
+
+}
+
+.featured-promo-area {
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    span {
+        width: 1920px;
+        height: 1080px;
+    }
+
+    .dj-content {
+
+    }
+}
+
+.signature-wraps-area {
+    opacity: 0;
+}
+
+.l-screen-reverse .featured-promo-area {
+    left: 0px;
+}

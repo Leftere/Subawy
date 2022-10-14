@@ -1,0 +1,39 @@
+.hero_footer-price {
+	position       : absolute;
+	padding        : 0px 0px 3px 0px;
+	font-family    : 'Subway-Heavy';
+	font-size      : 2rem;
+	font-weight    : 600;
+	color          : #ffffff;
+	letter-spacing : 0.02rem;
+}
+
+
+[class~='c-Footer_background-ItalianHero2017w3'] {
+	background : inline('images/background.jpg');
+
+	.hero_cb_6in {
+		top  : 162px;
+		left : 80px;
+	}
+
+	.hero_12in {
+		top  : 162px;
+		left : 425px;
+	}
+}
+
+
+[class~='c-Footer_background-ItalianHero2017w3-sodium'] {
+	background : inline('images/background-sodium.jpg');
+
+	.hero_cb_6in {
+		top  : 175px;
+		left : 80px;
+	}
+
+	.hero_12in {
+		top  : 175px;
+		left : 425px;
+	}
+}

@@ -1,0 +1,27 @@
+.c-CroissantMini_13 {
+    position: absolute;
+    width: 640px;
+    height: 1080px;
+    overflow: hidden;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .dn-p249 {
+    top: 175px;
+    left: 10px;
+  }
+
+  .dn-p499 {
+    top: 350px;
+    left: 10px;
+  }
+
+  .dn-p599 {
+    top: 570px;
+    left: 10px;
+  }
+}

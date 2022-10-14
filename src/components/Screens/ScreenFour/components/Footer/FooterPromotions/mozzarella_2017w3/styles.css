@@ -1,0 +1,19 @@
+.mozzarella_footer-price {
+	position: absolute;
+	padding: 0px 0px 3px 0px;
+	font-family: 'Subway-Heavy';
+	font-size: 2rem;
+	font-weight: 600;
+	color: #ffffff;
+	letter-spacing: 0.02rem;
+}
+
+.mozzerella_cb_6in {
+	top: 165px;
+	left: 210px;
+}
+
+.mozzerella_12in {
+	top: 165px;
+	left: 500px;
+}

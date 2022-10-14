@@ -1,0 +1,47 @@
+.c-TableList {
+  position : relative;
+}
+
+.c-TableList_row {
+  position : relative;
+  width    : 100%;
+  padding  : 0px 0px 17px 0px;
+
+  &-nested {
+    padding : 0px 0px 8px 40px;
+  }
+
+  &:nth-last-child(1) {
+    padding : 0px;
+
+    &-nested {
+      padding : 0px 0px 0px 40px;
+    }
+  }
+}
+
+.c-TableList_column {
+  position       : relative;
+  display        : inline-block; 
+  vertical-align : top;
+  text-align     : center;
+
+  &:nth-child(1) {
+    padding-right : 30px;
+    text-align    : left; 
+  }
+}
+
+.c-TableList_title {
+  font-family: $font_family_heavy; 
+  font-size: $font_title_size; 
+  line-height: $font_title_line_height;
+  color: $color_text;
+}
+
+.c-TableList_caption {
+  font-family: $font_family_medium; 
+  font-size: $font_caption_size; 
+  line-height: $font_caption_line_height;
+  color: $color_text_highlight;
+}

@@ -1,0 +1,435 @@
+$framedelay: 15000ms;
+$framedelay1: 15100ms;
+$framedelay2: 15200ms;
+$framedelay3: 15300ms;
+$framedelay4: 15400ms;
+$framedelay5: 15500ms;
+
+@keyframes fadeInKidsMeal {
+  from {
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOutKidsMeal {
+  from {
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes moveToOrigin {
+  20% {
+    transform: translate3d(0, 0, 0) rotate3d(0,0,0,0deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0) rotate3d(0,0,0,0deg);
+  }
+}
+
+@keyframes moveToInitial {
+  to {
+    transform: initial;
+  }
+}
+
+@keyframes skyLogo {
+  9% {
+    transform: translate3d(0, 0, 0) rotate3d(0,0,0,0deg);
+  }
+  82% {
+    transform: translate3d(0, 0, 0) rotate3d(0,0,0,0deg);
+  }
+  95% {
+    transform: translate3d(678px, 103px, 0) scale(0.833);
+  }
+  to {
+    transform: translate3d(678px, 103px, 0) scale(0.833);
+  }
+}
+
+@keyframes mixieLogo {
+  14% {
+    transform: translate3d(0, 0, 0) rotate3d(0,0,0,0deg);
+  }
+  82% {
+    transform: translate3d(0, 0, 0) rotate3d(0,0,0,0deg);
+  }
+  95% {
+    transform: translate3d(663px, -22px, 0) scale(0.833);
+  }
+  to {
+    transform: translate3d(663px, -22px, 0) scale(0.833);
+  }
+}
+
+@keyframes meal {
+  10% {
+    transform: translate3d(0, 0, 0) rotate3d(0,0,0,0deg);
+  }
+  82% {
+    transform: translate3d(0, 0, 0) rotate3d(0,0,0,0deg);
+  }
+  95% {
+    transform: translate3d(-35px, -31px, 0) scale(0.895);
+  }
+  to {
+    transform: translate3d(-35px, -31px, 0) scale(0.895);
+  }
+}
+
+
+.kids-dual  {
+
+  * {
+    animation: none !important;
+    transform: translate3d(0, 0, 0) rotate3d(0,0,0,0deg) !important;
+  }
+
+}
+
+.c-KidsMeal {
+  position: relative;
+  padding: 15px 35px 0 15px;
+  height: 475px;
+
+  &.R2L {
+    padding: 15px 15px 0 30px;
+  }
+
+  img {
+      position: absolute;
+  }
+
+
+  .frame1 {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    animation: fadeInOutKidsMeal 15s ease-out 500ms forwards;
+    opacity: 0;
+
+
+    .sky-logo {
+      left: 38px;
+      top: 117px;
+      transform: translate3d(678px, 103px, 0) scale(0.833) !important;
+    }
+
+
+    .mixie-logo {
+      left: 38px;
+      top: 344px;
+      transform: translate3d(663px, -22px, 0) scale(0.833) !important;
+    }
+
+    .little-logo {
+      left: 470px;
+      top: 376px;
+      transform: translate3d(400px, 0px, 0);
+      animation: moveToOrigin 9000ms ease-out 7.5s forwards;
+    }
+
+    .meal {
+      top: 185px;
+      left: 526px;
+      transform: translate3d(-94px, -94px, 0) scale(0.8) !important;
+    }
+
+  }
+
+  .frame2 {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    animation: fadeInOutKidsMeal 10.5s ease-out $framedelay forwards;
+    opacity: 0;
+
+
+    h2 {
+      position: absolute;
+      left: 47px;
+      top: 31px;
+
+      font-size: 40px;
+      font-family: 'Subway-Heavy';
+      color: $subway_green;
+
+      padding: 0; margin: 0;
+    }
+
+    .fold {
+      bottom: 0;
+      right: 0;
+      transform: translate3d(450px, 330px, 0);
+      animation: moveToOrigin 5000ms ease-out $framedelay;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+    }
+
+    .sky-logo {
+      left: 38px;
+      top: 117px;
+      transform: translate3d(0, 370px, 0);
+      animation: skyLogo 10s ease-in-out $framedelay;
+      animation-iteration-count: 1;
+    }
+
+    .w-plane {
+      top: 97px;
+      left: 172px;
+      transform: translate3d(0, 370px, 0) rotate3d(0,0,1,-10deg);
+      animation: moveToOrigin 5000ms ease-out $framedelay;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+    }
+
+    .b-plane {
+      top: 97px;
+      left: 337px;
+      transform: translate3d(0, 370px, 0) rotate3d(0,0,1,-20deg);
+      animation: moveToOrigin 4900ms ease-out $framedelay1;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+    }
+
+    .y-plane {
+      top: 97px;
+      left: 534px;
+      transform: translate3d(0, 370px, 0) rotate3d(0,0,1,-30deg);
+      animation: moveToOrigin 4800ms ease-out $framedelay2;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+    }
+
+    .mixie-logo {
+      left: 38px;
+      top: 344px;
+      transform: translate3d(0, 200px, 0);
+      animation: mixieLogo 10s ease-in-out $framedelay;
+      animation-iteration-count: 1;
+    }
+
+    .t-watch {
+      top: 296px;
+      left: 174px;
+      transform: translate3d(0, 200px, 0);
+      animation: moveToOrigin 4700ms ease-out $framedelay3;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+    }
+
+    .y-watch {
+      top: 296px;
+      left: 268px;
+      transform: translate3d(0, 200px, 0);
+      animation: moveToOrigin 4600ms ease-out $framedelay4;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+    }
+
+    .p-watch {
+      top: 296px;
+      left: 362px;
+      transform: translate3d(0, 200px, 0);
+      animation: moveToOrigin 4500ms ease-out $framedelay5;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+    }
+
+    .meal {
+      top: 185px;
+      left: 526px;
+      transform: translate3d(320px, 0px, 0);
+      animation: meal 10s ease-in-out $framedelay;
+      animation-iteration-count: 1;
+    }
+
+  }
+
+  .frame3 {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    animation: fadeInKidsMeal 10.5s ease-out 24.5s forwards;
+    opacity: 0;
+
+
+    .sky-logo {
+      left: 38px;
+      top: 117px;
+      transform: translate3d(678px, 103px, 0) scale(0.833) !important;
+    }
+
+
+    .mixie-logo {
+      left: 38px;
+      top: 344px;
+      transform: translate3d(663px, -22px, 0) scale(0.833) !important;
+    }
+
+    .little-logo {
+      left: 470px;
+      top: 376px;
+      transform: translate3d(400px, 0px, 0);
+      animation: moveToOrigin 9000ms ease-out 9.5s forwards;
+    }
+
+    .meal {
+      top: 185px;
+      left: 526px;
+      transform: translate3d(-94px, -94px, 0) scale(0.8) !important;
+    }
+
+  }
+
+
+
+  .c-Menus_subheader {
+    margin-left: 2rem;
+  }
+
+  .c-KidsMeal_sticker {
+    position: absolute;
+    right: 10px;
+    right: 28px;
+    bottom: 150px;
+    width: 210px;
+    &.R2L {
+      right: 10px;
+    }
+
+    img {
+      position: absolute;
+      right: 0px;
+      bottom: -15px;
+    }
+
+    img.meal-evergreen {
+      bottom: -17px;
+      right: 100px;
+    }
+
+    &-evergreen {
+      position: absolute;
+      bottom: 120px;
+      left: 430px;
+
+      img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .kids-meal-mmlm-meal {
+    position: absolute;
+    bottom: 100px;
+    width: 250px;
+    right: 190px;
+  }
+
+  .kids-meal-cars-meal {
+    position: absolute;
+    bottom: 50px;
+    /*height: 275px;*/
+    right: 205px;
+  }
+
+  .c-List_item {
+    padding: 0px 0px 10px 0px;
+  }
+
+  /* Legal updates */
+  .c-Header_sub {
+    font-size: 30px;
+    font-family: 'Subway-Heavy';
+  }
+
+  .c-Menus_title {
+    font-size: 32px;
+  }
+
+  .deduct-wording {
+    left: 15px;
+    line-height: 1;
+    font-size: 32px;
+
+    &.evergreen {
+      bottom: -15px;
+    }
+
+    .deduct-asterisk {
+      position: absolute;
+      left: -10px;
+      top: 0px;
+      font-size: 22px;
+    }
+  }
+
+  .c-Menus_footer {
+    bottom: 62px;
+    left: 0px;
+    &.R2L {
+      left: 15px;
+    }
+    /*width: 772px;*/
+
+    .little-people-logo {
+      position: absolute;
+      right: -10px;
+      bottom: -40px;
+
+    }
+
+    .c-Menus_copyright {
+      position: absolute;
+      bottom: -19px;
+      font-size: 18px;
+      text-align: left;
+      padding-left: 15px;
+    }
+
+    .txt-copyright {
+      font-family: 'Subway-Medium';
+      font-size: 8px;
+      line-height: 1;
+      position: absolute;
+      bottom: -40px;
+      left: 15px;
+      line-height: 1.3;
+
+      br {
+        line-height: 0.4;
+      }
+    }
+  }
+
+  .restricted {
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+  }
+
+  .c-Menus_subheader {
+    font-size: 50px;
+
+    .price-currency {
+      font-size: 38px;
+      position: relative;
+      top: -7px;
+    }
+  }
+}

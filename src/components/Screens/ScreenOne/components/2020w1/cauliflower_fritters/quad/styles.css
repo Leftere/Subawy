@@ -1,0 +1,54 @@
+.c-cauliflower-quad {
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.frame-1 {
+		background-color: #008938;
+		width: 1280px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+
+	.cal {
+		font-family: 'Subway-Medium';
+	}
+
+	.price-cal {
+		font-size: 34px;
+		position: absolute;
+		top: 0;
+		font-family: 'Subway-Heavy';
+		color: #FFF;
+	}
+
+	.ranch-price {
+		top: 896px;
+		left: 45px;
+	}
+
+	.dipper-price {
+		color: #00572D;
+		top: 403px;
+		right: 35px;
+	}
+
+	.curry-price {
+		top: 996px;
+		left: 860px;
+	}
+
+	.ranch-price, .curry-price, .dipper-price {
+		.price {
+			margin-right: 12px;
+		}
+	}
+
+
+
+
+
+}

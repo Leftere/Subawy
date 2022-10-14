@@ -1,0 +1,47 @@
+.c-beyond-meatball-quad {
+  position: relative;
+  font-family: 'Subway-Heavy';
+  width: 1280px;
+  height: 1080px;
+
+  * {
+    position: absolute;
+  }
+
+  .frame1 {
+    width: 100%;
+    height: 100%;
+    background-color: #c12925;
+  }
+
+  .frame2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .meatball-sub {
+    position: absolute;
+  }
+
+  .meatball-prices {
+    position: absolute;
+    left: 30px;
+    top: 1015px;
+    color: #fff;
+    width: 1280px;
+    font-size: 32px;
+  }
+
+  .price {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  .calories {
+    position: relative;
+    font-family: 'Subway-Medium';
+  }
+
+}

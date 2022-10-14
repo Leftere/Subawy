@@ -1,0 +1,236 @@
+/**********************************************************************************************************************
+PURE OUTER LAYOUT CLASSES
+**********************************************************************************************************************/
+
+/* @root - PURE OUTER LAYOUT*/
+/* pure layout class - no aesthetic properties should be used here*/
+.l-player {
+  box-sizing : border-box;
+  position   : relative;
+
+  display    : flex;
+  flex-flow  : row nowrap;
+
+  height     : 1080px;
+
+  margin     : 0px;
+  padding    : 0px;
+
+  overflow   : hidden;
+  font-size  : 0px;
+
+  &-quad {
+    width   : 7700px;
+  }
+  &-dual {
+    /*width : 3860px;*/
+    width : 3840px;
+  }
+}
+
+/* @root - PURE OUTER LAYOUT*/
+/* pure layout class - no aesthetic properties should be used here*/
+.l-screen {
+  position       : relative;
+  display        : inline-block;
+  display        : flex;
+  flex-flow      : row nowrap;
+
+  width          : 1920px;
+  max-width      : 1920px !important;
+  min-width      : 1920px !important;
+  height         : 1080px;
+
+  margin         : 0px;
+  padding        : 0px;
+
+  vertical-align : top;
+  /*overflow*/       : hidden;
+  font-size      : 0px;
+
+
+  &-reverse {
+    flex-flow: row-reverse nowrap;
+  }
+}
+
+.screen section {
+  height: 1080px;
+  transform : translateZ(0px);
+  -webkit-backface-visibility: hidden;
+
+  span {
+    height: 1080px;
+    transform : translateZ(0px);
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+.l-interrupt {
+  pointer-events: none; /* Get the inspector acting nice */
+  span {
+    transform : translateZ(0px);
+    display: inline-block;
+    height: 1080px;
+    width: 100%;
+  }
+}
+
+.l-interrupt-placeholder {
+  transform : translateZ(0px);
+  display: inline-block;
+  height: 1080px;
+  width: 100%;
+}
+
+.l-screen-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+
+.l-region {
+  position: relative;
+  vertical-align: top;
+
+  height: 100%;
+  width: 100%;
+
+  margin: 0px;
+  padding: 30px 35px 30px 35px;
+  font-size: 0px;
+  overflow: visible;
+
+
+  &-primary {
+    display: inline-block;
+    width: 62.5%;
+  }
+
+  &-secondary {
+    display: inline-block;
+    width: 37.5%;
+  }
+
+  &-flush {
+    overflow: visible;
+    padding: 0px;
+  }
+
+  &-drop {
+    overflow: visible;
+    /*padding  : 55px 35px 30px 35px;*/
+    padding: 40px 35px 30px 35px;
+  }
+
+  &-lift {
+    overflow: visible;
+    padding: 30px 45px 80px 45px;
+  }
+}
+
+
+/*@root - element that removed from the standard document flow - takes full available height and width - is on a higher z-index layer*/
+.l-interrupt {
+  z-index  : 100;
+  position : absolute;
+  left     : 0px;
+  top      : 0px;
+  width    : 100%;
+  height   : 100%;
+  overflow : hidden;
+  transform: translateZ(0);
+
+  /*@extender - at a higher z context then any other layer - will be seen right away immediately if visible*/
+  &-abrupt {
+    z-index : 100;
+  }
+  /*@extender - at a lower z context then most other layer - will have to wait till other layers move to been seen*/
+  &-patient {
+    z-index : 0;
+  }
+}
+
+
+.l-inline {
+  display : inline-block;
+}
+
+
+.l-pad {
+  padding  : 30px 45px 30px 45px;
+
+  &-sm {
+    padding : 12px;
+  }
+  &-md {
+    padding : 45px;
+  }
+  &-lg {
+    padding : 80px;
+  }
+
+  &-top {
+    &-sm {
+      padding-top : 12px;
+    }
+    &-md {
+      padding-top : 45px;
+    }
+    &-lg {
+      padding-top : 80px;
+    }
+  }
+  &-bot {
+    &-sm {
+      padding-bottom : 12px;
+    }
+    &-md {
+      padding-bottom : 45px;
+    }
+    &-lg {
+      padding-bottom : 80px;
+    }
+  }
+  &-lt {
+    &-sm {
+      padding-left: 12px;
+    }
+    &-md {
+      padding-left : 45px;
+    }
+    &-lg {
+      padding-left : 80px;
+    }
+  }
+  &-rt {
+    &-sm {
+      padding-right : 12px;
+    }
+    &-md {
+      padding-right : 45px;
+    }
+    &-lg {
+      padding-right : 80px;
+    }
+  }
+}
+
+
+.l-flush {
+  padding : 0px;
+
+  &-top {
+    padding-top : 0px;
+  }
+  &-bot {
+    padding-bottom : 0px;
+  }
+  &-lt {
+    padding-left : 0px;
+  }
+  &-rt {
+    padding-right : 0px;
+  }
+}

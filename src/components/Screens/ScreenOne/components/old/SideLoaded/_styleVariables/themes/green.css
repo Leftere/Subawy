@@ -1,0 +1,17 @@
+/**********************************************************************************************************************
+GREEN THEME COLORS
+dependancies (these must be imported into the root index.css before the theme.css is) 
+	1. colors.css
+**********************************************************************************************************************/
+$color_menu_text_default       : #ffffff; 			/*white*/
+$color_menu_text_highlight     : $subway_yellow;
+$color_menu_background         : $subway_green;
+
+
+
+$color_background 		       : $subway_green; 
+$color_background_inverted     : $subway_yellow;
+$color_text                    : #ffffff; 			/* white */
+$color_text_inverted           : #006230; 			/*dark green*/
+$color_text_highlight          : $subway_yellow;
+$color_text_highlight_inverted : $subway_green;

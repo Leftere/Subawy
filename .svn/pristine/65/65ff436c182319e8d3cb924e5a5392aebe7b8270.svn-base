@@ -1,0 +1,16 @@
+
+.cheesyGarlicInterrupt {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  width: 7680px;
+  height: 1080px;
+
+  * {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

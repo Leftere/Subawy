@@ -1,0 +1,26 @@
+.c-PitSmokedBrisketCheddarFooter {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: #000;
+
+	.item-price {
+	  position: absolute;
+	  font-size: 36px;
+	  color: #dd3705;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+	}
+
+	.price {
+		top: 165px;
+		left: 15px;
+	}
+
+	.cal {
+		font-family: 'Subway-Medium';
+		margin-left: 10px;
+		margin-right: 30px;
+	}
+
+}

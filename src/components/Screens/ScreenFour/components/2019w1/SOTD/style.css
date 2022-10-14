@@ -1,0 +1,15 @@
+.c-SOTD2019w1 {
+
+  position: relative;
+
+  .price {
+    position: absolute;
+    font-family: 'Subway-Heavy';
+    font-size: 70px;
+    color: #fff;
+    left: 596px;
+    top: 63px;
+    z-index: 100;
+  }
+
+}

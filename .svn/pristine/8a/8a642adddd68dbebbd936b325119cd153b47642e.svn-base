@@ -1,0 +1,14 @@
+---
+name: Screen 4 - Drinks Menu
+menu: Components
+route: /components/screen4/drinks-menu
+---
+
+<br />
+
+# Screen 4: Drinks Menu
+
+This area is largely static and is used to display the cold and hot drinks menu. The top half also displays an add on section for chips, cookies, and drinks. 
+The bottom of the panel cycles through whatever drink sizes the restaraunt has set to be available and rotates between cold and hot drinks.
+
+![Drinks Menu](./DrinksMenu.jpg)

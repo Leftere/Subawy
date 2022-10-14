@@ -1,0 +1,15 @@
+.SignatureWrapInterrupt {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 7680px;
+  height: 1080px;
+
+  img {
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+  }
+
+}

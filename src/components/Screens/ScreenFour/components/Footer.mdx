@@ -1,0 +1,56 @@
+---
+name: Screen 4 - Footer
+menu: Components
+route: /components/screen4/footer
+---
+
+<br />
+
+# Screen 4: Footer
+
+This footer is specifically for static rotating promotional items, typically depletions that go into effect the window after the corresponsing promotion.
+
+<br />
+
+![Footer](./footer.jpg)
+
+## Creating a new component
+
+#### Path for new components:
+```
+src/components/Screens/ScreenFour/Footer/FooterPromotions
+```
+
+If one does not already exist, create a new folder and name it with the year and window number (ex. 2020w2). Within this folder is where you will 
+create all the new promotions for that window. Each promotion should be contained within its own folder and within that folder should be js and css files as well as an image,
+typically named "BG.jpg".
+
+When creating a new footer, because they are all static and very similar, it is typically easiest to replicate an old footer and plug in new keys and a BG image.
+
+In order for them to appear, new promos need to be added to the playlist lineup in
+```
+src/components/Screens/ScreenFour/Footer/playlists/footer.js
+```
+by importing them at the top of the file, then adding the new component to the "components" object.
+
+<br />
+
+## Key
+
+```
+footer_tier_one
+footer_tier_two
+footer_tier_three
+```
+
+Go to
+```
+src/neocast/local-data.js
+```
+and set these keys to the values provided by the project manager in order to see the corresponding promotions appear on the boards.
+
+<br />
+
+## Setting price or other variable data
+
+See [setting data](/setting-data)

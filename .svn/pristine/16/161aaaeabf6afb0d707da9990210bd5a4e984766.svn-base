@@ -1,0 +1,82 @@
+.c-Header {
+  position : relative; 
+}
+
+.c-Header_row {
+  position : relative;
+  width    : 100%;
+}
+
+.c-Header_column {
+  position : relative;
+  display  : inline-block;
+
+  &-block {
+    display : block;
+  }
+  &-spacer {
+    /*padding-bottom : 43px;*/
+    /* legal updates */
+    padding-bottom: 16px;
+  }
+}
+
+.c-Header_header {
+  margin      : 0px;
+  font-family : $font_family_heavy; 
+  font-size   : $font_header_size; 
+  line-height : $font_header_line_height;
+  color       : $color_text;
+}
+
+.c-Header_subheader {
+  font-family : $font_family_heavy; 
+  font-size   : $font_subheader_size; 
+  line-height : $font_subheader_line_height;
+  color       : $color_text;
+}
+
+.c-Header_title {
+  font-family : $font_family_heavy; 
+  font-size   : $font_title_size; 
+  line-height : $font_title_line_height;
+  color       : $color_text;
+}
+
+.c-Header_icon {
+  position : relative; 
+  width    : 100%;
+  height   : 100%;
+  overflow : visible;
+}
+
+.c-Header_tagline {
+  font-family : $font_family_medium; 
+  font-size   : $font_tagline_size; 
+  line-height : $font_tagline_size;
+  color       : $color_text;
+}
+
+.c-Header_note {
+  font-family : $font_family_heavy; 
+  font-size   : $font_note_size; 
+  color       : #ffc20d;/*$color_text;*/
+  position    : absolute;
+  left        : 210px;
+  top         : 0px;
+}
+
+.c-Header_sub {
+  font-family: $font_family_medium; 
+  font-size: $font_note_size; 
+  color: $color_text;
+  margin-bottom: 0.6rem;
+  line-height: 2rem;
+}
+
+
+
+
+
+
+

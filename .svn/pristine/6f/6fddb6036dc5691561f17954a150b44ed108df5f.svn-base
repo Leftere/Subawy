@@ -1,0 +1,46 @@
+.ChipotleInterrupt {
+  position: absolute;
+  bottom: 0px;
+  left: 1920px;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+
+  .seeds, .bottom, .sandwich, .seedsSmall, .seedsLarge {
+    position: absolute;
+  }
+
+  .bottom {
+    width: 1920px;
+    bottom: 0;
+    overflow:hidden;
+  }
+
+  .seedsSmall, .seedsLarge {
+    top: -210px;
+    left: 0px;
+  }
+
+  .sandwichWrapper {
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 253px;
+    overflow: hidden;
+    border-radius: 68px 68px 0 0;
+
+
+    .sandwich {
+      bottom: -30px;
+    }
+
+  }
+}
+
+.l-player-direction-R2L {
+
+  .ChipotleInterrupt {
+    left: 3840px;
+  }
+}

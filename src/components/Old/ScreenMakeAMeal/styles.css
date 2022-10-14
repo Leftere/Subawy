@@ -1,0 +1,33 @@
+.makeAMealMain {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 1080px;
+  position: relative;
+
+  .c-Promotion_item-tax {
+    font-weight: normal;
+    margin-bottom: 2px;
+  }
+
+  .txt-copyright {
+    font-family: 'Subway-Medium';
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .c-Menus_footer {
+    bottom: 20px;
+    padding-left: 15px;
+  }
+}
+
+.make-a-meal-screen-main-row {
+  height: calc(100% / 3);
+}
+
+.make-a-meal-screen-secondary {
+  width: 50%;
+  height: 1080px;
+}
+

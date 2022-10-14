@@ -1,0 +1,41 @@
+.c-french-dip-dual {
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.frame-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #00A7E9;
+		width: 1280px;
+		height: 1080px;
+	}
+
+	.classic-dip-prices {
+		position: absolute;
+		top: 730px;
+		left: 800px;
+	}
+
+	.southern-dip-prices {
+		position: absolute;
+		top: 952px;
+		left: 920px;
+	}
+
+	.calories {
+		font-family: 'Subway-Medium';
+		margin-left: 18px;
+
+	}
+
+	.price {
+		font-family: 'Subway-Heavy';
+		display: block;
+		font-size: 30px;
+		width: 1280px;
+	}
+}

@@ -1,0 +1,83 @@
+.c-Promotion-2018w4-GingerChickenPromo {
+
+  height: 1080px;
+  width: 100%;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+
+  * {
+    position: absolute;
+  }
+
+  .frame {
+    width: 100%;
+    height: 100%;
+  }
+
+  .frame1 {
+    background: #ff8200;
+  }
+
+  .frame2 {
+    background: #dd3705;
+  }
+
+  .text1 {
+    left: 91px;
+    top: 92px;
+  }
+
+  .text2 {
+    left: 88px;
+    top: 526px;
+  }
+
+  .text3 {
+    left: 89px;
+    top: 88px;
+  }
+
+  .text4,
+  .text5 {
+    left: 88px;
+    top: 82px;
+  }
+
+  .text6 {
+    left: 85px;
+    top: 80px;
+  }
+
+  .price6 {
+    font-family: 'Subway-Heavy';
+    font-size: 138px;
+    color: #ffffff;
+    width: 500px;
+    position: absolute;
+    left: 76px;
+    top: 546px;
+    margin: 0;
+  }
+
+  .calories6 {
+    font-family: 'Subway-Medium';
+    font-size: 66px;
+    color: #ffffff;
+    width: 500px;
+    position: absolute;
+    left: 81px;
+    top: 685px;
+    margin: 0;
+  }
+
+  .footer6 {
+    left: 90px;
+    top: 940px;
+  }
+
+  .copyright {
+    left: 91px;
+    top: 1037px;
+  }
+}

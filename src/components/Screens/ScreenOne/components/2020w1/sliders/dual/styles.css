@@ -1,0 +1,22 @@
+.c-sliders-dual {
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.upsell-price {
+		position: absolute;
+		top: 387px;
+		left: 563px;
+		font-family: 'Subway-Heavy';
+		font-size: 58px;
+		color: #F2B700;
+		z-index: 100;
+	}
+
+	.frame-3b {
+		transform: rotate(180deg);
+	}
+}

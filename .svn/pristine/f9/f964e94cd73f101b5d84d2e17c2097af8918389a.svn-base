@@ -1,0 +1,363 @@
+$panScale: 1.09;
+
+.c-FeaturedPromotionReubenDuo2016w8 {
+
+	span {
+		height: auto !important;
+	}
+
+	contain     : strict;
+	position    : relative;
+	width       : 1920px;
+    height      : 1080px;
+    overflow    : hidden;
+    font-family : 'KGSecondChancesSolid';
+    font-size   : 100px;
+    color       : #ffffff;
+    transform   : translate3d(0,0,0);
+    transition  : transform 4.5s ease-out 0s;
+    will-change : transform;
+
+	&[data-ui-state~="transition:out"] {
+    	transition : transform 1s ease-out 0s;
+		transform  : translate3d(0,0,2px);
+
+		.c-FeaturedPromotionReubenDuo2016w8_static_inner {
+			opacity          : 0;
+			transition-delay : 0s;
+		}
+	}
+
+
+
+	/*what makes our reuben so delicious?*/
+	&[data-ui-state~="transition:in:frame1"] {
+		transform : translate3d(0,0,1px);
+		.c-FeaturedPromotionReubenDuo2016w8_frame:nth-child(1) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_content {
+				opacity : 1;
+				.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+					transform : scale(1) translateZ(0);
+				}
+				.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+					transform : translate3d(0,0,0);
+				}
+			}
+		}
+	}
+	/*hearty portions of corned beef*/
+	&[data-ui-state~="transition:in:frame2"] {
+		transform : translate3d(0,0,0);
+		.c-FeaturedPromotionReubenDuo2016w8_frame:nth-child(1) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_content {
+				opacity          : 0;
+				transition-delay : 1s;
+				.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+					transform : scale($panScale) translateZ(0);
+				}
+				.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+					transform : translate3d(0,0,0);
+				}
+			}
+		}
+		.c-FeaturedPromotionReubenDuo2016w8_frame:nth-child(2) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_content {
+				opacity : 1;
+				.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+					transform : scale($panScale);
+				}
+				.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+					transform : translate3d(0,0,0);
+				}
+			}
+		}
+	}
+	/*bavarian-style sauerkraut*/
+	&[data-ui-state~="transition:in:frame3"] {
+		transform : translate3d(0,0,1px);
+		.c-FeaturedPromotionReubenDuo2016w8_frame:nth-child(2) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_content {
+				opacity          : 0;
+				transition-delay : 1s;
+				.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+					transform : scale($panScale) translateZ(0);
+				}
+				.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+					transform : translate3d(0,0,0);
+				}
+			}
+		}
+		.c-FeaturedPromotionReubenDuo2016w8_frame:nth-child(3) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_content {
+				opacity : 1;
+				.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+					transform : scale(1) translateZ(0);
+				}
+				.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+					transform : translate3d(0,0,0);
+				}
+			}
+		}
+	}
+	/*thousand island dressing*/
+	&[data-ui-state~="transition:in:frame4"] {
+		transform : translate3d(0,0,0);
+		.c-FeaturedPromotionReubenDuo2016w8_frame:nth-child(3) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_content {
+				opacity          : 0;
+				transition-delay : 1s;
+				.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+					transform : scale(1) translateZ(0);
+				}
+				.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+					transform : translate3d(0,0,0);
+				}
+			}
+		}
+		.c-FeaturedPromotionReubenDuo2016w8_frame:nth-child(4) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_content {
+				opacity : 1;
+				.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+					transform : scale($panScale) translateZ(0);
+				}
+				.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+					transform : translate3d(0,0,0);
+				}
+			}
+		}
+	}
+	/*& swiss cheese*/
+	&[data-ui-state~="transition:in:frame5"] {
+		transform : translate3d(0,0,1px);
+		.c-FeaturedPromotionReubenDuo2016w8_frame:nth-child(4) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_content {
+				opacity          : 0;
+				transition-delay : 1s;
+				.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+					transform : scale($panScale) translateZ(0);
+				}
+				.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+					transform : translate3d(0,0,0);
+				}
+			}
+		}
+		.c-FeaturedPromotionReubenDuo2016w8_frame:nth-child(5) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_content {
+				opacity : 1;
+				.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+					transform : scale(1) translateZ(0);
+				}
+				.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+					transform : translate3d(0,0,0);
+				}
+			}
+		}
+	}
+	&[data-ui-state~="transition:in:static"] {
+		transform : translate3d(0,0,0);
+		.c-FeaturedPromotionReubenDuo2016w8_frame:nth-child(5) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_content {
+				opacity          : 0;
+				transition-delay : 1s;
+				.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+					transform : scale(1) translateZ(0);
+				}
+				.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+					transform : translate3d(0,0,0);
+				}
+			}
+		}
+		.c-FeaturedPromotionReubenDuo2016w8_static_inner {
+			opacity          : 1;
+			transition-delay : 0s;
+		}
+	}
+}
+
+
+
+
+	/*base frame css*/
+	.c-FeaturedPromotionReubenDuo2016w8_frame {
+		containt  : strict;
+		z-index   : 7; 
+		position  : absolute; 
+		top       : 0px;
+		left      : 0px;
+		height    : 100%;
+		width     : 100%;
+
+		/*what makes our reuben so delicious?*/
+		&:nth-child(1) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+				transform : scale($panScale) translateZ(0);
+			}
+			.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+				position  : absolute;
+				bottom    : 0px;
+				padding   : 0px 0px 54px 0px;
+				transform : translate3d(0,100%,0);
+			}
+		}
+		/*hearty portions of corned beef*/
+		&:nth-child(2) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+				transform : scale(1) translateZ(0);
+			}
+			.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+				position  : absolute;
+				bottom    : 0px;
+				right     : 0px;
+				padding   : 0px 0px 54px 0px;
+				transform : translate3d(100%,0,0);
+			}
+		}
+		/*bavarian-style sauerkraut*/
+		&:nth-child(3) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+				transform : scale($panScale) translateZ(0);
+			}
+			.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+				position  : absolute;
+				top       : 0px;
+				padding   : 108px 0px 0px 50px;
+				transform : translate3d(0,-100%,0);
+			}
+		}
+		/*thousand island dressing*/
+		&:nth-child(4) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+				transform : scale(1) translateZ(0);
+			}
+			.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+				position  : absolute;
+				bottom    : 0px;
+				right     : 0px;
+				padding   : 0px 54px 54px 0px;
+				transform : translate3d(100%,0,0);
+			}
+		}
+		/*& swiss cheese*/
+		&:nth-child(5) {
+			.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+				transform : scale($panScale) translateZ(0);
+			}
+			.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+				position  : absolute;
+				bottom    : 0px;
+				right     : 0px;
+				width     : 842px;
+				height    : 462px;
+				padding   : 54px 0px 0px 0px;
+				transform : translate3d(100%,0,0);
+			}
+		}
+	}
+
+
+	
+		.c-FeaturedPromotionReubenDuo2016w8_frame_content {
+			position    : relative;
+			width       : 100%;
+			height      : 100%;
+			opacity     : 0;
+
+			transition  : opacity 1s ease-out 0s;
+			will-change : opacity;
+		}
+			.c-FeaturedPromotionReubenDuo2016w8_frame_background {
+				position    : relative;
+				transition  : transform 5.5s ease-out 0.45s;
+				will-change : transform;
+			}
+			.c-FeaturedPromotionReubenDuo2016w8_frame_caption {
+				position    : absolute; 
+				transition  : transform 1.3s ease-out 0.45s;
+				will-change : transform;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.c-FeaturedPromotionReubenDuo2016w8_static {
+		containt  : strict;
+		z-index   : 3;
+		position  : absolute;
+		top       : 0px;
+		left      : 0px;
+		width     : 100%;
+    	height    : 100%;
+	}
+		.c-FeaturedPromotionReubenDuo2016w8_static_inner {
+			position    : relative;
+			width       : 100%;
+			height      : 100%;
+			opacity     : 0; 
+
+			transition  : opacity 1s ease-out 0s;
+			will-change : opacity;
+		}
+			.c-FeaturedPromotionReubenDuo2016w8_static_background {
+				z-index  : 1;
+				position : relative;
+				width    : 100%;
+				height   : 100%;
+				background-repeat   : no-repeat;
+				background-size     : cover;
+				background-position : center;
+			}
+			.c-FeaturedPromotionReubenDuo2016w8_static_content {
+				z-index     : 2;
+				position    : absolute;
+				top         : 750px;
+				left        : 150px;
+				font-size   : 2.05rem;
+				line-height : 2.1rem;
+				font-family : 'MarkOffcPro-Bold';
+				color       : #6d6e71;
+				text-align  : left;
+			}
+
+			.c-FeaturedPromotionReubenDuo2016w8_callout {
+				font-family : 'BrooklynSamuels5-Fat';
+				font-size   : 2.25rem;
+				color       : #b60050;
+			}
+			.c-FeaturedPromotionReubenDuo2016w8_value {
+				font-family : 'BrooklynSamuels5-Fat';
+				font-size   : 2.25rem;
+				color       : #ff8200;
+			}
+			.c-FeaturedPromotionReubenDuo2016w8_sizes {
+				font-family : 'MyriadPro-BoldCondensed';
+				font-size   : 2.8rem;
+				line-height : 4rem;
+			}
+			.c-FeaturedPromotionReubenDuo2016w8_calories {
+				font-family : 'MyriadPro-Condensed';
+				font-size   : 45px;
+			}
+			.c-FeaturedPromotionReubenDuo2016w8_urgency {
+				z-index     : 4;
+				position    : absolute;
+				top         : 1050px;
+				left        : 1730px;
+				font-size   : 24px;
+				font-family : 'MyriadPro-BoldCondensed';
+				color       : #6d6e71;
+			}

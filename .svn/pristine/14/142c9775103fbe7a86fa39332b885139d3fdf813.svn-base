@@ -1,0 +1,54 @@
+.c-Promotion-2018w2-SignatureWraps {
+
+  height: 1080px;
+  width: 100%;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-size: 36px;
+  color: #fa4c16;
+  font-family: 'Subway-Heavy';
+
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .text {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .board {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .wraps {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 156px;
+    line-height: 128px;
+    color: #8bcd32;
+    position: absolute;
+    bottom: 4px;
+    left: 25px;
+
+    sup {
+      position: relative;
+      font-size: 103px !important;
+      top: -29px !important;
+      margin-right: -5px;
+    }
+  }
+
+}

@@ -1,0 +1,30 @@
+.c-GuacFeatured {
+
+  .bg, .fg, .hass, .text1, .text2, .tryGuac {
+    position: absolute;
+    left: 0; top: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .fg {
+    top: 0;
+    left: -30px;
+  }
+
+  .text1, .text2 {
+    left: 27px;
+    top: 102px;
+  }
+
+  .tryGuac {
+    left: 192px;
+    top: 969px;
+  }
+
+  .hass {
+    left: 640px;
+    top: 648px;
+  }
+
+}

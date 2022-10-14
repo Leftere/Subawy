@@ -1,0 +1,171 @@
+@keyframes sandyZoom1 {
+  0% {
+    transform: translate3d(-440px, 90px, 0) scale(1.2);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+/*  50% {
+    transform: translate3d(-440px, 90px, 0) scale(1);
+    animation-timing-function: ease-in-out;
+  }*/
+  100% {
+    transform: translate3d(-440px, 90px, 0) scale(0.75);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+}
+
+/*
+@keyframes sandyZoom2 {
+  from {
+    transform: translate3d(-440px, 90px, 0) scale(1);
+    animation-timing-function: ease-in;
+  }
+  to {
+    transform: translate3d(-440px, 90px, 0) scale(0.75);
+    animation-timing-function: ease-in-out;
+  }
+}*/
+
+@keyframes ltoFade {
+  from {
+    transform: translate3d(1600px, 120px, 0) rotate3d(0,0,1,-30deg);
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  to {
+    transform: translate3d(1600px, 20px, 0) rotate3d(0,0,0,0deg);
+    opacity: 1;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes fadeInFromLeftish {
+  from {
+    transform: translate3d(-2000px, 50px, 0);
+    /*opacity: 0;*/
+    animation-timing-function: ease-in-out;
+  }
+  to {
+    transform: translate3d(-150px, 50px, 0);
+    /*opacity: 1;*/
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes panLeftAutumn {
+  from {
+    transform: translate3d(0px, 0, 0) scale(1.1);
+    animation-timing-function: ease-in-out;
+  }
+  to {
+    transform: translate3d(-50px, 0, 0) scale(1.1);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes panLeftAutumnFrame1 {
+ from {
+    transform: translate3d(90px, 200px, 0) scale(1.1);
+    animation-timing-function: ease-in-out;
+  }
+  to {
+    transform: translate3d(30px, 105px, 0) scale(1.1);
+    animation-timing-function: ease-in;
+  } 
+}
+
+@keyframes panRight {
+  from {
+    transform: translate3d(0, 0, 0);
+    animation-timing-function: ease-in-out;
+  }
+  to {
+    transform: translate3d(50px, 0, 0);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes zoomInLarge {
+  from {
+    transform: scale(1);
+    animation-timing-function: ease-in-out;
+  }
+  to {
+    transform: scale(1.15);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes fadeInAutumn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutAutumn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+/* -- Common -- */
+
+@keyframes fadeSlideLeftAutumn {
+  from {
+    transform: translate3d(0, 0, 0);
+    /*opacity: 1;*/
+    animation-timing-function: ease-in-out;
+  }
+  to {
+    transform: translate3d(-2000px, 0, 0);
+    /*opacity: 0;*/
+    animation-timing-function: ease-in;
+  }
+}
+
+
+@keyframes fadeInFromRightAutumn {
+  from {
+    transform: translate3d(2000px, 0, 0);
+    /*opacity: 0;*/
+    animation-timing-function: ease-in-out;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    /*opacity: 1;*/
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes fadeInFromTop {
+  from {
+    transform: translate3d(0px, -500px, 0);
+    /*opacity: 0;*/
+    animation-timing-function: ease-in-out;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    /*opacity: 1;*/
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes fadeInFromLeft {
+  from {
+    transform: translate3d(-2000px, 0px, 0);
+    /*opacity: 0;*/
+    animation-timing-function: ease-in-out;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    /*opacity: 1;*/
+    animation-timing-function: ease-in;
+  }
+}
+

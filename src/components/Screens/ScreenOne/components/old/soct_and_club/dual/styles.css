@@ -1,0 +1,45 @@
+.soctAndClubFeatured {
+  contain: strict;
+  position: absolute;
+
+  img.background {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+  }
+
+  .titleMainCopy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 178px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+    position: absolute;
+    top: 100px;
+
+    & > sup {
+      font-size: 95px !important;
+    }
+  }
+
+  .frame {
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+    height: auto;
+    bottom: 0px;
+  }
+
+  .choicemark {
+    position: absolute;
+    width: 257px;
+    height: auto;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+}

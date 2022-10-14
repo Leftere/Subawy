@@ -1,0 +1,12 @@
+.c-MiniPromo {
+    position: absolute;
+    width: 640px;
+    height: 1080px;
+    overflow: hidden;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

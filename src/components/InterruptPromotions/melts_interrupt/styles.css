@@ -1,0 +1,40 @@
+.fresh-melts-interrupt-container {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.fresh-melts-interrupt-panel {
+	height: 100%;
+	width: 25%;
+	display: inline-block;
+	background-size: cover;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+}
+
+.fresh-melts-interrupt-panel img {
+	position: absolute;
+	top: 0;
+}
+
+.panel-one {
+	background: #ffffff;
+}
+
+.panel-two {
+	background: rgba(0,0,0,0.6);
+}
+
+.panel-three {
+	background: rgba(0,0,0,0.6);
+	left: -2px;
+}
+
+.panel-four {
+	background: rgba(0,0,0,0.6);
+	left: -12px;
+}

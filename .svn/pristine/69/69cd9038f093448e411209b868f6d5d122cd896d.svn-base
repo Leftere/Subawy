@@ -1,0 +1,61 @@
+.c-TunaGoddess19w2d {
+
+  height: 1080px;
+  width: 1920px;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-family: 'Subway-Heavy';
+
+  * {
+    position: absolute;
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 52px;
+    line-height: 52px;
+    color: #00a7e9;
+    width: 500px;
+  }
+
+  .d-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .d-text {
+    font-family: 'Subway-Heavy';
+    font-size: 52px;
+    line-height: 52px;
+    color: #00a7e9;
+  }
+
+  .dn-bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .dn-final {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .dn-sub1Price {
+    position: absolute;
+    top: 417px;
+    left: 35px;
+    white-space: pre;
+  }
+
+  .dn-sub2Price {
+    position: absolute;
+    top: 829px;
+    left: 35px;
+    white-space: pre;
+  }
+
+}

@@ -1,0 +1,38 @@
+.c-ChickenWrap19w2 {
+
+	.item-price {
+	  position: absolute;
+	  font-size: 34px;
+	  color: #fff;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+	  left: 25px;
+    top: 153px;
+
+	  .item-cals {
+	  	font-family: 'Subway-Medium';
+	  	font-size: 34px;
+	  }
+	}
+
+  .price-1 {
+    color: #4c006a;
+    left: 13px;
+    top: 114px;
+  }
+
+  .price-2 {
+    color: #4c006a;
+    left: 223px;
+    top: 155px;
+  }
+
+  &.c-Footer {
+    transform: scale(1) !important;
+    transform-origin: initial !important;
+    width: 960px  !important;
+    height: 200px  !important;
+  }
+
+}

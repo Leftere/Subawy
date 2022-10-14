@@ -1,0 +1,209 @@
+.footerAddonsHero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 3.5rem 1rem 0rem 4rem;
+
+  .isNY {
+    display: none !important;
+  }
+    
+  .isPhilly {
+    float: right;
+    position: absolute;
+    width: 100%;
+    left: 360px;
+
+    span {
+      display: inline-block !important;
+    }
+  }
+
+  .footer-title {
+
+    left: 30px;
+    top: 30px;
+    font-family: 'Subway-Super';
+    font-size: 54px;
+    color: #fff;
+    margin-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    margin-top: -60px;
+  }
+
+  .f-col {
+    display: block;
+
+    height: 100%;
+
+    .wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      .info{
+        display:flex;   
+        margin-left: 2rem;
+        flex-direction: column;
+        text-align: left;
+      }
+    
+    }
+
+    img {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      margin-top: -50px;
+    }
+
+    .title {
+      text-transform: uppercase;
+      display: block;
+      top: 105px;
+      width: 100%;
+      font-family: 'Subway-Bold';
+      font-weight: normal;
+      font-size: 36px;
+      color: #fff;
+    }
+
+    .new {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-family: 'Subway-Super';
+      font-weight: normal;
+      margin-bottom: -3px;
+      margin-top: 10px;
+      padding: 6px 6px;
+      position: absolute;
+      color: #004c1d;
+      background-color: #fff200;
+      right: -100px;
+      line-height: 1;
+      height: 40px;
+    }
+
+    .pricing {
+    
+      display: block;
+      top: 135px;
+      width: 100%;
+      text-align: center;
+      font-family: 'Subway-Medium';
+      font-weight: normal;
+      font-size: 40px;
+      color: #fff;
+
+      span {
+        font-size: 36px;
+        font-weight: normal;
+        text-align: left;
+        display: block;
+      }
+      strong {
+          text-align: left;
+        font-family: 'Subway-Heavy';
+        display: block;
+        font-size: 36px;
+        font-weight: 200;
+      }
+    }
+  }
+
+  .f-1 {
+    left: 385px;
+    margin-right: 19rem;
+  }
+
+  .f-2 {
+
+    margin-right: 5rem;
+    
+  }
+
+  .f-3 {
+    left: 985px;
+  }
+
+  .f-4 {
+    left: 1285px;
+  }
+
+  .f-5 {
+    left: 1585px;
+  }
+
+  .f-bread {
+    position: absolute;
+    left: 685px;
+    top: 14px;
+    display: block;
+    width: 930px;
+    height: 100%;
+
+    .title {
+      position: absolute;
+      top: 20px;
+      display: block;
+      width: 235px;
+      text-align: left;
+      font-family: 'Subway-Heavy';
+      font-size: 36px;
+      color: #fff;
+
+    }
+
+    .pricing {
+      position: absolute;
+      display: block;
+      top: 98px;
+      font-family: 'Subway-Medium';
+      font-size: 18px;
+      color: #fff;
+
+      strong {
+        font-family: 'Subway-Heavy';
+      }
+    }
+
+    img {
+      position: absolute;
+      left: 115px;
+      bottom: 14px;
+    }
+
+    .disclaimer {
+      position: absolute;
+      top: 25px;
+      left: 295px;
+      width: 290px;
+      font-family: 'Subway-Medium';
+      font-size: 18px;
+      line-height: 1;
+      color: #fff;
+    }
+  }
+
+  .footer-1,
+  .footer-2,
+  .footer-3 {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.belgio {
+  position: absolute !important;
+  left: 1210px;
+  top: 15px;
+}

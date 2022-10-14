@@ -1,0 +1,34 @@
+.c-nashville-quad {
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.frame1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.item-price {
+	  font-size: 36px;
+	  color: #fff;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+	  position: absolute;
+	}
+
+	.price {
+		top: 950px;
+	}
+
+	.dollars {
+		right: 632px;
+	}
+
+	.cents {
+		left: 648px;
+	}
+}

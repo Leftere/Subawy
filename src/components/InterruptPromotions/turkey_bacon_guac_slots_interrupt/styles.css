@@ -1,0 +1,62 @@
+.turkey-bacon-guac-interrupt {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background-color: rgba(0,0,0,.7);
+
+
+    .slots-container {
+        width: 1280px;
+        position: absolute;
+        background-color: #FFF;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .wheel-1 {
+        position: absolute;
+        width: 410px;
+        height: 1425px;
+        top: 126px;
+        left: 28px;
+        background-image: url('./images/Blur_Slots.jpg');
+        background-color: #FFF;
+        background-repeat: repeat-y;
+        background-position: 0px 0px;
+    }
+
+    .wheel-2 {
+        position: absolute;
+        width: 410px;
+        height: 1425px;
+        top: 126px;
+        left: 442px;
+        background-image: url('./images/Blur_Slots.jpg');
+        background-color: #FFF;
+        background-repeat: repeat-y;
+        background-position: 0px 0px;
+    }
+
+    .wheel-3 {
+        position: absolute;
+        width: 410px;
+        height: 1425px;
+        top: 126px;
+        left: 850px;
+        background-image: url('./images/Blur_Slots.jpg');
+        background-color: #FFF;
+        background-repeat: repeat-y;
+        background-position: 0px 0px;
+    }
+
+    .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}

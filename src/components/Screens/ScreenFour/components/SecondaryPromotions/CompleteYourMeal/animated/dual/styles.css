@@ -1,0 +1,58 @@
+.CompleteYourMealAnimated {
+  contain: strict;
+
+  img {
+    position: absolute;
+    height: auto !important;
+    z-index: 2;
+  }
+
+  .vitaminWater {
+    bottom: 60px;
+    left: 140px;
+  }
+
+  .dasani {
+    opacity: 0;
+    bottom: 90px;
+    left: 205px;
+  }
+
+  .cookie1 {
+    opacity: 0;
+    bottom: 70px;
+    left: 410px;
+    z-index: 4;
+  }
+
+  .cookie2 {
+    opacity: 0;
+    bottom: 15px;
+    left: 500px;
+    z-index: 5;
+  }
+
+  .chippies {
+    bottom: 60px;
+    left: 390px;
+  }
+
+  .subwayCup {
+    opacity: 0;
+    bottom: 90px;
+    left: 175px;
+  }
+
+  .newDecal {
+    opacity: 0;
+    bottom: 525px;
+    right: 95px;
+  }
+
+  .vickies {
+    opacity: 0;
+    bottom: 50px;
+    left: 425px;
+  }
+
+}

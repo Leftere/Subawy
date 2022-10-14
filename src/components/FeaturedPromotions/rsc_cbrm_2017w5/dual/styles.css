@@ -1,0 +1,29 @@
+.rscCbrFeatured {
+  .frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  .frame2, .endingFrame, .endingCopy {
+    opacity: 0;
+  }
+
+  .sandwich1 {
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    z-index: 5;
+    height: auto !important;
+  }
+
+  .sandwich2 {
+    opacity: 0;
+    z-index: 4;
+    position: absolute;
+    right: 0px;
+    top: 250px;
+    height: auto !important;
+  }
+}

@@ -1,0 +1,46 @@
+.CompleteYourMealAnimated {
+  contain: strict;
+
+  img {
+    position: absolute;
+    height: auto !important;
+    z-index: 2;
+  }
+
+  .vitaminWater {
+    bottom: 60px;
+    left: 80px;
+  }
+
+  .dasani {
+    opacity: 0;
+    bottom: 90px;
+    left: 145px;
+  }
+
+  .cookie1 {
+    opacity: 0;
+    bottom: 70px;
+    left: 300px;
+    z-index: 4;
+  }
+
+  .cookie2 {
+    opacity: 0;
+    bottom: 15px;
+    left: 390px;
+    z-index: 5;
+  }
+
+  .chippies {
+    bottom: 60px;
+    left: 300px;
+  }
+
+  .subwayCup {
+    opacity: 0;
+    bottom: 90px;
+    left: 115px;
+  }
+
+}

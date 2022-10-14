@@ -1,0 +1,48 @@
+.freshly-made-quad {
+    
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .yellow-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fdbe11;
+        width: 1280px;
+        height: 1080px;
+    }
+
+    .black-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #000;
+        width: 1280px;
+        height: 1080px;
+    }
+
+    .turkey1 {
+        top: -50px;
+        left: -700px;
+    }
+
+    .steak1 {
+        top: -50px;
+        left: -1400px;
+    }
+
+    .steak2 {
+        height: 540px;
+        top: 0px;
+        left: -330px;
+    }
+
+    .turkey2 {
+        height: 540px;
+        top: 560px;
+    }
+
+}

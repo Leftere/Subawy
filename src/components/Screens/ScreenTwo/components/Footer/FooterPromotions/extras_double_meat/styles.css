@@ -1,0 +1,22 @@
+[class~="c-Footer_background-ExtrasDoubleMeat"] {
+	background : inline('images/background.png');
+	font-family: 'MyriadPro-Condensed';
+}
+
+sup {
+	top: -5px !important;
+    font-size: 71% !important;
+    vertical-align: middle;
+}
+
+.dynamic-footer {
+  letter-spacing: -1px;
+  font-size: 40px;
+  top: -3px;
+}
+.extras_double_meat_price_6in {
+	position: absolute;
+	top: 117px;
+	left: 350px;
+	color: black;
+}

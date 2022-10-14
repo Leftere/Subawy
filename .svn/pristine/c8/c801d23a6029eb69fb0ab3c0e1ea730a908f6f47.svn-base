@@ -1,0 +1,7 @@
+.c-MiniPromo {
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

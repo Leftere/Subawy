@@ -1,0 +1,20 @@
+.c-RyeBreadFeatured {
+  
+  .bread, .lto, .fg {
+    position: absolute;
+    left: 0; top: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .lto {
+    top: 508px;
+    left: 44px;
+  }
+
+  .bread {
+    left: 390px;
+    top: 90px;
+  }
+
+}

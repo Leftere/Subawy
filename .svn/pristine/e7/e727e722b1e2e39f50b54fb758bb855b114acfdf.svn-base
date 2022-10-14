@@ -1,0 +1,9 @@
+.coke-2020-w4-quad {
+    
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+}

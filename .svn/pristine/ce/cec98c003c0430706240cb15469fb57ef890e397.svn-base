@@ -1,0 +1,21 @@
+---
+name: Setting Data
+route: /setting-data
+---
+
+## Setting price or other variable data
+
+At the top of your file, import the API
+```
+import API from 'api';
+```
+
+Then within your component set the value using a variable. For example:
+```
+let itemPrice = `$${API.loc('your_price_key_goes_here')}`
+```
+You can verify this is working by setting this key to the desired value in
+```
+src/neocast/local-data.js
+```
+Note: This key should be the one provided by the project manager.

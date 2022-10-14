@@ -1,0 +1,36 @@
+* {
+  background: transparent;
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+}
+
+h2 {
+  color: red;
+  font-size: 200px;
+}
+
+h3 {
+  color: blue;
+  font-size: 300px;
+  position: absolute;
+  left: 3000px;
+  top: 100px;
+}
+
+body > div {
+  box-sizing : border-box;
+  position   : absolute;;
+  height     : 1080px;
+  width   : 7700px;
+  margin     : 0px;
+  padding    : 0px;
+  top: 0;
+  left: 0;
+}
+
+html, body {
+  background: transparent !important;
+}

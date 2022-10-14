@@ -1,0 +1,35 @@
+[class~="c-Footer_background-RoundCheesePizza"] {
+  font-family: 'Subway-Heavy';
+  font-size: 32px;
+  color: white;
+}
+
+.pizza_cheese_price {
+  position: absolute;
+  top: 86px;
+  left: 240px;
+}
+
+.pizza_extra_toppings_price {
+  position: absolute;
+  top: 122px;
+  left: 315px;
+}
+
+.pizza-alt-option {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  font-family: 'Subway-Heavy';
+  left: 548px;
+  bottom: 15px;
+}
+
+.pizza-alt-calories {
+  font-family: 'Subway-Medium';
+  margin: 0px 8px;
+}
+
+.option-container {
+  margin-bottom: 6px;
+}

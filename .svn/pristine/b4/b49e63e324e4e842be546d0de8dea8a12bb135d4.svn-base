@@ -1,0 +1,35 @@
+.c-Promotion-2018w2-PromoPanel {
+
+  height: 1080px;
+  width: 100%;
+  display: inline-block;
+  background: #008d43;
+  position: relative;
+  font-size: 210px;
+  color: #ffffff;
+  font-family: 'Subway-Heavy';
+
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .text {
+    position:absolute;
+    left: 0;
+    top: 168px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .text4 {
+    top: 74px;
+    text-align: left;
+    font-size: 192px;
+    margin-left: 275px;
+  }
+
+}

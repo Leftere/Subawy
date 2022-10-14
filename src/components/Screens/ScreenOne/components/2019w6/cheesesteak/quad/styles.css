@@ -1,0 +1,50 @@
+.c-cheesesteak-quad {
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.Cheesesteaks {
+		height: 100%;
+	}
+
+	.CheesesteaksContainer {
+		position: absolute;
+		top:0;
+		left: 0;
+		width: 500px;
+		height: 500px;
+		overflow: hidden;
+	}
+
+	.carne-asada-prices {
+	    position: absolute;
+	    left: 920px;
+	    top: 650px;
+	    color: #fff;
+	    width: 1280px;
+	    font-size: 36px;
+  	}
+
+  	.provolone-prices {
+	    position: absolute;
+	    left: 920px;
+	    top: 920px;
+	    color: #fff;
+	    width: 1280px;
+	    font-size: 36px;
+  	}
+
+	  .price {
+	    position: relative;
+	    display: block;
+	    font-family: 'Subway-Heavy';
+	  }
+
+	  .calories {
+	    position: relative;
+	    margin-left: 20px;
+	    font-family: 'Subway-Medium';
+	  }
+}

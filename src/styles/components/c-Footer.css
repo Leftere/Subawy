@@ -1,0 +1,214 @@
+.c-Footer {
+	box-sizing   : border-box;
+	position     : relative;
+	width        : 100%;
+	height       : 100%;
+	/*border-width : 0px 5px;*/
+	/*border-color : $subway_green;*/
+	/*border-style : solid;*/
+	overflow     : hidden;
+	
+	&-old-school,&-old-side-loaded {
+		display         : flex;
+		align-items     : center;
+		justify-content : center;
+	}
+}
+
+.c-Footer_old {
+	position   : relative;
+	width      : 960px;
+	height     : 200px;
+	min-width  : 960px;
+	min-height : 200px;
+	background : #008938;
+	color      : #6d6e71;
+}
+
+.c-Footer-old-school {
+	background-color: #008938;
+}
+
+.c-Footer {
+	background-color: #008938;
+}
+
+.c-Footer_background {
+	z-index   : 1; 
+	position  : relative;
+	width     : 100%;
+	height    : 100%;
+	overflow  : hidden;
+	background-size: contain !important;
+
+	&-expand {
+		background-position : center  !important;
+		background-repeat   : no-repeat !important;
+		background-size     : 100% 100%   !important;
+	}
+	&-old-school {
+		position            : relative;
+		background-size     : cover !important;
+		background-position : center !important;
+		width               : 960px;
+		height              : 200px;
+		min-width           : 960px;
+		min-height          : 200px;
+	}
+}
+
+.c-Footer_backing {
+	z-index  : 1; 
+	position : absolute;
+	top      : 0px;
+	left     : 0px;
+	width    : 100%;
+	height   : 100%;
+	overflow : hidden;
+
+	&-old-side-loaded {
+		z-index  : 1;
+		position : relative; 
+		width    : 100%;
+		height   : auto;
+	}
+}
+
+.c-Footer_items {
+	z-index  : 2; 
+	position : absolute;
+	left     : 0px;
+	bottom   : 0px;
+	width    : 100%;
+	height   : 45%;
+	overflow : visible;
+}
+
+.c-Footer_item {
+	position  : absolute; 
+	top       : 0px;
+	/*padding   : 13px 21px;*/
+	padding   : 13px 0px;
+	font-size : 0px;
+
+	&:nth-child(1) {
+		left : 0px;
+	}
+	&:nth-child(2) {
+		right : 0px;
+	}
+
+	&-side-loaded:nth-child(1) {
+		left : 180px;
+	}
+	&-side-loaded:nth-child(2) {
+		right   : 46px;
+		padding : 12px 0px;
+	}
+
+	&-old-side-loaded {
+		z-index  : 2; 
+		position : absolute;
+		padding  : 0px;
+	}
+	&-old-side-loaded:nth-of-type(1) {
+		top  : 121px;
+		left : 95px; 
+	}
+	&-old-side-loaded:nth-of-type(2) {
+		top  : 121px;
+		left : 855px; 
+	}
+}
+
+.c-Footer_item_option {
+	position : relative;
+	display  : block;
+	width    : 320px;
+	color    : #6d6e71;
+
+	~ .c-Footer_item_option {
+		margin-top : 5px;
+	}
+
+	&-side-loaded {
+		width : auto;
+	}
+
+	/*displays the item's options (usually a size option) next to each other - row*/
+	&-inline {
+		display : inline-block;
+	}
+	~ .c-Footer_item_option-inline {
+		margin: 0px 0px 0px 15px;
+	}
+}
+
+.c-Footer_label {
+	position       : relative; 
+	display        : inline-block;
+	width          : 61%;
+	padding        : 8px 0px;
+	vertical-align : top;
+	text-align     : right; 
+	font-size      : 1.87rem;
+	line-height    : 1.9rem;
+	font-family    : $font_family_heavy;
+}
+
+.c-Footer_values {
+	position       : relative; 
+	display        : inline-block;
+	padding        : 8px 10px 8px 15px;
+	vertical-align : top;
+	
+	&-side-loaded {
+		padding : 7px 0px 0px 0px;
+	}
+}
+
+.c-Footer_value {
+	position    : relative;
+	font-family : $font_family_heavy; 
+	font-size   : 1.87rem;
+	line-height : 1.9rem;
+	-webkit-font-smoothing : antialiased;
+
+	~ .c-Footer_value {
+		font-family : $font_family_medium; 
+	}
+
+	&-old-side-loaded {
+		position    : relative;
+		padding     : 0px;
+		font-family : 'MyriadPro-Condensed' !important;
+		font-size   : 30px;
+		line-height : 37px;
+
+		sup {
+			position       : relative;
+			top            : -5px;
+			font-size      : 71%;
+			vertical-align : middle;
+		}
+		p {
+			z-index  : 1;
+			position : absolute;
+			top      : 0;
+			left     : 0;
+		}
+	}
+}
+
+.c-Footer_options {
+	position : absolute;
+	left     : 11%;
+	bottom   : 0px;
+	width    : 37%;
+	height   : auto;
+	overflow : visible;
+
+	&-expand {
+		width : 100%;
+	}
+}

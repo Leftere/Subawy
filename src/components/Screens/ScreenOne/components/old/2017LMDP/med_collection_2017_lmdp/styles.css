@@ -1,0 +1,42 @@
+.med-ending-frame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .ending-price {
+    font-family: 'Subway-Heavy';
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .med-price1-6 {
+    position: absolute;
+    top: 660px;
+    left: 805px;
+  }
+
+  .med-price1-12 {
+    position: absolute;
+    top: 767px;
+    left: 915px;
+  }
+
+  .med-price-salad {
+    position: absolute;
+    top: 877px;
+    left: 1044px;
+  }
+
+  .med-price2-6 {
+    position: absolute;
+    top: 877px;
+    left: 1337px;
+  }
+
+  .med-price2-12 {
+    position: absolute;
+    top: 877px;
+    left: 1721px;
+  }
+}

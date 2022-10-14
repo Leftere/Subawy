@@ -1,0 +1,29 @@
+[class~="c-Footer_background-SteakAndBaconMelt"] {
+  background : inline('images/background.png');
+  font-family: 'MyriadPro-Condensed';
+}
+
+sup {
+  top: -5px !important;
+  font-size: 71% !important;
+  vertical-align: middle;
+}
+
+.dynamic-footer {
+  letter-spacing: -1px;
+  font-size: 45px;
+  top: -3px;
+  color: black;
+}
+
+.steak_and_bacon_melt_price_6in {
+  position: absolute;
+  top: 112px;
+  left: 97px;
+}
+
+.steak_and_bacon_melt_price_12in {
+  position: absolute;
+  top: 112px;
+  left: 325px;
+}

@@ -1,0 +1,53 @@
+.c-w8wsdDayOf {
+  font-family: 'Subway-Heavy';
+  font-size: 30px;
+  color: #fff;
+
+
+  .frame1, .frame2, .frame3 {
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+
+  .frame2 {
+    background: #feba12;
+    color: #fff;
+
+    .count {
+      font-size:358px;
+      display: block;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 100px;
+    }
+
+    .subtitle {
+      font-size:120px;
+      display: block;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 450px;
+      color: #008938;
+    }
+
+    .plate {
+      position: absolute;
+      left: calc(50% - 285px);
+      top: 587px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 770px) { 
+  .featured-promo-area {
+    transform: scale(0.395);
+    transform-origin: top left;
+  }
+} 

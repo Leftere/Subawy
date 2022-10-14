@@ -1,0 +1,36 @@
+  .sodium-warning {
+    color: #F2B700;
+    font-family: 'Subway-Bold' !important;
+    font-size: 30px;
+    display: inline;
+    width: 200px;
+    text-align: center;
+
+    span {
+      display: inline;
+    }
+
+    small {
+      font-family : 'HelveticaLTStd-Cond';
+      font-size: 12px;
+      font-weight: normal;
+      color: #000;
+      text-align: bottom;
+    }
+  }
+
+  .sodium-warning:before {
+    content: '';
+    width: 34px;
+    height: 30px;
+    margin-right: 10px;
+
+    display: inline-block !important;
+    background-image: url(./images/sodium-warning-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .sodium-warning.isPhilly:before {
+    background-image: url(./images/philly-warning.png);
+  }

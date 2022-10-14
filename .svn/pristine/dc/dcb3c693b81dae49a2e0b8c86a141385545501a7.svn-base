@@ -1,0 +1,190 @@
+/************************************************************************************************************************
+CORE MODULE STYLES
+************************************************************************************************************************/
+.c-InterruptCatering2016w8 {
+    position    : absolute;
+    top         : 0px;
+    left        : 3840px;
+    width       : 3840px;
+    height      : 1080px;
+    overflow    : hidden;
+    font-family : 'MarkScOffcPro-Heavy';
+    font-size   : 124px;
+    color       : white;
+
+    &-reverse {
+    	left : 0px;
+    }
+}
+.c-InterruptCatering2016w8_field {
+	position    : absolute;
+	left        : 0px;
+	bottom      : 0px;
+	width       : 50%;
+	display     : inline-flex;
+	will-change : transform;
+	&:nth-child(1) {
+		transform : translate3d(0,100%,0);
+	}
+	&:nth-child(2) {
+		transform : translate3d(100%,100%,0);
+		.c-InterruptCatering2016w8_field_text {
+			transform : translate3d(-50%,100%,0);
+		}
+	}
+}
+	.c-InterruptCatering2016w8_field_grass {
+		position : relative;
+		width    : 100%;
+    	height   : 199px;
+	}
+	.c-InterruptCatering2016w8_field_intro {
+		z-index    : 2;
+		position   : absolute;
+		left       : 50%;
+		top        : 50%;
+		width      : 100%;
+		text-align : center;
+		transform  : translate3d(-50%,-50%,0);
+	}
+	.c-InterruptCatering2016w8_field_deal {
+		z-index    : 2;
+		position   : absolute;
+		top        : 50%;
+		width      : 100%;
+		opacity    : 0;
+		text-align : center;
+		transform  : translateY(-50%);
+	}
+	.c-InterruptCatering2016w8_field_details {
+		z-index    : 2;
+		position   : absolute;
+		left       : 5%;
+		top        : 50%;
+		text-align : left;
+		font-size  : 35px;
+		opacity    : 0;
+		transform  : translateY(-50%);
+	}
+
+
+.c-InterruptCatering2016w8_ball {
+    position  : absolute;
+    left      : 0px;
+    top       : 0px;
+    transform : translate3d(-100%,200%,0);
+}
+.c-InterruptCatering2016w8_sub {
+    position    : absolute;
+    left        : -100%;
+    bottom      : 0px;
+    width       : 100%;
+    will-change : transform;
+}
+
+
+
+
+/************************************************************************************************************************
+STATE => TRANSITION:IN:FRAME1
+************************************************************************************************************************/
+.c-InterruptCatering2016w8[data-ui-state~="transition:in:frame1"] {
+	.c-InterruptCatering2016w8_field {
+		/*[property] [duration] [timing function] [delay]*/
+		transition : transform 500ms ease-out 0ms;
+		&:nth-child(1) {
+			transform : translate3d(0,0,0);
+		}
+		&:nth-child(2) {
+			transform : translate3d(100%,0,0);
+			.c-InterruptCatering2016w8_field_text {
+				transform : translate3d(-50%,-50%,0);
+				/*[property] [duration] [timing function] [delay]*/
+				transition : transform 500ms ease-out 3.5s;
+			}
+		}
+	}
+
+	.c-InterruptCatering2016w8_ball {
+		/* sub-animation brings ball up and back down */
+		/*[animation name] [duration] [timing function] [delay]*/
+		animation : ballAnimation 2s linear 1s;
+	}
+}
+@keyframes ballAnimation {
+    0%   { transform : translate3d(-100%,200%,0); }
+    20%  { transform : translate3d(300%, 100%,0); }
+    45%  { transform : translate3d(600%, 50%, 0); }
+    78%  { transform : translate3d(900%, 60%,0); }
+    100% { transform : translate3d(1200%,70%,0); }
+}
+
+
+
+
+/************************************************************************************************************************
+STATE => TRANSITION:IN:FRAME2
+************************************************************************************************************************/
+.c-InterruptCatering2016w8[data-ui-state~="transition:in:frame2"] {
+	.c-InterruptCatering2016w8_field {
+		&:nth-child(1) {
+			transform : translate3d(0,0,0);
+		}
+		&:nth-child(2) {
+			transform : translate3d(100%,0,0);
+			.c-InterruptCatering2016w8_field_text {
+				transform : translate3d(-50%,-50%,0);
+			}
+		}
+	}
+
+	.c-InterruptCatering2016w8_field_intro {
+		opacity : 0;
+		/*[property] [duration] [timing function] [delay]*/
+		transition  : opacity 0ms linear 1.7s;
+		will-change : opacity;
+	}
+	.c-InterruptCatering2016w8_field_deal,.c-InterruptCatering2016w8_field_details {
+		opacity : 1;
+		/*[property] [duration] [timing function] [delay]*/
+		transition  : opacity 0ms linear 1.7s;
+		will-change : opacity;
+	}
+	.c-InterruptCatering2016w8_sub {
+		transform   : translate3d(170%,0,0);
+		/*[property] [duration] [timing function] [delay]*/
+		transition  : transform 3.5s ease-out 0s;
+		will-change : transform;
+	}
+}
+
+/* OUT */
+.c-InterruptCatering2016w8[data-ui-state~="transition:out"] {
+	.c-InterruptCatering2016w8_field {
+		/*[property] [duration] [timing function] [delay]*/
+		transition : transform 500ms ease-out 0ms;
+		&:nth-child(1) {
+			transform : translate3d(0,100%,0);
+		}
+		&:nth-child(2) {
+			transform : translate3d(100%,100%,0);
+			.c-InterruptCatering2016w8_field_text {
+				transform : translate3d(-50%,-50%,0);
+			}
+		}
+	}
+	.c-InterruptCatering2016w8_field_intro {
+		opacity : 0;
+	}
+	.c-InterruptCatering2016w8_field_deal,.c-InterruptCatering2016w8_field_details {
+		opacity : 1;
+	}
+	.c-InterruptCatering2016w8_sub {
+		transform   : translate3d(170%,100%,0);
+		/*[property] [duration] [timing function] [delay]*/
+		transition  : transform 500ms ease-out 0s;
+		will-change : transform;
+	}
+}
+
+/* END Football Catering */

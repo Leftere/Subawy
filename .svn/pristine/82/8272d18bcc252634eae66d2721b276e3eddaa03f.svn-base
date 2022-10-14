@@ -1,0 +1,19 @@
+.c-AppRemoteOrderDual {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #f2b700;
+
+  * {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .frame1, .frame2, .frame3, .frame4 {
+    width: 100%;
+    height: 100%;
+  }
+
+}

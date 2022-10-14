@@ -1,0 +1,59 @@
+---
+name: Common - DOMinator
+menu: Components
+route: /components/common/DOMinator
+---
+
+# DOMinator
+
+The DOMinator is a common component that can be used to create a simple DOM from text and images without having to write the HTML yourself.
+
+<br />
+
+## Example
+
+Import some images, and set some text.
+
+```
+import frame1 from '../images/frame-1.png'
+import frame2 from '../images/frame-2.png'
+import frame3 from '../images/frame-3.png'
+
+let price1 = '$5.00';
+let price2 = '$3.00';
+let price3 = '$6.00';
+```
+
+Put those images and text into an "elements" object using the following syntax. This will create a simple DOM with the elements in the order they were listed.
+```
+let R = React.createElement;
+let domClass = 'new-dom-class'
+let elements = {
+  frame1: ['img', frame1],
+  frame1Text: ['text', price1]
+  frame2: ['img', frame2],
+  frame2Text: ['text', price2]
+  frame3: ['img', frame3],
+  frame3Text: ['text', price3]
+}
+
+let dominate = DOMinator.dominate(elements)
+let result = dominate.result
+let C = dominate.references // Children lookup
+
+let dom = R('div', {
+  className: domClass
+}, result)
+```
+
+You should end up with something that similar to this.
+```
+<div class="new-dom-class">
+    <img class="frame1" src="frame.png" />
+    <div class="frame1Text">$5.00</div>
+    <img class="frame2" src="frame.png" />
+    <div class="frame2Text">$3.00</div>
+    <img class="frame3" src="frame.png" />
+    <div class="frame3Text">$6.00</div>
+</div>
+```

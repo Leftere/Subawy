@@ -1,0 +1,65 @@
+.w3Feature {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .promoImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .makeMeal {
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    font-family: 'Subway-Heavy';
+    font-size: 50px;
+    color: #4c006a;
+  }
+
+  .subtitle {
+    position: absolute;
+    left: 40px;
+    top: 220px;
+    font-family: 'Subway-Medium';
+    font-size: 25px;
+    color: #4c006a;
+    line-height: 1.3;
+  }
+}
+
+.promo1, .promo2, .promo3 {transition: all 500ms}
+
+.showPromo1 {
+  .promo1 {opacity: 1}
+  .promo2 {opacity: 0}
+  .promo3 {opacity: 0}
+}
+
+.showPromo2 {
+  .promo1 {opacity: 0}
+  .promo2 {opacity: 1}
+  .promo3 {opacity: 0}
+}
+
+.showPromo3 {
+  .promo1 {opacity: 0}
+  .promo2 {opacity: 0}
+  .promo3 {opacity: 1}
+}
+
+
+.l-player-direction-R2L {
+  .w3Feature {
+    .makeMeal {
+      left: 480px;
+      top: 100px;
+    }
+
+    .subtitle {
+      left: 480px;
+      top: 220px;
+    }
+  }
+}

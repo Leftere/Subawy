@@ -1,0 +1,36 @@
+.c-FreshValue122018w1 {
+
+  position: relative;
+
+  .price {
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Subway-Heavy';
+    color: #038d43;
+    z-index: 100;
+  }
+
+  .top {
+    top: 193px;
+  }
+
+  .left {
+    left: 35px;
+  }
+
+  .right {
+    right: 39px;
+  }
+
+  .bottom {
+    bottom: 426px;
+  }
+
+  .veggie {
+    color: #006230;
+    right: 100px;
+    bottom: 70px;
+    font-size: 42px;
+  }
+
+}

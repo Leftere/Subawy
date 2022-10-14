@@ -1,0 +1,66 @@
+.c-PitSmokedChickenAndBrisketQuad {
+
+  height: 1080px;
+  width: 1920px;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-family: 'Subway-Heavy';
+
+  * {
+    position: absolute;
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    width: 500px;
+  }
+
+  .d-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .d-text {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #fff;
+  }
+
+  .d-bg {
+    left: -50px;
+    top: -50px;
+    width: calc(100% + 100px);
+    height: calc(100% + 100px);
+  }
+
+  .dn-sub1Price6 {
+    top: 962px;
+    left: 0px;
+    white-space: pre;
+  }
+
+  .dn-sub1Price6 {
+    top: 477px;
+    left: 218px;
+    white-space: pre;
+  }
+
+  .dn-sub2Price6 {
+    top: 1005px;
+    left: 35px;
+    white-space: pre;
+  }
+
+  .dn-sub2Price12 {
+    top: 1005px;
+    left: 305px;
+    white-space: pre;
+  }
+
+}

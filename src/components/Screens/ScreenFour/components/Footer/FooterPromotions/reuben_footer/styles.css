@@ -1,0 +1,30 @@
+.c-ReubenFooter {
+
+  .item-price {
+    position: absolute;
+    font-size: 32px;
+    color: white;
+    font-family: 'Subway-Heavy';
+    z-index: 99;
+    padding: 0; margin: 0;
+  }
+
+  .six-price {
+    bottom: 18px;
+    left: 70px;
+  }
+
+  .twelve-price {
+    bottom: 18px;
+    left: 445px;
+  }
+
+
+  sup {
+    top: -5px !important;
+    font-size: 71% !important;
+    vertical-align: middle;
+  }
+
+}
+

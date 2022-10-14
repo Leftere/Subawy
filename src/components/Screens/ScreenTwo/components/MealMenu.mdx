@@ -1,0 +1,44 @@
+---
+name: Screen 2 - Meal menu
+menu: Components
+route: /components/screen2/meal-menu
+---
+<br />
+
+# Screen 2: Meal Menu
+
+This area holds some typical sandwich menu items, as well as the "Make it a meal" combo deal.
+
+<br />
+
+![Make it a meal](./menu.jpg)
+
+## Make it a meal
+
+This section's display can change based on whether the restaraunt serves Coca-Cola, and whether the drink it comes with is 20oz or 21oz.
+
+<br />
+
+## Keys
+
+These keys affect the display of "Make it a meal"
+```
+show_20_oz_drink
+show_20_oz_clear_drink
+serves_coca_cola
+meal_deal_fountain_additional_price
+```
+
+These keys affect pricing for the rest of the menu's sandwiches. The price for each of these is added to the value for the key "meal_deal_fountain_additional_price" in order to get the final meal price.
+```
+bf_ham_price_6in
+oven_roasted_chicken_price_6in
+turkey_breast_price_6in
+spicy_italian_price_6in
+tuna_price_6in
+meatball_marinara_price_6in
+```
+
+## Setting price or other variable data
+
+See [setting Data](/setting-data)

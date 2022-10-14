@@ -1,0 +1,266 @@
+.c-Promotion-w7autumn {
+  height: 1080px;
+  width: 100%;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-size: 36px;
+  color: #fa4c16;
+  font-family: 'Subway-Heavy';
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+
+  .startFrame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    will-change: opacity;
+    z-index: 10;
+    animation: fadeOut 1.2s linear 5s forwards;
+  }
+
+
+  .pan {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+
+    &.frame1 {
+      transform: translate3d(90px, 200px, 0) scale(1.1);
+      will-change: transform;
+      animation:
+        panLeftAutumnFrame1 5s linear 5s forwards,
+        fadeOutAutumn 1.7s linear 8.5s forwards;
+    }
+
+    &.frame2 {
+      opacity: 0;
+      will-change: transform;
+      transform: translate3d(0px, 0, 0) scale(1.1);
+      animation:
+        fadeInAutumn 2s linear 8.5s forwards,
+        panLeftAutumn 5.5s linear 8.5s forwards,
+        fadeOutAutumn 1.7s linear 13s forwards;
+    }
+
+    &.frame3 {
+      opacity: 0;
+      will-change: transform;
+      transform: scale(1.2);
+      animation:
+        fadeInAutumn 2s linear 13s forwards,
+        zoomInLarge 5.5s linear 12s forwards,
+        fadeOutAutumn 1s linear 17s forwards;
+    }
+  }
+
+  .lto {
+    opacity: 0;
+    animation:
+        ltoFade 2s linear 22.5s forwards;
+  }
+
+  .sandy {
+    position: absolute;
+    will-change: transform;
+    left: 0px;
+    top: 0;
+    opacity: 0;
+    transform: translate3d(-440px, 90px, 0) scale(1.2);
+    animation:
+        fadeInAutumn 1.5s linear 18.2s forwards,
+        sandyZoom1 5.2s linear 18.5s forwards;
+  }
+
+  .titleCopy {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+  }
+
+  .largeCopy {
+    font-size: 125px;
+  }
+
+  .mediumCopy {
+    font-size: 115px;
+  }
+
+  .frame1Copy {
+    animation:
+      fadeSlideLeftAutumn 1.5s linear 7.4s forwards;
+  }
+
+  .frame2Copy {
+    /*opacity: 0;*/
+    transform: translate3d(2000px, 0, 0);
+    animation:
+      fadeInFromRightAutumn 1.5s ease-in-out 8.5s forwards,
+      fadeSlideLeftAutumn 1.5s ease-in-out 12.2s forwards;
+  }
+
+  .frame3Copy {
+    /*opacity: 0;*/
+    transform: translate3d(2000px, 0, 0);
+    animation:
+      fadeInFromRightAutumn 1.5s ease-in-out 13.0s forwards,
+      fadeSlideLeftAutumn 1.5s ease-in-out 17s forwards;
+  }
+
+  .frame4Copy {
+    /*opacity: 0*/;
+    transform: translate3d(0px, -500px, 0);
+    animation:
+      fadeInFromTop 1.5s ease-in-out 18.5s forwards,
+      fadeOutAutumn 1s ease-in-out 22.2s forwards;
+  }
+
+  .frame5Copy {
+    /*opacity: 0;*/
+    transform: translate3d(-2000px, 50px, 0);
+    animation:
+      fadeInFromLeftish 1.5s ease-in-out 22.7s forwards;
+  }
+
+  .prepricing {
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    width: 560px;
+    height: 200px;
+    z-index: 11;
+
+    .price {
+      position: absolute;
+      top: 100px;
+    }
+
+    .price-six {
+      position: absolute;
+      left: -45px;
+    }
+
+    .price-foot {
+      position: absolute;
+      left: 345px;
+    }
+
+  }
+
+  .pricing {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    width: 560px;
+    height: 200px;
+    color: #fa4c16;
+
+    transform: translate3d(2000px, 0, 0);
+    /*opacity: 0;*/
+    animation: fadeInFromRightAutumn 1.5s linear 22.9s forwards;
+
+    .title {
+      font-size: 44px;
+    }
+
+    .subtitle {
+      font-size: 30px;
+    }
+
+    .size {
+      font-size: 36px;
+    }
+
+    .cal {
+      font-size: 34px;
+      font-family: 'Subway-Medium';
+    }
+
+    .subprice {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      .size, .price {
+        position: absolute;
+        top: 100px;
+      }
+
+      .cal {
+        position: absolute;
+        top: 150px;
+      }
+
+      .size-six {
+        position: absolute;
+        left: 0px;
+      }
+
+      .size-foot {
+        position: absolute;
+        left: 210px;
+      }
+
+      .price-six {
+        position: absolute;
+        left: 51px;
+      }
+
+      .price-foot {
+        position: absolute;
+        left: 380px;
+      }
+
+      .cal-six {
+        position: absolute;
+        left: 50px;
+      }
+
+      .cal-foot {
+        position: absolute;
+        left: 380px;
+      }
+
+    }
+
+    .steakPricing {
+      top: 0;
+    }
+
+    .horsePricing {
+      top: 250px;
+    }
+
+    .rotisseriePricing {
+      top: 540px;
+    }
+  }
+
+  .disclaimer {
+    position: absolute;
+    bottom: 15px;
+    left: -45px;
+    width: 650px;
+    display: block;
+    font-size: 18px;
+    font-family: 'Subway-Medium';
+    color: #666666;
+    line-height: 1;
+
+    transform: translate3d(200px, 0, 0);
+    opacity: 0;
+    animation:
+      fadeInFromRightAutumn 2s linear 23.4s forwards;
+
+    small {
+      font-size: 10px;
+      transform: scale(0.8);
+      display: block;
+    }
+  }
+}

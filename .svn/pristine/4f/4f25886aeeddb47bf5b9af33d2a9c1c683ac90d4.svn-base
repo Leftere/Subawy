@@ -1,0 +1,56 @@
+.c-chicken_wrap-dual {
+
+  height: 1080px;
+  width: 1280px;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-family: 'Subway-Heavy';
+
+  * {
+    position: absolute;
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    width: 500px;
+  }
+
+  .d-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .d-text {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #fff;
+  }
+
+  .d-bg {
+    left: -50px;
+    top: 0px;
+    width: auto;
+    height: 100%;
+  }
+
+  .dn-sub_1 {
+    top: 390px;
+    left: 965px;
+    white-space: pre;
+  }
+
+  .dn-sub_2 {
+    top: 991px;
+    left: 37px;
+    white-space: pre;
+  }
+
+}

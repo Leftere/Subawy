@@ -1,0 +1,46 @@
+.c-geah-quad {
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.price-container {
+		font-family: 'Subway-Heavy', 'sans-serif';
+		font-size: 30px;
+		width: 1280px;
+		position: absolute;
+		top: 880px;
+		left: 20px;
+
+		.price-heading {
+			margin-bottom: 20px;
+			margin-left: 30px;
+			display: block;
+		}
+
+		.sub-size {
+			float: left;
+			display: inline-block;
+			margin-left: 30px;
+		}
+
+		.sub-prices {
+			float: left;
+			display: inline-block;
+			margin-left: 30px;
+		}
+
+		.footlong-container {
+			margin-left: 30px;
+		}
+
+		.price {
+			display: block;
+		}
+
+		.calories {
+			font-family: 'Subway-Medium';
+		}
+	}
+}

@@ -1,0 +1,171 @@
+.HotDrinksMenu {
+  & .menu-title {
+    font-family: 'Subway-Heavy';
+    font-size: 70px;
+    display: block;
+    margin-bottom: 14px;
+    color: #fff;
+  }
+
+
+  & .c-Header_column:nth-child(1),
+  & .c-TableList_column:nth-child(1) {
+    width: 60%;
+  }
+
+  & .c-Header_column:nth-child(2),
+  & .c-TableList_column:nth-child(2) {
+    width: 40%;
+
+    .c-Menus_title {
+      text-align: right !important;
+    }
+  }
+
+  .coffeCupImage {
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+    height: 280px;
+  }
+
+  .c-Promotion_item-tax {
+    position: absolute;
+    top: 1050px;
+    left: 530px;
+  }
+
+  .c-Menus_title-v-expand {
+    margin-bottom: 0;
+    line-height: 2.8rem;
+
+    & > span {
+      margin-bottom: 4px;
+    }
+  }
+
+  /* Legal updates */
+  .c-TableList_row {
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+
+  .c-Menus_caption {
+    font-size: 36px;
+  }
+
+  /* legal updates for font size */
+  .c-Menus_title, .c-Menus_caption-highlight {
+    font-size: 36px;
+  }
+
+  .hotDrinkLineItem {
+    font-family: 'Subway-Medium';
+    padding-left: 40px;
+  }
+
+  .hotDrinksTitle {
+    margin-bottom: 0px;
+  }
+
+  .categorySpacer {
+    height: 20px;
+  }
+
+  .freshGround {
+    position: relative;
+    bottom: 280px;
+    left: 0px;
+    font-size: 36px;
+    color: #f3bd27;
+    font-family: 'Subway-Heavy';
+    line-height: 1.1;
+  }
+
+  .fountain-wrapper {
+    display: block;
+    width: 100%;
+
+    div {
+      font-size: 36px;
+      font-family: 'Subway-Heavy';
+      line-height: 1.1;
+      color: #fff;
+      display: inline-block;
+      margin-bottom: 7px;
+    }
+
+    .sizes {
+      width: 60%;
+    }
+
+    .prices {
+      width: 40%;
+      text-align: right;
+    }
+
+    .cals {
+      display: block;
+      font-family: 'Subway-Medium';
+    }
+  }
+
+  .local-wrapper {
+    .c-Price span span {
+      display: inline-block;
+      width: 96px;
+      text-align: left;
+    }
+  }
+
+  .hotWrapper {
+
+    .premiumWrapper {
+      .c-TableList_row {
+        margin-bottom: 2px;
+      }
+    }
+
+      .c-TableList_column:nth-child(1) {
+          width: 71.5%;
+      }
+
+      .c-TableList_column:nth-child(2) {
+          width: 17.2%;
+      }
+
+      .c-TableList_column:nth-child(3) {
+          width: 12%;
+          margin-right: -10px;
+
+          .c-Menus_title {
+            text-align: left !important;
+          }
+      }
+
+    .c-long-cal {
+      .c-TableList_column:nth-child(1) {
+        width: 102%;
+        padding: 0;
+
+        span {
+          padding: 0; margin: 0;
+          font-size: 36px;
+        }
+      }
+    }
+
+    .hotCals {
+      font-size: 36px;
+      font-family: 'Subway-Heavy';
+      line-height: 1.1;
+      color: #fff;
+      text-align: right;
+      margin: 5px 0 15px 0;
+    }
+  }
+
+  .categorySpacer {
+    height: 15px;
+  }
+}

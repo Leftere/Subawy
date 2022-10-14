@@ -1,0 +1,28 @@
+.valueTestSoctDual {
+  background-color: white;
+  backface-visibility: hidden;
+
+  img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: auto !important;
+  }
+
+  .endingPrice {
+    position: absolute;
+    bottom: 103px;
+    font-size: 36px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+    opacity: 0;
+  }
+
+  .price6 {
+    right: 390px;
+  }
+
+  .price12 {
+    right: 55px;
+  }
+}

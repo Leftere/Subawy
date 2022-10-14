@@ -1,0 +1,85 @@
+.c-CaliFresh {
+
+  height: 1080px;
+  width: 1920px;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-family: 'Subway-Heavy';
+  z-index: 9999;
+
+  * {
+    position: absolute;
+  }
+
+  .price {
+    font-family: 'Subway-Medium';
+    font-size: 36px;
+    line-height: 36px;
+    color: #f00;
+    width: 500px;
+  }
+
+  .d-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .d-text {
+    font-family: 'Subway-Medium';
+    font-size: 34px;
+    line-height: 34px;
+    color: #322;
+  }
+
+  .d-bg {
+    left: -50px;
+    top: -50px;
+    width: calc(100% + 100px);
+    height: calc(100% + 100px);
+  }
+
+  .dn-sub1Price6 {
+    top: 348px;
+    left: 485px;
+    white-space: pre;
+  }
+
+  .dn-sub1Price12 {
+    top: 392px;
+    left: 485px;
+    white-space: pre;
+  }
+
+  .dn-sub1PricePro {
+    top: 440px;
+    left: 485px;
+    white-space: pre;
+  }
+
+  .dn-sub2Price6 {
+    top: 348px;
+    left: 1015px;
+    white-space: pre;
+  }
+
+  .dn-sub2Price12 {
+    top: 392px;
+    left: 1015px;
+    white-space: pre;
+  }
+
+  .dn-sub2PricePro {
+    top: 440px;
+    left: 1015px;
+    white-space: pre;
+  }
+
+    
+  .dn-sodium1 {
+    left: 0px;
+    top: 0px;
+  }
+
+}

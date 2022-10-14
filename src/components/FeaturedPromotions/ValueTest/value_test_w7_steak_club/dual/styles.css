@@ -1,0 +1,122 @@
+.c-Promotion-w7steakDual {
+  height: 1080px;
+  width: 100%;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-size: 36px;
+  color: #008938;
+  font-family: 'Subway-Heavy';
+
+  .frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .frame1 {
+    z-index: 2;
+  }
+
+  .frame2 {
+    z-index: 3;
+  }
+
+  .frame3 {
+    z-index: 4;
+  }
+
+  .pricing {
+    position: absolute;
+    top: 228px;
+    right: 38px;
+    width: 630px;
+    z-index: 100;
+    display: block;
+
+    .title {
+      font-size: 44px;
+    }
+
+    .subtitle {
+      font-size: 30px;
+    }
+
+    .limited {
+      color: #fa4c16
+    }
+
+    .size {
+      font-size: 36px;
+    }
+
+    .cal {
+      font-size: 34px;
+      font-family: 'Subway-Medium';
+    }
+
+    .subprice {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      .size, .price {
+        position: absolute;
+        top: 100px;
+      }
+
+      .cal {
+        position: absolute;
+        top: 140px;
+      }
+
+      .size-six {
+        position: absolute;
+        left: 0px;
+      }
+
+      .size-foot {
+        position: absolute;
+        left: 210px;
+      }
+
+      .price-six {
+        position: absolute;
+        left: 51px;
+      }
+
+      .price-foot {
+        position: absolute;
+        left: 380px;
+      }
+
+      .cal-six {
+        position: absolute;
+        left: 50px;
+      }
+
+      .cal-foot {
+        position: absolute;
+        left: 380px;
+      }
+
+    }
+
+    .steakPricing {
+      top: 0;
+    }
+
+    .horsePricing {
+      top: 310px;
+    }
+
+    .rotisseriePricing {
+      top: 600px;
+      left: 7px;
+    }
+  }
+
+}

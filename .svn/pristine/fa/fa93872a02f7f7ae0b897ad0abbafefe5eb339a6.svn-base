@@ -1,0 +1,62 @@
+.c-Promotion-2018w3-SteakContingency {
+
+  height: 1080px;
+  width: 100%;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-size: 36px;
+  color: #fa4c16;
+  font-family: 'Subway-Heavy';
+
+  * {
+    position: absolute;
+  }
+
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .text1 {
+    top: 75px;
+    left: 75px;
+  }
+
+  .text2 {
+    top: 75px;
+    left: 75px;
+  }
+
+  .sub {
+    top: 100px;
+    left: 1400px;
+  }
+
+  .finalFrame {
+
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 45px;
+    color: #ffffff;
+    width: 500px;
+  }
+
+  .price1 {
+    left: 72px; top: 570px;
+  }
+
+  .price2 {
+    left: 724px; top: 421px;
+  }
+
+  .price3 {
+    left: 72px; top: 818px;
+  }
+
+}

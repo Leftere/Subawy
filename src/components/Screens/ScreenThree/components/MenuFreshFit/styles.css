@@ -1,0 +1,103 @@
+.c-MenuFresh {
+
+  .subImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .freshHeader {
+    display: block;
+    height: 120px;
+
+    h1, h2 {
+      text-transform: uppercase;
+      font-family: 'Subway-Heavy';
+      position: absolute;
+      padding: 0;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 83px;
+      top: 34px;
+      left: 47px;
+      color: #8dcd32;
+
+      sup {
+        position: relative;
+        top: -25px !important;
+        left: 3px;
+        font-size: 25px !important;
+        font-family: 'Subway-Medium';
+        margin-right: -16px;
+      }
+    }
+
+    h2 {
+      top: 67px;
+      right: 43px;
+      font-size: 36px;
+      color: #ffc20d;
+    }
+  }
+
+  .blockItems {
+
+    .c-TableList_row {
+      width: 384px;
+      height: 125px;
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      margin-top: 183px;
+
+      padding-left: 36px;
+      font-size: 36px;
+
+      .sub_title {
+        display: block;
+        font-family: 'Subway-Heavy';
+      }
+
+      .prices {
+        display: block;
+        font-family: 'Subway-Heavy';
+        color: #f2b700;
+      }
+    }
+  }
+
+  .localItems {
+    position: absolute;
+    left: 807px;
+    top: 503px;
+    width: 1000px;
+
+    .c-TableList_column:nth-child(1) {
+      width: 760px;
+    }
+
+    .c-Price {
+      font-family: 'Subway-Heavy';
+      color: #f2b700;
+    }
+
+    .c-Menus_title span {
+      padding: 0;
+    }
+  }
+
+  .legalContent {
+    font-size: 18px;
+  }
+
+  .saladType {
+    position: absolute;
+    left: 1700px;
+    top: 524px;
+    font-size: 36px;
+    font-family: 'Subway-Heavy';
+    color: #f2b700;
+  }
+}

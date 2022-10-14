@@ -1,0 +1,179 @@
+$easeChipQuad: cubic-bezier(0.520, 0, 0.785, 1);
+
+@keyframes slideIn {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    transform: translate3d(0, 1500px, 0);
+  }
+
+  60% {
+    transform: translate3d(0, 230px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 305px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 270px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 280px, 0);
+  }
+}
+
+
+@keyframes chipPhysics {
+  from {
+    transform: translate3d(0, 0, 0) rotate3d(0.1,0.2,1,5deg);
+  }
+  to {
+    transform: translate3d(0, 900px, 0) rotate3d(0,0,1,0deg);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.chipInterrupt {
+  background: #f2b700;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  width: 7680px;
+  height: 1080px;
+
+  animation: fadeOut 1s ease-out 6s forwards;
+
+  img {
+    position: absolute;
+    z-index: 99;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  div[class^='chip'] {
+    width: 560px;
+    height: 365px;
+    display: block;
+    position: absolute;
+    animation: chipPhysics 2s $easeChipQuad 1s forwards;
+    will-change: transform;
+  }
+
+  /* Three chip images */
+  .type1 { background: url('./images/chip1.png') }
+  .type2 { background: url('./images/chip2.png') }
+  .type3 { background: url('./images/chip3.png') }
+
+  /* Chip left position */
+  .chip1 {
+    left: -20px;
+  }
+
+  .chip2 {
+    left: 612px;
+  }
+
+  .chip3 {
+    left: 1360px;
+  }
+
+  .chip4 {
+    left: 1676px;
+  }
+
+  .chip5 {
+    left: 3384px;
+  }
+
+  .chip6 {
+    left: 3782px;
+  }
+
+  .chip7 {
+    left: 4002px;
+  }
+
+  .chip8 {
+    left: 5467px;
+  }
+
+  .chip9 {
+    left: 6136px;
+  }
+
+  .chip10 {
+    left: 6895px;
+  }
+
+  .chip11 {
+    left: 7498px;
+  }
+
+  /* Chip starting point */
+  .offset1 {
+    top: -1000px;
+  }
+
+  .offset2 {
+    top: -800px;
+  }
+
+  .offset3 {
+    top: -600px;
+  }
+
+  .offset4 {
+    top: -400px;
+  }
+
+}
+
+.cta img {
+  position: absolute;
+  left: 5905px;
+  top: 186px;
+  width: 1625px;
+  height: 527px;
+  opacity: 0;
+}
+
+.cta1 {
+  animation: fadeInOut 2.2s ease-out 1s forwards;
+}
+
+.cta2 {
+  animation: fadeInOut 3s ease-out 3.5s forwards;
+}

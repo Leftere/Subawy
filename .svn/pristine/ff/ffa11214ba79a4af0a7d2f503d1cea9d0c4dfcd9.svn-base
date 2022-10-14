@@ -1,0 +1,302 @@
+/**
+ * Neocast API
+ */
+import API from 'api'
+
+
+import FreshMozzarella2017w3 from '../FooterPromotions/mozzarella_2017w3'
+import ItalianHero from '../FooterPromotions/italian_hero_2017w3'
+import HoagieBread from '../FooterPromotions/hoagie_bread_2017w3'
+import PaniniDepletion from '../FooterPromotions/w6_panini_depletion'
+import CornedBeef from '../FooterPromotions/corned_beef_contingency_2016w8'
+import Cranberry from '../FooterPromotions/cranberry_mustard_sauce_depletion_2016w8'
+import Panini2016w8 from '../FooterPromotions/panini_2016w8'
+import Panini2017w2 from '../FooterPromotions/panini_2017w2'
+import Gatorade2016w8 from '../FooterPromotions/gatorade_2016w8'
+import ExtrasDoubleMeatFooter from '../FooterPromotions/extras_double_meat'
+import BaconFooter from '../FooterPromotions/bacon'
+import CookiesFooter from '../FooterPromotions/cookies_group'
+import CateringHalf from '../FooterPromotions/catering_half'
+import Soup from '../FooterPromotions/sides_soup'
+import Pizza from '../FooterPromotions/personal_pizza'
+import Flatizza from '../FooterPromotions/flatizza'
+import ExtrasDoubleMeatNoPrice from '../FooterPromotions/extras_double_meat_no_price'
+import Gingerbread from '../FooterPromotions/gingerbread'
+import SteakAndBacon from '../FooterPromotions/steak_and_bacon_melt'
+import SoupsOn from '../FooterPromotions/local_footer_soups_on'
+import RealGoodFood from '../FooterPromotions/real_good_food'
+import LmdpItalHero from '../FooterPromotions/lmdp_ital_hero'
+import MultigrainFlatbread from '../FooterPromotions/multigrain_flatbread'
+import MeatballMarinara from '../FooterPromotions/meatball_marinara'
+import BaconEggAndCheese from '../FooterPromotions/bacon_egg_cheese'
+import TurkeyBreast from '../FooterPromotions/turkey_breast'
+
+import Autumn from '../FooterPromotions/autumn_2017w7'
+import CornedBeef17w8 from '../FooterPromotions/reuben_footer'
+import RyeBread17w8 from '../FooterPromotions/rye_bread'
+
+import BlazeFooter from '../FooterPromotions/BlazeFooter'
+
+import Guac18w2 from '../FooterPromotions/guac_2018w2'
+
+import Sesame18w3 from '../FooterPromotions/sesame_2018w3'
+import Peppercorn18w3 from '../FooterPromotions/peppercorn_2018w3'
+
+import MyWay18w4 from '../FooterPromotions/myway_2018w4'
+import SteakGuac18w4 from '../FooterPromotions/steak_guac_2018w4'
+import GingerChicken18w4 from '../FooterPromotions/ginger_chicken_2018w4'
+
+import CrispyChicken18w5 from '../FooterPromotions/crispy_chicken_2018w5'
+import BuffaloChicken18w5 from '../FooterPromotions/buffalo_chicken_2018w5'
+import BuffaloRotisserie18w5 from '../FooterPromotions/buffalo_rotisserie_2018w5'
+
+import ThirdParty18w6 from '../FooterPromotions/third_party_delivery_2018w6'
+
+// w6.5
+import SteakDepletion from '../FooterPromotions/steak_depletion'
+
+
+// w7
+import MintCCC18w7 from '../FooterPromotions/mint_chocolate_chip'
+import FreshMozzarella18w7 from '../FooterPromotions/fresh_mozzarella'
+import ThaiChicken18w7 from '../FooterPromotions/thai_chicken'
+import ItalianCiabatta18w7 from '../FooterPromotions/italian_ciabatta'
+import UCGBFooter18w7 from '../FooterPromotions/ucgb_footer'
+
+// 19w1
+import CrispyChicken19w1 from '../FooterPromotions/crispy_chicken_2019w1'
+import NationalMilkDay from '../FooterPromotions/national_milk_day'
+import FootlongSOTD19w1 from '../FooterPromotions/sotd_2019w1'
+
+// 19w2
+import PitSmokedBrisket19w2 from '../FooterPromotions/pit_smoked_brisket_2019w2'
+import PitSmokedChicken19w2 from '../FooterPromotions/pit_smoked_chicken_2019w2'
+import PitSmokedChickenAndBrisket19w2 from '../FooterPromotions/pit_smoked_chicken_and_brisket_2019w2'
+
+// 19w2b
+import WrapSteak19w2 from '../FooterPromotions/steak_wrap_2019w2'
+import WrapChicken19w2 from '../FooterPromotions/chicken_wrap_2019w2'
+import Wraps19w2 from '../FooterPromotions/w2_signature_wraps_footer'
+
+// 19w2c
+import RaspLemonCookie from '../FooterPromotions/rasp_lemon_cookie';
+import TunaGoddess from '../FooterPromotions/tuna_goddess';
+import TunaSouthwest from '../FooterPromotions/tuna_southwest';
+import CroissantMinis from '../FooterPromotions/croissant_minis';
+
+// 19w3
+import GiftCard from '../FooterPromotions/2019w3/gift_card';
+import SmoresCookie from '../FooterPromotions/2019w3/smores_cookie';
+
+
+import PizzaSub from '../FooterPromotions/2019w3/pizza_sub';
+import SubwayMinis from '../FooterPromotions/2019w4/subway_minis';
+import ClubCollection from '../FooterPromotions/2019w4/club_collection';
+
+// 19w4
+import FreshMozzarellaW4 from '../FooterPromotions/2019w4/fresh_mozzarella_w4';
+import ItalianCiabattaW4 from '../FooterPromotions/2019w4/italian_ciabatta';
+import ChickenPestoCiabattaW4 from '../FooterPromotions/2019w4/chicken_pesto_ciabatta';
+import GarlicSteakCiabattaW4 from '../FooterPromotions/2019w4/garlic_steak';
+import KingsHawaiianW4 from '../FooterPromotions/2019w4/kings_hawaiian';
+import DeviledEggW4 from '../FooterPromotions/2019w4/deviled_egg';
+
+// 19w5
+import SmokedCheddarW5 from '../FooterPromotions/2019w5/smoked_cheddar';
+import CaramelAppleCookieW5 from '../FooterPromotions/2019w5/caramel_apple_cookie';
+import PitSmokedBrisketW5 from '../FooterPromotions/2019w5/pit_smoked_brisket';
+import PitSmokedBrisketCheddarW5 from '../FooterPromotions/2019w5/pit_smoked_brisket_cheddar';
+import BeyondMeatballW5 from '../FooterPromotions/2019w5/beyond_meatball';
+
+// 19w6
+import UltimateSteakW6 from '../FooterPromotions/2019w6/ultimate_steak';
+import UCGBW6 from '../FooterPromotions/2019w6/ucgb_depletion';
+import DarkChocolateCookieW6 from '../FooterPromotions/2019w6/dark_chocolate_cookie';
+import ChilesOnionsW6 from '../FooterPromotions/2019w6/chiles_onions';
+import CarneAsadaW6 from '../FooterPromotions/2019w6/carne_asada_cheesesteak';
+import BaconSpreadW6 from '../FooterPromotions/2019w6/bacon_spread';
+import PimentoCheeseW6 from '../FooterPromotions/2019W6/pimento_cheese';
+import FrenchDipW6 from '../FooterPromotions/2019w6/french_dip';
+import FrenchDipClassicW6 from '../FooterPromotions/2019w6/french_dip_classic';
+import NashvilleHotFooterW6 from '../FooterPromotions/2019w6/wraps_hot';
+import AvocadoRanchFooterW6 from '../FooterPromotions/2019w6/wraps_ranch';
+import WrapsFooterW6 from '../FooterPromotions/2019w6/wraps';
+
+// 20w1
+import CauliflowerCurryW1 from '../FooterPromotions/2020w1/cauliflower_curry';
+import CauliflowerRanchW1 from '../FooterPromotions/2020w1/cauliflower_ranch';
+
+// 20w2
+import CarrotCakeCookieW2 from '../FooterPromotions/2020w2/carrot_cake_cookie';
+
+// 20w5
+import BBQRibFooter from '../FooterPromotions/2020w5/bbq_rib';
+import BBQRibFooter5 from '../FooterPromotions/2020w5/bbq_rib_5';
+
+// 20w6
+import GiftCardFooter from '../FooterPromotions/2020w6/gift_card';
+
+// Sideloaders
+import SideLoadedNew from '../FooterPromotions/SideLoaded';
+import SideLoadedOld from '../FooterPromotions/SideLoadedOld';
+
+
+/**
+ * Available components to show
+ */
+const components = {
+  mozzarella_2017w3: <FreshMozzarella2017w3 />,
+  italian_hero_2017w3: <ItalianHero />,
+  hoagie_bread_2017w3: <HoagieBread />,
+  w6_panini_depletion: <PaniniDepletion />,
+  corned_beef_contingency_2016w8: <CornedBeef />,
+  cranberry_mustard_sauce_depletion_2016w8: <Cranberry />,
+  panini_2016w8: <Panini2016w8 />,
+  panini_2017w2: <Panini2017w2 />,
+  gatorade_2016w8: <Gatorade2016w8 />,
+  extras_double_meat: <ExtrasDoubleMeatFooter />,
+  bacon: <BaconFooter />,
+  cookies_group: <CookiesFooter />,
+  catering_half: <CateringHalf />,
+  sides_soup: <Soup />,
+  personal_pizza: <Pizza />,
+  flatizza: <Flatizza />,
+  extras_double_meat_no_price: <ExtrasDoubleMeatNoPrice />,
+  gingerbread: <Gingerbread />,
+  steak_and_bacon_melt: <SteakAndBacon />,
+  local_footer_soups_on: <SoupsOn />,
+  real_good_food: <RealGoodFood />,
+  lmdp_ital_hero: <LmdpItalHero />,
+  multigrain_flatbread: <MultigrainFlatbread />,
+  meatball_marinara: <MeatballMarinara />,
+  bacon_egg_cheese: <BaconEggAndCheese />,
+  turkey_breast: <TurkeyBreast />,
+  carved_turkey: <Autumn />,
+  corned_beef: <CornedBeef17w8 />,
+  rye_bread: <RyeBread17w8 />,
+  blaze_footer: <BlazeFooter />,
+  guacamole_footer: <Guac18w2 />,
+  peppercorn_aioli_footer: <Sesame18w3 />,
+  sesame_bread_footer: <Peppercorn18w3 />,
+  my_way_rewards_footer: <MyWay18w4 />,
+  sweet_n_smoky_footer: <SteakGuac18w4 />,
+  sesame_ginger_footer: <GingerChicken18w4 />,
+  //crispy_chicken_footer: <CrispyChicken18w5 />,
+  buffalo_chicken_footer: <BuffaloChicken18w5 />,
+  buffalo_rotisserie_footer: <BuffaloRotisserie18w5 />,
+  third_party_delivery_footer: <ThirdParty18w6 />,
+  steak_depletion: <SteakDepletion />,
+
+  mint_chocolate_chip_cookie_footer: <MintCCC18w7 />,
+  fresh_mozzarella_footer: <FreshMozzarella18w7 />,
+  thai_chicken_sub_footer: <ThaiChicken18w7 />,
+  italian_ciabatta_footer: <ItalianCiabatta18w7 />,
+  //ucgb_footer: <UCGBFooter18w7 />,
+
+  crispy_chicken_w1_footer: <CrispyChicken19w1 />,
+  national_milk_day: <NationalMilkDay />,
+  footlong_of_the_day_footer: <FootlongSOTD19w1 />,
+
+  pit_smoked_brisket_footer: <PitSmokedBrisket19w2 />,
+  pit_smoked_chicken_footer: <PitSmokedChicken19w2 />,
+  pit_smoked_brisket_chicken_footer: <PitSmokedChickenAndBrisket19w2 />,
+
+  steak_guac_footer: <WrapSteak19w2 />,
+  sesame_ginger_footer: <WrapChicken19w2 />,
+  w2_signature_wraps_footer: <Wraps19w2 />,
+
+  raspberry_lemonade_cookie_footer: <RaspLemonCookie />,
+  green_goddess_footer: <TunaGoddess />,
+  southwest_tuna_footer: <TunaSouthwest />,
+  '249_croissant_minis': <CroissantMinis />,
+
+  cards_footer: <GiftCard />,
+  smores_cookie_footer: <SmoresCookie />,
+  
+  supreme_pizza_footer: <PizzaSub />,
+  subway_minis_footer: <SubwayMinis />,
+  //club_collection_footer: <ClubCollection />,
+
+
+  mozzarella_footer: <FreshMozzarellaW4 />,
+  italian_ciabatta_footer: <ItalianCiabattaW4 />,
+  chicken_ciabatta_footer: <ChickenPestoCiabattaW4 />,
+  garlic_ciabatta_footer: <GarlicSteakCiabattaW4 />,
+  kings_hawaiian_footer: <KingsHawaiianW4 />,
+  deviled_egg_footer: <DeviledEggW4 />,
+
+  chicken_pesto_footer: <ChickenPestoCiabattaW4 />,
+  garlic_steak_footer: <GarlicSteakCiabattaW4 />,
+
+  smoked_cheddar_footer: <SmokedCheddarW5 />,
+  caramel_apple_cookie_footer: <CaramelAppleCookieW5 />,
+  brisket_only_footer: <PitSmokedBrisketW5 />,
+  pit_smoked_brisket_footer: <PitSmokedBrisketCheddarW5 />,
+  beyond_meatball_footer: <BeyondMeatballW5 />,
+
+  ultimate_steak_footer: <UltimateSteakW6 />,
+  ucgb_w6_footer: <UCGBW6 />,
+  dark_chocolate_cherry_footer: <DarkChocolateCookieW6 />,
+  chiles_onions_footer: <ChilesOnionsW6 />,
+  carne_asada_footer: <CarneAsadaW6 />,
+  bacon_spread_footer: <BaconSpreadW6 />,
+  pimento_cheese_footer: <PimentoCheeseW6 />,
+  french_dip_footer: <FrenchDipW6 />,
+  classic_french_dip_footer: <FrenchDipClassicW6 />,
+  nashville_hot_footer: <NashvilleHotFooterW6 />,
+  avocado_ranch_footer: <AvocadoRanchFooterW6 />,
+  w6_wraps_footer: <WrapsFooterW6 />,
+
+  cauliflower_curry_footer: <CauliflowerCurryW1 />,
+  cauliflower_ranch_footer: <CauliflowerRanchW1 />,
+
+  carrot_cake_footer: <CarrotCakeCookieW2 />,
+
+  bbq_rib_footer: <BBQRibFooter />,
+  bbq_rib_5_footer: <BBQRibFooter5 />,
+
+  giftcards_2020_footer: <GiftCardFooter />,
+
+  /**
+   * Sideloaded content
+   *
+   *  1. If key contains 'sideloaded_' then it's new
+   *  2. If key contains '_custom' then it's old
+   */
+
+  // 1 - old
+  local_footer_one_custom: <SideLoadedOld baseKey={'local_footer_one_custom'} />,
+  // 1 - new
+  sideloaded_footer_promotion1: <SideLoadedNew baseKey={'sideloaded_footer_promotion1'} />,
+
+  // 2 - old
+  local_footer_two_custom: <SideLoadedOld baseKey={'local_footer_two_custom'} />,
+  // 2 - new
+  sideloaded_footer_promotion2: <SideLoadedNew baseKey={'sideloaded_footer_promotion2'} />,
+
+  // 3 - old
+  local_footer_three_custom: <SideLoadedOld baseKey={'local_footer_three_custom'} />,
+  // 3 - new
+  sideloaded_footer_promotion3: <SideLoadedNew baseKey={'sideloaded_footer_promotion3'} />
+}
+
+
+export default [
+  {
+    id: '2ddc8d1f-d6bc-48a7-b547-ded0a61dc1ba',
+    frames: [
+      {
+        component: components[API.loc('footer_tier_one')],
+        duration: 20000
+      },
+      {
+        component: components[API.loc('footer_tier_two')],
+        duration: 20000
+      },
+      {
+        component: components[API.loc('footer_tier_three')],
+        duration: 20000
+      },
+    ]
+  }
+]

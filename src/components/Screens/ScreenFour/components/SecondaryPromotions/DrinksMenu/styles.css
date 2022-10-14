@@ -1,0 +1,43 @@
+.c-PromotionDrinksMenu {
+
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-family: 'Subway-Medium';
+    font-size: 22px;
+
+    .promotion_background {
+        z-index: 0;
+        position: relative;
+        height: 100%;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .price {
+        margin-top: 4px;
+    }
+
+    .price, .taxes, .copyright {
+        position: absolute;
+        color: #000;
+        font-size: 38px;
+
+        em {
+            color: #008d43;
+            font-style: normal;
+        }
+    }
+
+    .taxes {
+        font-family: 'HelveticaLTStd-Cond';
+        font-size: 22px;
+    }
+
+    .copyright {
+        font-family: 'HelveticaLTStd-Cond';
+        font-size: 8px;
+    }
+
+}

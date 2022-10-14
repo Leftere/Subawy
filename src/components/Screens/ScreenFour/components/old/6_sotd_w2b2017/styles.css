@@ -1,0 +1,84 @@
+.c-SOTD2017w2 {
+	position : absolute;
+}
+
+.sotdShadow {
+	position: absolute;
+  top: 498px;
+  left: 17px;
+}
+
+.c-SOTD2017w2_background {
+	z-index  : 1;
+}
+
+.c-SOTD2017w2_sub {
+	z-index  : 5;
+	position : absolute;
+	top      : 30%;
+	left     : 0px;
+	width    : 100%;
+	padding  : 0px 15px;
+}
+
+.c-SOTD2017w2_sub_img {
+	position : relative;
+	width    : 100%;
+}
+
+.c-SOTD2017w2_week {
+	z-index   : 5;
+	position  : absolute;
+	top       : 55.5%;
+	width     : 100%;
+	overflow  : hidden;  	
+}
+
+.c-SOTD2017w2_week_day {
+	position  : relative;
+	display   : flex; 
+	flex-flow : row nowrap;
+	padding   : 4px 0px;
+	width     : 100%; 
+	font-size : 0px;
+}
+
+.c-SOTD2017w2_week_day_name {
+	position   : relative;
+	display    : inline-block;	
+	width      : 30%;
+	padding    : 0px 15px 0px 0px;
+	text-align : right;
+}
+
+.c-SOTD2017w2_week_day_sub {
+	position   : relative;
+	display    : inline-block;	
+	width      : 63%;
+	padding    : 0px 0px 0px 15px;
+	text-align : left ;
+}
+
+.c-SOTD2017w2_week_day_label {
+	display       : inline;
+	padding       : 7px 7px 4px 7px;
+	font-family   : 'Subway-Heavy'; 
+	font-size     : 1.82rem;
+	line-height   : 1.9rem;  
+	border-radius : 3px;
+	&-selected {
+		background : #008938;
+		color      : #ffffff !important;
+	}
+}
+
+.c-SOTD2017w2_mealdeal {
+	z-index     : 5; 
+	position    : absolute;
+	bottom      : 11%;
+	color       : #4c006a;
+	font-family : 'Subway-Heavy';
+	font-size   : 2.2rem;
+	line-height : 2.2rem;
+	margin-left : 60px;
+}

@@ -1,0 +1,24 @@
+.c-GarlicSteakFooterW4 {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: #000;
+
+	.item-price {
+	  position: absolute;
+	  font-size: 36px;
+	  color: #fff;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+	}
+
+	.six-price {
+		top: 182px;
+		left: 15px;
+	}
+
+	.twelve-price {
+		top: 57px;
+		left: 475px;
+	}
+}

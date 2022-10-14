@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  margin      : 0px;
+  padding     : 0px;
+  color       : #fff;
+  font-family : 'BrooklynSamuelsFat';
+  background  : #000000 url('./styles/background.png');
+  -webkit-font-smoothing: antialiased;
+}
+
+br {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}

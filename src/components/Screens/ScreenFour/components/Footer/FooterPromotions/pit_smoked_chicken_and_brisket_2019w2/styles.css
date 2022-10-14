@@ -1,0 +1,44 @@
+.c-PitSmokedChickenAndBrisketFooter19w2 {
+
+	.item-price {
+	  position: absolute;
+	  font-size: 28px;
+	  color: #fff;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+	  left: 25px;
+    top: 153px;
+
+	  .item-cals {
+	  	font-family: 'Subway-Medium';
+	  	font-size: 24px;
+	  }
+	}
+
+  .price-1 {
+    color: #cd4723;
+    left: 332px;
+    top: 35px;
+  }
+
+  .price-2 {
+    color: #cd4723;
+    left: 318px;
+    top: 101px;
+  }
+
+  .price-3 {
+    color: #cd4723;
+    left: 318px;
+    top: 129px;
+  }
+
+  &.c-Footer {
+    transform: scale(1) !important;
+    transform-origin: initial !important;
+    width: 960px  !important;
+    height: 200px  !important;
+  }
+
+}

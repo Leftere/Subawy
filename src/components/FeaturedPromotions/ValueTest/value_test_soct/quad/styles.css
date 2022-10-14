@@ -1,0 +1,101 @@
+@keyframes soctSubPan {
+  from {
+    transform: translate3d(0, 0, 0) scale(1.12);
+  }
+  to {
+    transform: translate3d(110px, 0, 0) scale(1.12);
+  }
+}
+
+@keyframes soctSubMove {
+  from {
+    transform: translate3d(110px, 0, 0) scale(1.12);
+  }
+  to {
+    transform: translate3d(500px, -250px, 0) scale(1);
+  }
+}
+
+@keyframes panCopyRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-550px, 0, 0);
+  }
+}
+
+
+.valueTestSoctQuad {
+  background-color: white;
+  backface-visibility: hidden;
+
+  img {
+    height: auto !important;
+  }
+
+  .largeCopy {
+    font-size: 300px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+  }
+
+  .titleMainCopy {
+  /*  display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;*/
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    padding-left: 60px;
+  }
+
+  .mainSub {
+    position: absolute;
+    left: -500px;
+    bottom: 50px;
+    will-change: transform;
+    transform: translate3d(150px, 0, 0) scale(1.12);
+
+    animation: soctSubPan 8s linear 0s forwards,
+      soctSubMove 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 8s forwards;
+  }
+
+  .frame1Copy {
+    animation: panCopyRight 8s linear 0s forwards,
+      fadeOut 500ms ease-in-out 8s forwards;
+  }
+
+
+  /*
+  .frame2Copy {
+    opacity: 0;
+    animation: fadeIn 500ms ease-in-out 4s forwards,
+      fadeOut 500ms ease-in-out 8s forwards;
+  }
+  */
+
+  .endingCopy {
+    opacity: 0;
+    animation: fadeIn 500ms ease-in-out 9s forwards;
+  }
+
+  .endingPrice {
+    position: absolute;
+    bottom: 103px;
+    font-size: 36px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+    opacity: 0;
+    animation: fadeIn 500ms ease-in-out 9s forwards;
+  }
+
+  .price6 {
+    right: 390px;
+  }
+
+  .price12 {
+    right: 55px;
+  }
+}

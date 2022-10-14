@@ -1,0 +1,414 @@
+/*
+@keyframes blink-animation {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+*/
+
+.s-DrinksFrame-0,
+.s-DrinksFrame-1,
+.s-DrinksFrame-2,
+.s-DrinksFrame-3, {
+  .LocalFavorites {
+    opacity: 1 !important;
+  }
+  .ForKids {
+    opacity: 0 !important;
+  }
+}
+
+.s-DrinksFrame-4,
+.s-DrinksFrame-5,
+.s-DrinksFrame-6,
+.s-DrinksFrame-7, {
+  .LocalFavorites {
+    opacity: 0 !important;
+  }
+  .ForKids {
+    opacity: 1 !important;
+  }
+}
+
+.DrinksMenu {
+  background: #fff;
+  font-family : 'Subway-Medium';
+
+    
+  .c-Menus_caption, .c-TableList_column {
+    font-size: 36px;
+    line-height: 1;
+    height: auto;
+    display: block;
+  }
+
+  .bg, .fizzBg {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .price {
+    position: absolute;
+    color: #000;
+    font-size: 38px;
+
+    em {
+      color: #008d43;
+      font-style: normal;
+    }
+  }
+
+  .c-Menus_title,
+  .c-Menus_caption-highlight {
+    color: #008d43;
+    font-size: 38px !important;
+  }
+
+  .LocalFavorites {
+    position: absolute;
+    left: 25px;
+    top: 650px;
+    color: #008d43;
+    width: calc(100% - 50px);
+    opacity: 1;
+    transition: 500ms opacity;
+
+    h2 {
+      font-family : 'Subway-Bold';
+      font-size: 58px;
+      color: #008d43;
+      text-transform: uppercase;
+      margin: 0 0 20px 0;
+      padding: 0;
+
+      span {
+        font-family : 'Subway-Medium';
+        color: #000;
+        font-size: 30px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .ForKids {
+    position: absolute;
+    left: 25px;
+    top: 650px;
+    color: #008d43;
+    width: calc(100% - 50px);
+    transition: 500ms opacity;
+    opacity: 0;
+
+    sup { 
+      font-family : 'Subway-Medium';
+      font-weight: normal;
+      vertical-align: top; 
+      position: relative; 
+      top: 0.1em !important; 
+    }
+
+    h2 {
+      font-family : 'Subway-Bold';
+      font-size: 58px;
+      color: #008d43;
+      text-transform: uppercase;
+      margin: 0 0 20px 0;
+      padding: 0;
+      line-height: 1;
+
+      span {
+        font-family : 'Subway-Medium';
+        color: #000;
+        font-size: 30px;
+        margin-left: 0px;
+        margin-top: 0px;
+        display: block;
+        text-transform: none;
+      }
+    }
+
+    .kidsItems {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      vertical-align: top;
+    }
+
+    .col {
+      width: 50%;
+    }
+
+    
+    h3 {
+      font-family : 'Subway-Bold';
+      text-transform: uppercase;
+      font-size: 38px;
+      color: #004c1d;
+      margin: 0;
+      margin-top: -7px;
+      margin-bottom: 5px;
+    }
+
+    .kidsItem {
+      display: inline-block; 
+      width: 100%;
+      vertical-align: top;
+
+      h2 {
+        font-size: 38px;
+        margin: 0;
+        line-height: 1;
+      }
+
+      .kidsCals {
+        font-family : 'Subway-Medium';
+        color: #008d43;
+        font-size: 30px;
+        margin-left: 0px;
+        margin-top: -2px;
+        margin-bottom: 15px;
+        display: inline-block;
+      }
+
+      .amount {
+        font-family : 'Subway-Medium';
+        color: #000;
+        font-size: 30px;
+        margin-left: 8px;
+        margin-top: -2px;
+        margin-bottom: 15px;
+        display: inline-block;
+
+      }
+
+    }
+  }
+/*
+  .fizzBg {
+    animation: blink-animation 1.3s steps(3, start) infinite;
+  }
+*/
+  .drinks {
+    position: absolute;
+    left: 34px;
+    top: 525px;
+    width: 890px;
+  }
+
+  .c-Sizes {
+    position: relative;
+    width: 430px;
+    font-size: 21px;
+    font-family: 'Subway-Heavy';
+    margin-left: -430px;
+    text-align: right;
+    top: 6px;
+
+    .size {
+      border: 3px solid rgba(242,183,0,0);
+      color: #828080;
+      padding: 10px 7px 6px;
+      margin: 0px 0 0 7px;
+      transition: 300ms all;
+    }
+
+    .size.current {
+      border: 3px solid #f2b700;
+      color: #f2b700;
+      padding: 10px 7px 6px;
+      margin: 0px 0 0 10px;
+    }
+  }
+
+  .c-Prices {
+
+    .drink {
+      color: rgba(255,255,255,0);
+      transition: 300ms all;
+    }
+  }
+
+  .c-ExtraColumnSizes {
+    width: 0;
+    display: inline-block;
+  }
+
+  .c-ExtraColumnPrices {
+    width: 14%;
+    display: inline-block;
+  }
+
+  .c-Prices {
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .c-Menus_note {
+    position: absolute;
+    left: 34px;
+    top: 473px;
+    font-family: 'Subway-Medium';
+    font-size: 22px;
+    line-height: 22px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .addOptionOne, .addOptionTwo {
+    position: absolute;
+    left: 132px;
+    top: 173px;
+    font-family: 'Subway-Heavy';
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .addOptionTwo {
+    left: 610px;
+  }
+
+  padding-left: 30px;
+  padding-top: 35px;
+  width: 100%; height: 100%;
+
+  & .c-Header_column:nth-child(1),
+  & .c-TableList_column:nth-child(1) {
+    width: 100%;
+  }
+
+  & .c-Header_column:nth-child(2),
+  & .c-TableList_column:nth-child(2) {
+    width: 14%;
+  }
+
+  .c-TableList_row {
+    padding: 0px 0px 12px 0px;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  /* Legal updates */
+  .c-Menus_caption {
+    font-size: 36px;
+  }
+
+  /* legal updates for font size */
+  .c-Menus_title, .c-Menus_caption-highlight {
+    font-size: 36px;
+  }
+
+  .localDrinks {
+    width: 50%;
+
+    .c-TableList_row {
+      padding: 0px 0px 14px 0px;
+    }
+  }
+
+  .c-Menus_header {
+    margin-bottom: 14px;
+    color: #fff;
+  }
+
+  .fountain {
+    display: inline-block;
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #fff;
+    text-align: left;
+    width:20%;
+    vertical-align: top;
+  }
+
+  .drinks-right {
+    display: inline-block;
+    width: 77.5%;
+  }
+
+  .drinks {
+    position: absolute;
+  }
+
+  .water {
+    left: 317px;
+    bottom: 20px;
+  }
+
+  .coke {
+    left: 393px;
+    bottom: 20px;
+  }
+
+  .drink {
+    left: 511px;
+    bottom: 20px;
+  }
+
+  &.s-DrinksFrame-0 {
+    .drink-0 {
+      color: #fff;
+    }
+    .size-0 {
+      border: 3px solid #f2b700;
+      color: #f2b700;
+      padding: 10px 7px 6px;
+      margin: 0px 0 0 10px;
+    }
+  }
+
+  &.s-DrinksFrame-1 {
+    .drink-1 {
+      color: #fff;
+    }
+    .size-1 {
+      border: 3px solid #f2b700;
+      color: #f2b700;
+      padding: 10px 7px 6px;
+      margin: 0px 0 0 10px;
+    }
+  }
+
+  &.s-DrinksFrame-2 {
+    .drink-2 {
+      color: #fff;
+    }
+    .size-2 {
+      border: 3px solid #f2b700;
+      color: #f2b700;
+      padding: 10px 7px 6px;
+      margin: 0px 0 0 10px;
+    }
+  }
+
+  &.s-DrinksFrame-3 {
+    .drink-3 {
+      color: #fff;
+    }
+    .size-3 {
+      border: 3px solid #f2b700;
+      color: #f2b700;
+      padding: 10px 7px 6px;
+      margin: 0px 0 0 10px;
+    }
+  }
+
+
+
+}
+

@@ -1,0 +1,68 @@
+.c-Promotion-2018w3-MakeTurkey {
+
+    height: 1080px;
+    width: 100%;
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    font-size: 36px;
+    color: #fa4c16;
+    font-family: 'Subway-Heavy';
+
+
+    .freshFrame {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+    }
+
+    .startFrame {
+      z-index: 1000;
+    }
+
+    .frame1 {
+      z-index: 2;
+    }
+
+    .frame2 {
+      z-index: 3;
+    }
+
+    .frame3 {
+      z-index: 4;
+    }
+
+    .frame4 {
+      z-index: 5;
+    }
+
+    .frame5 {
+      z-index: 6;
+    }
+
+    .frame6 {
+      z-index: 7;
+    }
+
+    .price {
+      font-family: 'Subway-Heavy';
+      font-size: 156px;
+      line-height: 128px;
+      color: #8bcd32;
+      position: absolute;
+      bottom: 4px;
+      left: 25px;
+      z-index: 8;
+
+      sup {
+        position: relative;
+        font-size: 103px !important;
+        top: -29px !important;
+        margin-right: -5px;
+      }
+    }
+
+  }

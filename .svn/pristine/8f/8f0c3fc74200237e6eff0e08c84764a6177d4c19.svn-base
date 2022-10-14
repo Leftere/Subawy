@@ -1,0 +1,56 @@
+{
+  "name": "dmb",
+  "version": "3.0.0",
+  "engines": {
+    "node": ">=8.9.1"
+  },
+  "description": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "set FORCE_CONTENT=true&&node ./node_modules/webpack-dev-server/bin/webpack-dev-server --progress",
+    "build": "set NODE_ENV=production&&node ./node_modules/webpack/bin/webpack --progress",
+    "push": "node bin/push-to-boards",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "docz:serve": "docz build && docz serve"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "fastdom": "^1.0.6",
+    "fs-extra": "^4.0.2",
+    "gsap": "^1.20.2",
+    "gsap-then": "^2.1.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.10",
+    "queue": "^4.4.0",
+    "react-css-transition-replace": "^2.2.0",
+    "docz": "latest",
+    "react": "16.8.0",
+    "react-dom": "16.8.0"
+  },
+  "devDependencies": {
+    "archiver": "^2.0.3",
+    "autoprefixer": "^7.1.4",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "css-loader": "^0.28.7",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.30.1",
+    "inquirer": "^3.2.3",
+    "postcss": "^6.0.11",
+    "postcss-flexbugs-fixes": "^3.2.0",
+    "postcss-loader": "^2.0.6",
+    "precss": "^2.0.0",
+    "scp2": "^0.5.0",
+    "simple-ssh": "^1.0.0",
+    "style-loader": "^0.18.2",
+    "webp-loader": "^0.2.1",
+    "webpack": "3.5.6",
+    "webpack-dev-server": "^2.8.1"
+  }
+}

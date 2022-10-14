@@ -1,0 +1,30 @@
+.pastrami-ending-frame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .ending-price {
+    font-family: 'Subway-Heavy';
+    font-size: 40px;
+    font-weight: 600;
+    color: #008938;
+  }
+
+  .pastrami-price6 {
+    position: absolute;
+    bottom: 106px;
+    left: 1313px;
+  }
+
+  .pastrami-price12 {
+    position: absolute;
+    bottom: 106px;
+    left: 1705px;
+  }
+}
+
+.pastrami-frame2-text {
+  display: inline-block;
+  overflow: visible;
+  width: 1600px;
+}

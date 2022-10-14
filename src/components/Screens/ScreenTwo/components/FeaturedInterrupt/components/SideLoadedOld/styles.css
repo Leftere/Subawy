@@ -1,0 +1,81 @@
+@import '../../../../../../../../src/styles/variables/index.css';
+
+
+.c-ValuePromotion {
+	position   : relative;
+	height     : 1080px;
+	width      : 100%;
+	background : #ffffff;
+		 
+	&-old-school,&-side-loaded-old {
+		display         : flex;
+		align-items     : center;
+		justify-content : center;
+	}
+}
+
+.c-ValuePromotion_content {
+	position : relative;
+	height   : 100%; 
+
+	&-side-loaded-old {
+		width : 640px;
+	}
+}
+
+.c-ValuePromotion_image {
+	display      : block;
+	width        : auto;
+	height       : 100%;
+	margin-left  : auto;
+	margin-right : auto;
+	background   : #ffffff;
+}
+
+.c-ValuePromotion_backing {
+	z-index  : 1; 
+	position : absolute;
+	top      : 0px;
+	left     : 0px;
+	width    : 100%;
+	height   : 100%;
+	overflow : hidden;
+}
+
+.c-ValuePromotion_prices {
+	z-index  : 2; 
+	position : absolute;
+	bottom   : 0px;
+	width    : 100%;
+	height   : 92px;
+}
+
+.c-ValuePromotion_price {
+	position    : absolute;
+	top         : 0px;
+	font-family : $font_family_heavy;
+	font-size   : 1.87rem;
+	line-height : 1.9rem;
+	color       : #6d6e71;
+	-webkit-font-smoothing : antialiased;
+
+	&-side-loaded-old {
+		font-family : $font_family_heavy_old; 
+		font-size   : 34px; 
+		color       : #70BD47;			
+	}
+	&:nth-child(1) {    
+		left : 100px;
+	}
+	&:nth-child(2) {    
+		right : 100px;
+	}
+	&-5motd {
+		z-index     : 3;
+		left        : 36% !important;
+		top         : 16% !important;
+		font-family : $font_family_heavy_old;
+		font-size   : 7.55rem !important;
+		color       : #008545;
+	}
+}

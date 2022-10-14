@@ -1,0 +1,132 @@
+.c-ReubenFeature {
+  background: #fff;
+  color: #4c006a;
+  font-size: 42px;
+  font-family: 'Subway-Heavy';
+
+  .frame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; height: 100%;
+    background: #fff;
+  }
+
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    will-change: transform, opacity;
+  }
+
+  .theBack {
+    position: absolute;
+    left: 190px;
+    top: 110px;
+  }
+
+  .reubenOff {
+    position: absolute;
+    left: 200px;
+    top: 340px;
+  }
+
+  .reubenOn {
+    position: absolute;
+    left: 175px;
+    top: 316px;
+    will-change: opacity;
+  }
+
+  .frame2, .frame3, .frame4, .frame5, .frame6 {
+    opacity: 0;
+  }
+
+  .textCaption {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+  }
+
+  .sub {
+    position: absolute;
+    bottom: 30px;
+    z-index: 50;
+  }
+
+  .leftSub {
+    left: 0;
+    bottom: 170px;
+  }
+
+  .rightSub {
+    right: 0;
+    bottom: 120px;
+  }
+
+  .price {
+    position: absolute;
+    bottom: 50px;
+  }
+
+  .turkeyPrice {
+    left: 30px;
+  }
+
+  .beefPrice {
+    right: 30px;
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .headerOn {
+    top: 70px;
+    left: 70px;
+  }
+
+  .headerOff {
+    top: 81px;
+    left: 70px;
+  }
+
+  .lto {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    transform-origin: bottom center;
+    z-index: 0;
+  }
+
+  .legal {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+  }
+
+  .priceText {
+    position: absolute;
+    bottom: 47px;
+  }
+
+  .price-turkey.price-six {
+    left: 100px;
+  }
+
+  .price-turkey.price-twelve {
+    left: 615px;
+  }
+
+  .price-beef.price-six {
+    left: 1104px;
+  }
+
+  .price-beef.price-twelve {
+    left: 1614px;
+  }
+
+}

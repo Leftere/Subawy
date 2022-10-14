@@ -1,0 +1,176 @@
+/**********************************************************************************************************************
+STATIC EFFECTS
+**********************************************************************************************************************/
+[data-ui-state*="is:invisible"] {
+	opacity: 0;
+}
+
+/**********************************************************************************************************************
+TIMING PREFIXES
+**********************************************************************************************************************/
+[data-ui-state*="slowmo:"] {
+	transition-duration : 5s; 
+}
+
+[data-ui-state*="slow:"] {
+	transition-duration : 3s; 
+}
+
+[data-ui-state*="normal:"] {
+	transition-duration : 1.5s; 
+}
+
+[data-ui-state*="medium:"] {
+	transition-duration : 1s; 
+}
+
+[data-ui-state*="fast:"] {
+	transition-duration : 800ms; 
+}
+
+[data-ui-state*="furious:"] {
+	transition-duration : 300ms; 
+}
+
+/**********************************************************************************************************************
+FADE EFFECTS
+**********************************************************************************************************************/
+[data-ui-state*="fade:"] {
+	transition-property        : opacity;
+	transition-timing-function : ease-out;
+	transform : translateZ(0px);
+}
+
+[data-ui-state*="fade:in:"] {
+	opacity : 1;
+}
+
+[data-ui-state*="fade:out"] {
+	opacity : 0;
+}
+
+/**********************************************************************************************************************
+SLIDE AND SLIDE FADE EFFECTS
+**********************************************************************************************************************/
+[data-ui-state*="slide:"] {
+	transition-property        : transform;
+	transition-timing-function : ease-out;
+	&[data-ui-state*="fade:"] {
+		transition-property        : transform,opacity;
+		transition-timing-function : ease-out;
+	}
+}
+
+[data-ui-state~="slide:from:top"] {
+	transform: translate3d(0,-100%,0);
+}
+
+[data-ui-state~="slide:from:bottom"] {
+	transform: translate3d(0,100%,0);
+}
+
+[data-ui-state~="slide:from:left"] {
+	transform: translate3d(-100%,0,0);
+}
+
+[data-ui-state~="slide:from:right"] {
+	transform: translate3d(100%,0,0);
+}
+
+[data-ui-state~="slide:to:top"] {
+	transform: translate3d(0,-100%,0);
+}
+
+[data-ui-state~="slide:to:bottom"] {
+	transform: translate3d(0,100%,0);
+}
+
+[data-ui-state~="slide:to:left"] {
+	transform: translate3d(-100%,0,0);
+}
+
+[data-ui-state~="slide:to:right"] {
+	transform: translate3d(100%,0,0);
+}
+
+/**
+ * New fade in/fade out
+ */
+.fade-wait-leave {
+  opacity: 1;
+  transition-property        : opacity;
+  transition-timing-function : ease-out;
+}
+
+.fade-wait-leave.fade-wait-leave-active {
+  opacity: 0;
+  transition: opacity .4s ease-out;
+  perspective: 1000;
+  transition-property        : opacity;
+  transition-timing-function : ease-out;
+}
+
+.fade-wait-enter {
+  opacity: 0;
+  transition-property        : opacity;
+  transition-timing-function : ease-out;
+}
+
+.fade-wait-enter.fade-wait-enter-active {
+  opacity: 1;
+  transition: opacity .55s ease-out .6s;
+  perspective: 1000;
+  transition-property        : opacity;
+  transition-timing-function : ease-out;
+}
+
+.dj-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/**
+ * Cross fade for LMDP promos
+ */
+.cross-fade-leave {
+  opacity: 1;
+}
+.cross-fade-leave.cross-fade-leave-active {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.cross-fade-enter {
+  opacity: 0;
+}
+.cross-fade-enter.cross-fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes translateIntoPlace {
+  to {
+    transform: translate3d(0, 0, 0) rotateY(0) scale(1);
+  }
+}

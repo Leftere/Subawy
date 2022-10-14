@@ -1,0 +1,136 @@
+import { Component } from 'react'
+import PropTypes from 'prop-types'
+import neocastDataProvider from 'api/neocastDataProvider'
+import API from 'api'
+
+// import SignatureMenu from './components/Menu'
+// import SignatureFooter from './components/Footer'
+import SignatureFeaturedInterrupt from './components/FeaturedInterrupt'
+// import SignatureFeatured from './components/Featured'
+// import FeaturedW3 from './components/FeaturedW3'
+
+import MealMenu from './components/MealMenu'
+import BigFooter from './components/BigFooter'
+//import MiniPromo from './components/MiniPromo'
+
+import BlankMealOverlayPromoImage from './components/MealPromoOverlay/images/blank.png'
+import MealOverlayPromoImage from './components/MealPromoOverlay/images/chickenBaconRanch.jpg'
+import './styles.css'
+
+let TimerLength = 6000
+
+@neocastDataProvider([
+  'cbr_w2',
+])
+
+
+export default class PanelTwo extends Component {
+  static propTypes = {
+    player: PropTypes.oneOf(['quad', 'dual'])
+  }
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      intervalId: null,
+      currentFrameCount: 0
+    }
+  }
+
+  componentDidMount() {
+    this.state.intervalId = setInterval(this.timer.bind(this), TimerLength)
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.state.intervalId)
+  }
+
+  timer() {
+    this.setState({ currentFrameCount: this.state.currentFrameCount + 1 })
+  }
+
+  /* Currently replaced by the featured interrupt
+  <section className={`s-Featured`}>
+    <SignatureFeatured {...this.props} currentFrameCount={this.state.currentFrameCount}/>
+  </section>
+  */
+  render() {
+
+    let displayMealOverlay = `${API.loc('cbr_w2')}`;
+    let mealOverlay;
+
+    console.log('?? ' + displayMealOverlay)
+    if (displayMealOverlay == 'true' || displayMealOverlay == true) {
+      console.log('true')
+      mealOverlay = MealOverlayPromoImage;
+    } else {
+      console.log('fa')
+
+      mealOverlay = BlankMealOverlayPromoImage;
+    }
+
+
+    return (
+      <div className={this.props.screenClass}>
+
+        <section className="s-Meal">
+
+          <div className="meals">
+            <MealMenu
+              {...this.props}
+              currentFrameCount={this.state.currentFrameCount}
+            />
+          </div>
+
+          <div className="disclaimer">2,000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition information available upon request.</div>
+
+          <div className="footer">
+            <BigFooter
+              {...this.props}
+              currentFrameCount={this.state.currentFrameCount}
+            />
+          </div>
+
+          <div className="meal-promo-overlay">
+              <img src={mealOverlay} />
+          </div>
+
+        </section>
+
+        <section className="s-MiniPromo">
+          <SignatureFeaturedInterrupt
+              {...this.props}
+              currentFrameCount={this.state.currentFrameCount}
+            />
+        </section>
+
+        {/* Screen content */}
+        <div className={`c-signatureContent`}>
+
+          {/*
+          <section className={`s-Menu`}>
+            <SignatureMenu
+              {...this.props}
+              currentFrameCount={this.state.currentFrameCount}
+            />
+          </section>
+          */}
+
+          {/*
+          <section className={`s-FeaturedInterrupt`}>
+            <FeaturedW3
+              {...this.props}
+              currentFrameCount={this.state.currentFrameCount}
+            />
+          </section>
+          */}
+
+          
+
+          
+
+        </div>
+      </div>
+    )
+  }
+}

@@ -1,0 +1,90 @@
+@keyframes slideIn {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    transform: translate3d(0, 1500px, 0);
+  }
+
+  60% {
+    transform: translate3d(0, 230px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 305px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 270px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 280px, 0);
+  }
+}
+
+
+@keyframes slideUpAllTheWay {
+  from {
+    transform: translate3d(0, 280px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+.chickenInterrupt {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  width: 7680px;
+  height: 1400px;
+
+  animation: fadeOut 1s ease-out 11s forwards;;
+
+  img {
+    will-change: transform;
+
+    position: absolute;
+    z-index: 99;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    transform: translate3d(0px, 1400px, 0px);
+    animation: slideIn 1.4s ease-in-out 2s forwards,
+      slideUpAllTheWay 1.6s ease-in-out 5.5s forwards;
+  }
+
+  .chickenInterruptCta {
+    will-change: transform;
+
+    position: absolute;
+    right: 540px;
+    bottom: 310px;
+    z-index: 99;
+    font-family: 'Subway-Heavy';
+    font-size: 216px;
+    color: #f3bd27;
+
+    transform: translate3d(0px, 800px, 0px);
+    animation: slideIn 2s ease-in-out 7.7s forwards;
+  }
+}

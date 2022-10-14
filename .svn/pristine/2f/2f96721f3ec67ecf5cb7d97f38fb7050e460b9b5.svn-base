@@ -1,0 +1,18 @@
+  .sodium-warning {
+    color: #F2B700;
+    font-family: 'Subway-Heavy' !important;
+    font-size: 30px;
+    width: 200%;
+  }
+
+  .sodium-warning:before {
+    content: '';
+    width: 35px;
+    height: 30px;
+    margin-right: 10px;
+
+    display: inline-block !important;
+    background-image: url(./images/sodium-warning-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }

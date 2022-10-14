@@ -1,0 +1,130 @@
+.c-Promotion-w7autumnDual {
+  height: 1080px;
+  width: 100%;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+
+  color: #4c006a;
+  font-size: 42px;
+  font-family: 'Subway-Heavy';
+
+
+  .turkeyFrame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+
+  .startFrame {
+    z-index: 1000;
+  }
+
+  .frame1 {
+    z-index: 2;
+  }
+
+  .frame2 {
+    z-index: 3;
+  }
+
+  .frame3 {
+    z-index: 4;
+  }
+
+  .frame4 {
+    z-index: 5;
+  }
+
+  .endFrame {
+    opacity: 0;
+    z-index: 6;
+  }
+
+
+
+  .pricing {
+    position: relative;
+    bottom: 10px;
+    right: 0px;
+    width: 560px;
+    height: 200px;
+    color: #fa4c16;
+
+
+    .title {
+      font-size: 44px;
+    }
+
+    .subtitle {
+      font-size: 30px;
+    }
+
+    .size {
+      font-size: 36px;
+    }
+
+    .cal {
+      font-size: 34px;
+      font-family: 'Subway-Medium';
+    }
+
+    .subprice {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      .size, .price {
+        position: absolute;
+        top: 100px;
+      }
+
+      .cal {
+        position: absolute;
+        top: 150px;
+      }
+
+    }
+
+    .steakPricing {
+      top: 0;
+    }
+
+    .horsePricing {
+      top: 250px;
+    }
+
+    .rotisseriePricing {
+      top: 540px;
+    }
+  }
+
+
+
+  .priceText {
+    position: absolute;
+    bottom: 65px;
+  }
+
+  .price-turkey.price-six {
+    left: 105px;
+  }
+
+  .price-turkey.price-twelve {
+    left: 620px;
+  }
+
+  .price-beef.price-six {
+    left: 1109px;
+  }
+
+  .price-beef.price-twelve {
+    left: 1605px;
+  }
+
+
+}

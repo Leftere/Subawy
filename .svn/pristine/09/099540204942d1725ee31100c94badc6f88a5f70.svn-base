@@ -1,0 +1,159 @@
+@keyframes endingFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIntoPlace {
+  to {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes panRightSlow {
+  to {
+    transform: translate3d(100px, 0, 0);
+  }
+}
+
+.panBase {
+  position: absolute;
+  bottom: -70px;
+  left: -400px;
+  height: 832px;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform;
+  animation: panRightSlow 10.5s linear 0s forwards;
+}
+
+.rscCbrFeatured {
+  contain: strict;
+
+  .flip-container {
+    perspective: 1000px;
+  }
+
+  .flip-container.flipped .flipper {
+    transform: rotateY(-180deg) translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+
+  .flip-container, .front, .back {
+    position: relative;
+    transition: opacity 1.5s ease-out;
+    -webkit-backface-visibility: hidden;
+    height: 1080px;
+    width: 1920px;
+  }
+
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  .flipper {
+    transition: 1.85s;
+    transform-style: preserve-3d;
+    position: relative;
+    backface-visibility: hidden;
+  }
+
+  .front, .back {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .front {
+    z-index: 2;
+  }
+
+  .back {
+    transform: rotateY(180deg) translate3d(0, 0, 0);
+  }
+
+  .panSandwich {
+    @extend .panBase;
+  }
+
+  .panSandwich2 {
+    @extend .panBase;
+    animation: panRightSlow 9.5s linear 7.2s forwards;
+  }
+
+  .endingFrame {
+    transition: opacity 1.7s ease-in-out;
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    opacity: 0;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    will-change: opacity;
+    transform: translateZ(0);
+    animation: endingFadeIn 1.2s ease-in-out 0s forwards;
+  }
+
+  .sandwich1 {
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    z-index: 5;
+    height: 901px;
+    width: 1308px;
+    will-change: transform;
+    perspective: 1000px;
+
+    transform: translate3d(-1400px, 0, 0);
+    animation: slideIntoPlace 2.2s ease-in-out 1.2s forwards;
+  }
+
+  .sandwich2 {
+    position: absolute;
+    z-index: 4;
+    right: 0px;
+    top: 200px;
+    height: 693px;
+    width: 1212px;
+    will-change: transform;
+    perspective: 1000px;
+
+    transform: translate3d(1400px, 0, 0);
+    animation: slideIntoPlace 2.2s ease-in-out 1.2s forwards;
+  }
+
+  .endingFrameCopy {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    opacity: 0;
+    animation: endingFadeIn 2s ease-in-out 4s forwards;
+  }
+
+  .endFrameTitleCopy {
+    position: absolute;
+    color: white;
+    font-family: 'Subway-Heavy';
+    font-size: 146px;
+    width: 1920px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+
+    transform: translate3d(0, -600px, 0);
+    animation: slideIntoPlace 3.5s ease-in-out 1.6s forwards;
+  }
+}

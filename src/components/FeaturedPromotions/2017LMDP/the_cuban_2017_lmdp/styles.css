@@ -1,0 +1,30 @@
+.cuban-ending-frame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .ending-price {
+    font-family: 'Subway-Heavy';
+    font-size: 40px;
+    font-weight: 600;
+    color: #008938;
+  }
+
+  .cuban-price6 {
+    position: absolute;
+    bottom: 109px;
+    left: 1302px;
+  }
+
+  .cuban-price12 {
+    position: absolute;
+    bottom: 109px;
+    left: 1697px;
+  }
+}
+
+.bf-ham-text {
+  display: inline-block;
+  overflow: visible;
+  width: 1600px;
+}

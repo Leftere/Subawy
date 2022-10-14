@@ -1,0 +1,40 @@
+.DrinksMenu {
+  padding-left: 30px;
+  padding-top: 15px;
+
+  & .c-Header_column:nth-child(1),
+  & .c-TableList_column:nth-child(1) {
+    width: 72%;
+  }
+
+  & .c-Header_column:nth-child(2),
+  & .c-TableList_column:nth-child(2) {
+    width: 28%;
+  }
+
+  .c-TableList_row {
+    padding: 0px 0px 6px 0px;
+  }
+
+  /* Legal updates */
+  .c-Menus_caption {
+    font-size: 36px;
+  }
+
+  /* legal updates for font size */
+  .c-Menus_title, .c-Menus_caption-highlight {
+    font-size: 36px;
+  }
+
+  .localDrinks {
+    width: 50%;
+
+    .c-TableList_row {
+      padding: 0px 0px 14px 0px;
+    }
+  }
+
+  .c-Menus_header {
+    margin-bottom: 10px;
+  }
+}

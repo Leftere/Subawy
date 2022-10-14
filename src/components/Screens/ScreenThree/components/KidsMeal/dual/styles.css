@@ -1,0 +1,197 @@
+@keyframes fadeInOpen {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.kids-dual  {
+
+  * {
+    animation: none !important;
+  }
+}
+
+.c-KidsMeal {
+  position: relative;
+  padding: 15px 35px 0 15px;
+  height: 475px;
+  /*opacity: 0;
+  animation: fadeInOpen 2s linear forwards;*/
+
+  &.R2L {
+    padding: 15px 15px 0 30px;
+  }
+
+  img {
+      position: absolute;
+  }
+
+
+  .frame1 {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    opacity: 1;
+    padding: 10px 20px 0px 15px;
+  }
+
+  .kidsMeal {
+    position: absolute;
+    bottom: 25px;
+    right: 15px;
+  }
+
+  .c-Menus_subheader {
+    margin-left: 2rem;
+  }
+
+  .c-KidsMeal_body {
+    margin-top: 20px;
+  }
+
+  .c-KidsMeal_sticker {
+    position: absolute;
+    right: 10px;
+    right: 28px;
+    bottom: 150px;
+    width: 210px;
+    &.R2L {
+      right: 10px;
+    }
+
+    img {
+      position: absolute;
+      right: 0px;
+      bottom: -15px;
+    }
+
+    img.meal-evergreen {
+      bottom: -17px;
+      right: 100px;
+    }
+
+    &-evergreen {
+      position: absolute;
+      bottom: 120px;
+      left: 430px;
+
+      img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .kids-meal-mmlm-meal {
+    position: absolute;
+    bottom: 100px;
+    width: 250px;
+    right: 190px;
+  }
+
+  .kids-meal-cars-meal {
+    position: absolute;
+    bottom: 50px;
+    /*height: 275px;*/
+    right: 205px;
+  }
+
+  .c-List_item {
+    padding: 0px 0px 14px 0px;
+  }
+
+  /* Legal updates */
+  .c-Header_sub {
+    font-size: 27px;
+    font-family: 'Subway-Heavy';
+  }
+
+  .c-Menus_title {
+    font-size: 32px;
+  }
+
+  .deduct-wording {
+    left: 15px;
+    line-height: 1;
+    font-size: 32px;
+
+    &.evergreen {
+      bottom: -15px;
+    }
+
+    .deduct-asterisk {
+      position: absolute;
+      left: -10px;
+      top: 0px;
+      font-size: 22px;
+    }
+  }
+
+  .c-Menus_footer {
+    bottom: 62px;
+    left: 0px;
+    &.R2L {
+      left: 15px;
+    }
+    /*width: 772px;*/
+
+    .little-people-logo {
+      position: absolute;
+      right: -10px;
+      bottom: -40px;
+
+    }
+
+    .c-Menus_copyright {
+      position: absolute;
+      bottom: -15px;
+      font-size: 18px;
+      text-align: left;
+      padding-left: 15px;
+    }
+
+    .txt-copyright {
+      font-family: 'Subway-Medium';
+      font-size: 8px;
+      line-height: 1;
+      position: absolute;
+      bottom: -40px;
+      left: 15px;
+
+      br {
+        line-height: 0.4;
+      }
+    }
+
+    .mealCaption {
+      position: absolute;
+      bottom: -35px;
+      right: 115px;
+      font-size: 30px;
+      font-family: 'Subway-Heavy';
+      color: #00a4de;
+    }
+  }
+
+  .restricted {
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+  }
+
+  .c-Menus_subheader {
+    font-size: 50px;
+
+    .price-currency {
+      font-size: 38px;
+      position: relative;
+      top: -7px;
+    }
+  }
+}

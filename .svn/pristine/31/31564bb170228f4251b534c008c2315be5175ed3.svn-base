@@ -1,0 +1,59 @@
+.c-ClubCollectionFooterW4 {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: #000;
+
+	.item-price {
+	  position: absolute;
+	  font-size: 36px;
+	  color: #fff;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+	}
+
+	.six-price {
+		top: 182px;
+		left: 15px;
+	}
+
+	.twelve-price {
+		top: 57px;
+		left: 475px;
+	}
+
+	.price-chicken-six {
+		top: 8px;
+		left: 921px;
+	}
+
+	.price-chicken-twe {
+		top: 43px;
+		left: 920px;
+	}
+
+	.price-club-six {
+		top: 113px;
+		left: 640px;
+
+	}
+
+	.price-club-twe {
+		top: 113px;
+		left: 922px;
+
+	}
+
+	.price-american-six {
+		top: 180px;
+		left: 640px;
+
+	}
+
+	.price-american-twe {
+		top: 180px;
+		left: 924px;
+
+	}
+
+}

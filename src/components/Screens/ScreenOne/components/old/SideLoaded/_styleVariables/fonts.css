@@ -1,0 +1,50 @@
+/**********************************************************************************************************************
+CURRENT FONTS
+**********************************************************************************************************************/
+/*font families*/
+$font_family_heavy          : 'SubwayTest-Heavy';
+$font_family_medium         : 'SubwayTest-Medium';
+$font_family_light          : 'MyriadPro-Condensed';
+$font_family_condensed      : 'MyriadPro-BoldCondensed';
+
+
+
+
+/*specific font sizing per component child nodes*/
+$font_header_size           : 4rem;
+$font_header_line_height    : 4rem;
+
+$font_subheader_size        : 2.35rem;
+$font_subheader_line_height : 2.35rem;
+
+$font_tagline_size          : 2.6rem;
+$font_tagline_line_height   : 2.6rem;
+
+$font_note_size             : 1.73rem;
+$font_note_line_height      : 2rem;
+
+$font_title_size            : 2.3rem;
+$font_title_line_height     : 2.3rem;
+
+$font_caption_size          : 2rem;
+$font_caption_line_height   : 2rem;
+
+$font_copyright_size        : 0.8rem;
+$font_copyright_line_height : 1rem;
+
+$font_legal_size            : 0.5rem;
+$font_legal_line_height     : 0.6rem;
+
+$font_trademark_size        : 0.5rem;
+$font_trademark_line_height : 0.6rem;
+
+
+
+
+/**********************************************************************************************************************
+OLD SCHOOL FONTS
+we use these for old promos/footers
+**********************************************************************************************************************/
+$font_family_heavy_old  : 'BrooklynSamuelsFive-Fat';
+$font_family_bold_old   : 'BrooklynSamuelsFive-Bold'; 
+$font_family_medium_old : 'BrooklynSamuelsFive-Medium';

@@ -1,0 +1,85 @@
+---
+name: Interrupt Promotions
+menu: Components
+route: /components/interrupts
+---
+
+<br />
+
+# Interrupt Promotions
+
+Interrupt promotions ignore every other element in that they sit on a separate layer on top of everything else. These typically change window to window, though there
+is not always a new promotion running.
+
+
+## Creating a new component
+
+#### Path for new components:
+```
+src/components/InterruptPromotions
+```
+
+In order for them to appear, new promos need to be added to the playlist lineup in
+```
+src/components/MenuBoard/playlists/interrupts.js
+```
+by importing them at the top of the file, then adding the new component to the rotation under the "component" key. The key for the promotion must also be listed in the "conditions" key
+
+See example:
+```
+  {
+    id: '273ed55f-d8ec-4eac-a348-87d2551b4cc4',
+    frames: [
+
+      //XXX: for testing
+      {
+        conditions: [keyIsValue('menu_interrupt_back', 'turkey_breast_interrupt')],
+        component: <TurkeyBaconGuacSlots />,
+        duration: 12000,
+        animationDuration: 12000
+      },
+      {
+        component: <EmptyPlaceholder />,
+        duration: 60000,
+        animationDuration: 60000
+      }
+    ]
+  }
+```
+
+The "EmptyPlaceholder" component sets the interval between the promotion showing up on the boards.
+
+<br />
+
+## Animation
+
+Animation is done using gsap. Make sure to include gsap at the top of your file. Documentation for gsap can be found [here](https://greensock.com/docs/).
+
+```
+import 'gsap'
+import 'gsap-then'
+```
+For more details on how to set up your component for animation, see [here](/animation-tips).
+
+Note: Pay special attention to testing interrupts on "R2L" as well as "L2R" configurations. Becuase the interrupt layer sits separatly from the main layer, it is 
+particularly succeptable to positioning problems, especially if the interrupt in question does not go across all four screens. (Interrupts do not run on dual screen setups.)
+
+<br />
+
+## Key
+
+```
+menu_interrupt_back
+```
+
+Go to
+```
+src/neocast/local-data.js
+```
+and set this key to the value provided by the project manager in order to see the corresponding promotion appear on the boards.
+
+<br />
+
+## Setting price or other variable data
+
+See [setting data](/setting-data)

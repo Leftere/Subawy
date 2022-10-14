@@ -1,0 +1,41 @@
+.c-SubwayMinisSecondary {
+  height: 1080px;
+  width: 960px;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-family: 'Subway-Heavy';
+
+  * {
+    position: absolute;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 32px;
+    line-height: 32px;
+    color: #ffffff;
+    width: 500px;
+    z-index: 1;
+  }
+
+  .price-1 {
+    left: 690px;
+    top: 390px;
+  }
+
+  .price-2 {
+    left: 695px;
+    top: 590px;
+  }
+
+  .price-3 {
+    left: 213px;
+    top: 640px;
+    font-size: 31px;
+  }
+
+}

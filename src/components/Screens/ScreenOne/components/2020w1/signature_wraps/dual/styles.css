@@ -1,0 +1,38 @@
+.c-signature-wraps-w1 {
+	position: absolute;
+	z-index: 1;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.price-cals {
+		font-family: 'Subway-Heavy';
+		font-size: 48px;
+		position: absolute;
+		top: 0;
+		left: 75px;
+		width: 500px;
+		color: #00572d;
+
+		.cals {
+			font-family: 'Subway-Medium';
+			margin-left: 15px;
+		}
+	}
+
+	.turkey-price {
+		top: 550px;
+	}
+
+	.chipotle-price {
+		top: 735px;
+	}
+
+	.caesar-price {
+		top: 920px;
+	}
+
+}

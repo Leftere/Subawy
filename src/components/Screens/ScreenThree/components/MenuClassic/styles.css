@@ -1,0 +1,139 @@
+.c-MenuClassic {
+
+  .subImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .classicHeader {
+    display: block;
+    height: 120px;
+
+    h1, h2 {
+      text-transform: uppercase;
+      font-family: 'Subway-Heavy';
+      position: absolute;
+      padding: 0;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 83px;
+      top: 34px;
+      left: 47px;
+    }
+
+    h2 {
+      top: 67px;
+      right: 43px;
+      font-size: 36px;
+      color: #ffc20d;
+    }
+  }
+
+  .blockItems {
+
+    .c-TableList_row {
+      width: 384px;
+      height: 154px;
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      margin-top: 183px;
+
+      padding-left: 36px;
+      font-size: 36px;
+
+      .sub_title {
+        display: block;
+        font-family: 'Subway-Heavy';
+        margin-bottom: 7px;
+      }
+
+      .prices {
+        display: block;
+        font-family: 'Subway-Heavy';
+        color: #f2b700;
+      }
+    }
+  }
+
+  .localItems {
+    position: absolute;
+    left: 807px;
+    top: 485px;
+    width: 1000px;
+
+    .c-TableList_column:nth-child(1) {
+      width: 760px;
+    }
+
+    .c-TableList_column {
+      .c-Price {
+        font-size: 32px !important;
+      }
+    }
+
+    .c-TableList_row {
+      padding: 0;
+
+      .sub_title {
+        font-size: 32px !important;
+      }
+
+      .cals {
+        font-size: 32px !important;
+        margin-left: 10px;
+      }
+    }
+
+    .c-Price {
+      font-family: 'Subway-Heavy';
+      color: #f2b700;
+    }
+
+    .c-Menus_title span {
+      padding: 0;
+    }
+
+    .c-TableList_row .decal12 {
+      right: -70px;
+      top: -13px;
+    }
+  }
+
+  .legalContent {
+    font-size: 14px;
+  }
+
+  .kingImage {
+    position: absolute;
+    bottom: 30px;
+    right: 55px;
+  }
+
+  .ucgbImage {
+    position: absolute;
+    bottom: 22px;
+    right: 135px;
+  }
+
+  .kingPrice {
+    position: absolute;
+    right: 402px;
+    bottom: 60px;
+    font-family: 'Subway-Heavy';
+    color: #fff;
+    font-size: 32px;
+  }
+
+  .ucbgPrice {
+    position: absolute;
+    right: 170px;
+    bottom: 127px;
+    font-family: 'Subway-Heavy';
+    color: #f2b700;
+    font-size: 36px;
+  }
+}

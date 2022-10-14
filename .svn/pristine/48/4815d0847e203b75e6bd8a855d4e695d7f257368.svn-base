@@ -1,0 +1,186 @@
+.wrapDoubleMeatFeaturedTitleCopy {
+  opacity: 0;
+}
+
+@keyframes fadeInTitleCopy {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutTitleCopy {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUpWrap {
+  from {
+    transform: translate3d(0px, 1000px, 0px);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@keyframes wrapItemSlideIntoPlace {
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.02, 1.02, 1.02);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.wrapDoubleMeatFeatured {
+  background-color: white;
+  backface-visibility: hidden;
+
+  img {
+    position: absolute;
+    height: auto;
+  }
+
+  .wrap1 {
+    left: 0px;
+    bottom: 0px;
+    will-change: transform;
+
+    transform: translate3d(0px, 1000px, 0);
+    animation: slideUpWrap 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.2s forwards;
+  }
+
+  .wrap2 {
+    top: 90px;
+    right: 0px;
+    will-change: transform;
+    transform: translate3d(0px, 1200px, 0);
+    animation: slideUpWrap 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s forwards;
+  }
+
+  .titleCopy {
+    font-size: 88px;
+    font-family: 'Subway-Heavy';
+    color: #028940;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+  }
+
+  .titleCopySub {
+    position: absolute;
+    font-family: 'Subway-Heavy';
+    top: 160px;
+    left: 50px;
+    font-size: 118px;
+    color: #8bcd32;
+    opacity: 0;
+    animation: fadeInTitleCopy 500ms ease-in-out 4.7s forwards;
+  }
+
+  .titleCopy1 {
+    @extend .wrapDoubleMeatFeaturedTitleCopy;
+    animation: fadeInTitleCopy 500ms ease-in-out 500ms forwards;
+  }
+
+  .titleCopy2 {
+    @extend .wrapDoubleMeatFeaturedTitleCopy;
+    animation: fadeInTitleCopy 500ms ease-in-out 1.25s forwards;
+  }
+
+  .titleCopy3 {
+    @extend .wrapDoubleMeatFeaturedTitleCopy;
+    animation: fadeInTitleCopy 500ms ease-in-out 2s forwards;
+  }
+
+  .titleCopy4 {
+    @extend .wrapDoubleMeatFeaturedTitleCopy;
+    animation: fadeInTitleCopy 500ms ease-in-out 2.75s forwards;
+  }
+
+  .wrapNames {
+    opacity: 0;
+    animation: fadeInTitleCopy 1s ease-in-out 6.8s forwards;
+  }
+
+  .legal {
+    right: 10px;
+    bottom: 10px;
+    opacity: 0;
+    animation: fadeInTitleCopy 1s ease-in-out 6.8s forwards;
+  }
+
+  .ltv {
+    top: 40px;
+    right: 0px;
+    transform: translate3d(900px, 0, 0);
+    animation: wrapItemSlideIntoPlace 1.3s ease-in-out 6.8s forwards;
+  }
+
+  .choicemark {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: rotateY( -180deg );
+    backface-visibility: hidden;
+    animation: wrapItemSlideIntoPlace 1s ease-in-out 6.8s forwards;
+  }
+
+  .titleCopyWrapper {
+    animation: fadeOutTitleCopy 500ms ease-in-out 6.3s forwards;
+    will-change: opacity;
+  }
+
+  .signatureWrapsTitle {
+    opacity: 0;
+    left: 350px;
+    top: 130px;
+    will-change: opacity;
+    animation: fadeInTitleCopy 500ms ease-in-out 6.8s forwards;
+  }
+
+  .priceBubble {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    opacity: 0;
+    animation-name: bounceIn;
+    animation-duration: 2s;
+    animation-delay: 6.8s;
+    animation-fill-mode: forwards;
+    will-change: transform;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+
+  "plugins": [
+    "react"
+  ],
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "rules": {
+    "no-unused-vars": 1,
+    "no-var": "error",
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1
+  }
+}

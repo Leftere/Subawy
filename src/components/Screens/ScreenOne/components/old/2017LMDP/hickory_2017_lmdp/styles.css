@@ -1,0 +1,36 @@
+.hickory-ending-frame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .ending-price {
+    font-family: 'Subway-Heavy';
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .hickory-price1-6 {
+    position: absolute;
+    bottom: 136px;
+    left: 132px;
+  }
+
+  .hickory-price1-12 {
+    position: absolute;
+    bottom: 136px;
+    left: 522px;
+  }
+
+  .hickory-price2-6 {
+    position: absolute;
+    bottom: 136px;
+    left: 1224px;
+  }
+
+  .hickory-price2-12 {
+    position: absolute;
+    bottom: 136px;
+    left: 1614px;
+  }
+}

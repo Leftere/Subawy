@@ -1,0 +1,37 @@
+.c-InterruptItalianHero2017w3 {
+	position   : relative;
+	width      : 100%;
+	height     : 1080px;
+	background : #4c006a;
+	opacity    : 0;
+	transition : opacity 600ms ease-out 0ms;
+
+	&[data-ui-state~="transition:in"] {
+		opacity : 1;
+	}
+	&[data-ui-state~="transition:out"] {
+		opacity    : 0;
+		transition : opacity 600ms ease-out 4000ms;
+	}
+}
+
+.c-InterruptItalianHero2017w3_caption {
+	position        : absolute;
+	top             : 0px;
+	right           : 0px;
+	width           : 25%; 
+	height          : 100%;
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+}
+
+.c-InterruptItalianHero2017w3_caption_text {
+	position   : relative;
+	opacity    : 0;
+	transition : opacity 800ms ease-out 3000ms;
+
+	&[data-ui-state~="transition:in"] {
+		opacity : 1;
+	}
+}

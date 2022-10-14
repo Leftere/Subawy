@@ -1,0 +1,121 @@
+$animationTime:1.1s;
+
+@keyframes slideDownPromo {
+  100% {
+    transform: translate3d(0, 1800px, 0);
+  }
+}
+
+
+@keyframes slideLeftPromo {
+  from {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-1800px, 0, 0);
+  }
+}
+
+
+@keyframes slideIntoPlace {
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes rotateIntoPlace {
+  100% {
+    opacity: 1;
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+
+
+.CompleteYourMealAnimated {
+  contain: strict;
+  &.c-Promotion {
+    height: 1080px;
+  }
+
+  img {
+    position: absolute;
+    height: auto !important;
+    z-index: 2;
+  }
+
+  .vitaminWater {
+    bottom: 60px;
+    left: 150px;
+    will-change: transform;
+
+    animation: slideDownPromo $animationTime ease-in-out 3s forwards;
+  }
+
+  .dasani {
+    bottom: 90px;
+    left: 215px;
+    will-change: transform;
+
+    transform: translate3d(0, -1800px, 0);
+    animation: slideIntoPlace $animationTime ease-in-out 2.8s forwards,
+      slideLeftPromo $animationTime ease-in-out 9s forwards;
+  }
+
+  .cookie1 {
+    bottom: 70px;
+    left: 370px;
+    z-index: 4;
+    will-change: transform;
+
+    transform: translate3d(0, -1800px, 0);
+    animation: slideIntoPlace $animationTime ease-in-out 5.8s forwards,
+    slideLeftPromo $animationTime ease-in-out 8.9s forwards;
+  }
+
+  .cookie2 {
+    bottom: 15px;
+    left: 460px;
+    z-index: 5;
+    will-change: transform;
+
+    transform: translate3d(0, -1800px, 0);
+    animation: slideIntoPlace $animationTime ease-in-out 6s forwards,
+    slideLeftPromo $animationTime ease-in-out 8.92s forwards;
+  }
+
+  .chippies {
+    bottom: 60px;
+    left: 410px;
+    will-change: transform;
+
+    animation: slideDownPromo $animationTime ease-in-out 5.8s forwards;
+  }
+
+  .subwayCup {
+    bottom: 90px;
+    left: 185px;
+    will-change: transform;
+
+    transform: translate3d(1800px, 0, 0);
+    animation: slideIntoPlace $animationTime ease-in-out 8.6s forwards;
+  }
+
+  .vickies {
+    bottom: 60px;
+    left: 440px;
+    will-change: transform;
+    transform: translate3d(1800px, 0, 0);
+    animation: slideIntoPlace $animationTime ease-in-out 8.7s forwards;
+  }
+
+  .newDecal {
+    bottom: 535px;
+    right: 95px;
+    opacity: 0;
+    will-change: transform;
+    transform: rotate3d(0, 0, 1, -60deg);
+    transform-origin: bottom right;
+    animation: rotateIntoPlace $animationTime ease-in-out 9.4s forwards;
+  }
+
+}

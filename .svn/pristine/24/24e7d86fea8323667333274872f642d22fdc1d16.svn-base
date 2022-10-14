@@ -1,0 +1,94 @@
+$animationTime:1.1s;
+
+@keyframes slideDownPromo {
+  100% {
+    transform: translate3d(0, 1800px, 0);
+  }
+}
+
+
+@keyframes slideLeftPromo {
+  from {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-1800px, 0, 0);
+  }
+}
+
+
+@keyframes slideIntoPlace {
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+
+.CompleteYourMealAnimated {
+  contain: strict;
+  &.c-Promotion {
+    height: 1080px;
+  }
+
+  img {
+    position: absolute;
+    height: auto !important;
+    z-index: 2;
+  }
+
+  .vitaminWater {
+    bottom: 60px;
+    left: 80px;
+    will-change: transform;
+
+    animation: slideDownPromo $animationTime ease-in-out 3s forwards;
+  }
+
+  .dasani {
+    bottom: 90px;
+    left: 145px;
+    will-change: transform;
+
+    transform: translate3d(0, -1800px, 0);
+    animation: slideIntoPlace $animationTime ease-in-out 2.8s forwards,
+      slideLeftPromo $animationTime ease-in-out 9s forwards;
+  }
+
+  .cookie1 {
+    bottom: 70px;
+    left: 300px;
+    z-index: 4;
+    will-change: transform;
+
+    transform: translate3d(0, -1800px, 0);
+    animation: slideIntoPlace $animationTime ease-in-out 5.8s forwards;
+  }
+
+  .cookie2 {
+    bottom: 15px;
+    left: 390px;
+    z-index: 5;
+    will-change: transform;
+
+    transform: translate3d(0, -1800px, 0);
+    animation: slideIntoPlace $animationTime ease-in-out 6s forwards;
+  }
+
+  .chippies {
+    bottom: 60px;
+    left: 300px;
+    will-change: transform;
+
+    animation: slideDownPromo $animationTime ease-in-out 5.8s forwards;
+  }
+
+  .subwayCup {
+    bottom: 90px;
+    left: 115px;
+    will-change: transform;
+
+    transform: translate3d(1800px, 0, 0);
+    animation: slideIntoPlace $animationTime ease-in-out 8.7s forwards;
+  }
+
+}

@@ -1,0 +1,25 @@
+.c-MOTD2019w1 {
+
+  position: relative;
+
+  .price {
+    position: absolute;
+    font-family: 'Subway-Heavy';
+    z-index: 100;
+  }
+
+  .motd {
+    color: #008938;
+    font-size: 220px;
+    left: 83px;
+    top: 30px;
+  }
+
+  .sotd {
+    color: #00572d;
+    font-size: 48px;
+    left: 696px;
+    top: 994px;
+  }
+
+}

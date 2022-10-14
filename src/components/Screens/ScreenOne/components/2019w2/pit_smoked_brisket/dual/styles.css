@@ -1,0 +1,54 @@
+.c-ComponentNameDual {
+
+  height: 1080px;
+  width: 1920px;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+  font-family: 'Subway-Heavy';
+
+  * {
+    position: absolute;
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    width: 500px;
+  }
+
+  .d-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .d-text {
+    font-family: 'Subway-Heavy';
+    font-size: 56px;
+    line-height: 56px;
+    color: #fff;
+  }
+
+  .d-bg {
+    left: -50px;
+    top: -50px;
+    width: calc(100% + 100px);
+    height: calc(100% + 100px);
+  }
+
+  .dn-sub_1 {
+    top: 962px;
+    left: 1000px;
+    white-space: pre;
+  }
+
+  .dn-sub_2 {
+    top: 980px;
+    left: 788px;
+    white-space: pre;
+  }
+
+}

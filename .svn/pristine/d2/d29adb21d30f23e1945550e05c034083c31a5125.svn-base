@@ -1,0 +1,159 @@
+import { Component } from 'react';
+
+import API from 'api'
+
+import neocastDataProvider from 'api/neocastDataProvider'
+import SubLineItem from 'components/Common/SubLineItem'
+
+import imgChicken from './chicken.png'
+import imgSteak from './steak.png'
+import imgTurkey from './turkey.png'
+import imgTurkeySku from './turkey-sku.png'
+
+import PromoPanel from './PromotionalWrapsPanel.jpg'
+
+let isRBSkuTest = API.loc('test_sku_roast_beef');
+let enableWrapsPromo = API.loc('sd_signature_wraps');
+
+let testType = ""
+
+let chickenCalOverride = false
+let chipotleCalOveride = false
+let turkeyCalOverride = false
+
+let turkeyImage = imgTurkeySku;
+
+if (isRBSkuTest)
+{
+  testType = "rb-sku-test"
+  chickenCalOverride = 700
+  chipotleCalOveride = 760
+  turkeyCalOverride = 780
+}
+
+import './styles.css'
+
+let timerLength = 6000;
+let displayList = [
+  'showChicken',
+  'showSteak',
+  'showTurkey'
+]
+
+@neocastDataProvider([
+  'make_any_sub_a_wrap_price',
+  'sd_signature_wraps',
+])
+
+export default class WrapsMenu extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      intervalId: null,
+      currentFrame: 0
+    }
+  }
+
+  componentDidMount() {
+    this.state.intervalId = setInterval(this.timer.bind(this), timerLength)
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.state.intervalId)
+  }
+
+  timer() {
+    if (isRBSkuTest)
+    {
+      this.setState({currentFrame: 2})
+    } else
+    {
+      let nextFrame = this.state.currentFrame + 1;
+      if (nextFrame >= displayList.length) {
+        nextFrame = 0;
+      }
+      this.setState({currentFrame: nextFrame})
+    }
+  }
+
+  render() {
+    const {
+      make_any_sub_a_wrap_price,
+    } = this.props
+
+    return (
+      <div className={`c-SignatureWrapsMenu ${testType} ${this.props.layout} r-` + displayList[this.state.currentFrame]}>
+
+        {/* Header */}
+        <div className='c-Header_row'>
+          <div className='c-Header_column c-Header_column-spacer'>
+            <div className='c-Menus_header'>
+              SIGNATURE <br/>WRAPS.
+            </div>
+          </div>
+        </div>
+
+        {/* Wraps */}
+        {!isRBSkuTest &&
+          <div>
+          <SubLineItem apiKey='rotisserie_chicken_caesar_wrap' cal6={chickenCalOverride} showDescription/>
+          <SubLineItem apiKey='chipotle_southwest_steak_and_cheese_wrap' cal6={chipotleCalOveride} showDescription/>
+          <SubLineItem apiKey='turkey_bacon_guacamole_wrap' cal6={turkeyCalOverride} showDescription/>
+          </div>
+        }
+
+        {isRBSkuTest &&
+          <div>
+            <SubLineItem apiKey='rotisserie_chicken_caesar_wrap'
+              description={`Piled rostisserie-style chicken, Caesar dressing on a signature wrap`}
+              cal6={chickenCalOverride} showDescription/>
+            <SubLineItem apiKey='chipotle_southwest_steak_and_cheese_wrap'
+              description={`Shaved steak with chipotle sauce on a signature wrap`}
+              cal6={chipotleCalOveride} showDescription/>
+            <SubLineItem apiKey='turkey_bacon_guacamole_wrap'
+              description={`Oven-roasted turkey, bacon and guacamole on a signature wrap`}
+              cal6={turkeyCalOverride} showDescription/>
+          </div>
+        }
+
+
+        {/* Make Any Sub... */}
+        <div className="c-TableList_row">
+          <div className="c-TableList_column">
+            <div className="c-Menus_title c-Menus_title-left c-Menus_title-v-expand">
+              <span className="sub_title">Or make any sub a Signature Wrap.</span>
+            </div>
+          </div>
+          <div className="c-TableList_column c-TableList-center">
+            <div className="c-Menus_title c-Menus_title-left">
+              <span>${make_any_sub_a_wrap_price}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Extra Cheese */}
+        {/* <LineItem
+          name={'Extra Cheese'}
+          calories={'40-60/80-120'}
+          price6={extras_cheese_price_6in}
+          price12={extras_cheese_price_12in}
+          nextLine
+          expand={false}
+          indentCals={false}
+          suffix=""
+        /> */}
+
+        {/* Wrap Images */}
+        <img src={imgChicken} className='wrapImage imgChicken'/>
+        <img src={imgSteak} className='wrapImage imgSteak'/>
+        <img src={turkeyImage} className='wrapImage imgTurkey'/>
+
+        {/* Promo Panel for San Diego */}
+        {enableWrapsPromo &&
+          <img src={PromoPanel} className='wrap-promo-panel'/>
+        }
+      </div>
+    );
+  }
+}

@@ -1,0 +1,9 @@
+.freshFitMainContent {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.freshfitSideContent {
+  width: 50%;
+}

@@ -1,0 +1,36 @@
+.c-UCGB_footer {
+
+	.item-price {
+	  position: absolute;
+	  font-size: 28px;
+	  color: #fff;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+
+
+
+	  .item-cals {
+	  	font-family: 'Subway-Medium';
+	  	font-size: 28px;
+	  }
+	}
+
+  .price-1 {
+    left: 496px;
+    top: 90px;
+  }
+
+  .price-2 {
+    left: 668px;
+    top: 90px;
+  }
+
+  &.c-Footer {
+    transform: scale(1) !important;
+    transform-origin: initial !important;
+    width: 960px  !important;
+    height: 200px  !important;
+  }
+
+}

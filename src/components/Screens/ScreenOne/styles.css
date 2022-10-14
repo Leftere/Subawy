@@ -1,0 +1,79 @@
+.featured-promo-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+  > span {
+    height: 1080px;
+    width: 1280px;
+    display: inline-block;
+
+    > span {
+      height: 1080px;
+      width: 100%;
+      display: inline-block;
+    }
+  }
+}
+
+
+.l-screen .signature-wraps-area {
+  position: absolute;
+  width: 640px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  left: 1280px;
+  bottom: 0;
+}
+
+.l-screen-reverse .signature-wraps-area {
+  left: 0;
+}
+
+.l-screen-reverse .featured-promo-area {
+  left: 640px;
+}
+
+.full-width {
+  left: 0 !important;
+
+  > span {
+    width: 1920px;
+  }
+}
+
+.full-width-r {
+  left: auto !important;
+  right: 0px !important;
+
+  > span {
+    width: 1920px;
+  }
+}
+
+@keyframes wraps {
+  0% {opacity: 1;}
+  50% {opacity: 1;}
+  51% {opacity: 0;}
+  99% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.san-diego-wraps-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 1s ease;
+  animation-name: wraps;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+}
+
+.san-diego-wraps-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,21 @@
+.c-SmoresFooter {
+
+	.item-price {
+	  position: absolute;
+	  font-size: 38px;
+	  color: white;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+	}
+
+	.six-price {
+		bottom: 39px;
+		left: 13px;
+	}
+
+	.twelve-price {
+		bottom: 19px;
+		left: 445px;
+	}
+}

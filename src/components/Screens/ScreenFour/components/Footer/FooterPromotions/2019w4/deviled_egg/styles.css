@@ -1,0 +1,25 @@
+.c-DeviledEggFooterW4 {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: #000;
+
+	.item-price {
+	  position: absolute;
+	  font-size: 36px;
+	  color: #fff;
+	  font-family: 'Subway-Heavy';
+	  z-index: 99;
+	  padding: 0; margin: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+	}
+
+	.six-price {
+		top: 148px;
+	  left: 21px;
+	}
+
+	.twelve-price {
+		top: 148px;
+    left: 263px;
+	}
+}

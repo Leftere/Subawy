@@ -1,0 +1,43 @@
+$font_family_heavy  : 'Subway-Heavy';
+$font_family_medium : 'Subway-Medium';
+
+
+$color_menu_text_default   : #ffffff;
+$color_menu_text_highlight : #f3bd27;
+$color_menu_background     : #009132;
+
+
+$font_header_size           : 70px;
+$font_header_line_height    : 1;
+
+$font_subheader_size        : 2.35rem;
+$font_subheader_line_height : 2.35rem;
+
+$font_tagline_size          : 2.6rem;
+$font_tagline_line_height   : 2.6rem;
+
+$font_note_size             : 1.73rem;
+$font_note_line_height      : 2rem;
+
+$font_title_size            : 36px;
+$font_title_line_height     : 2.3rem;
+
+$font_caption_size          : 36px;
+$font_caption_line_height   : 2rem;
+
+$font_copyright_size        : 0.8rem;
+$font_copyright_line_height : 1rem;
+
+$font_legal_size            : 0.5rem;
+$font_legal_line_height     : 0.6rem;
+
+$font_trademark_size        : 0.5rem;
+$font_trademark_line_height : 0.6rem;
+
+
+$color_background 		       : #009132;
+$color_background_inverted     : #f3bd27;
+$color_text                    : #ffffff;
+$color_text_inverted           : #006230;
+$color_text_highlight          : #f3bd27;
+$color_text_highlight_inverted : #009132;

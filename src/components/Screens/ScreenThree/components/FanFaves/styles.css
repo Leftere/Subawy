@@ -1,0 +1,255 @@
+.c-FanFaves2021 {
+
+    .subImage {
+      position: absolute;
+      right: 0;
+      top: 9rem;
+
+     &.hide {
+        opacity: 0;
+      }
+    }
+
+
+    .sodium-warning {
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin: 0;
+      margin-top: -8px;
+    }
+    
+    &.ny-warning {
+      .sodium-warning {
+        display: inline-block;
+        width: auto;
+        margin-left: 5px;
+      }
+    }
+    
+
+      
+    .hero-info {
+      position: absolute;
+      left: 50px;
+      bottom: 20px;
+      font-size: 34px;
+      font-family : 'HelveticaLTStd-Cond';
+      letter-spacing: -1px;
+      color: #000;
+    
+      small {
+        display: block;
+        font-size: 8px;
+        letter-spacing: 0px;
+      }
+    }
+  
+    .freshHeader {
+      display: block;
+      height: 124px;
+      background-color:#a6ce3c;
+  
+      h1, h2 {
+        text-transform: uppercase;
+        font-family: 'Subway-Super';
+        position: absolute;
+        padding: 0;
+        margin: 0;
+      }
+
+      h2 { 
+        font-family: 'Subway-Heavy';
+      }
+  
+      h1 {
+        font-size: 55px;
+        top: 25px;
+        left: 36px;
+        color: #fff;
+        font-weight: normal;
+  
+        sup {
+          position: relative;
+          top: -25px !important;
+          left: 3px;
+          font-size: 25px !important;
+          font-family: 'Subway-Medium';
+          margin-right: -16px;
+        }
+      }
+  
+      h2 {
+        top: 40px;
+        left: 1010px;
+        font-size: 40px;
+        color: #fff;
+
+        .new {
+          font-family: 'Subway-Super';
+          padding: 18px 8px;
+          position: absolute;
+          font-weight: normal;
+          top: 7px;
+          color: #004c1d;
+          background: #fff200;
+          line-height: 0.5;
+          letter-spacing: -1px;
+          margin-left: 20px;
+          height: 44px;
+          font-size: 38px;
+        }
+      }
+
+      .size {
+        font-weight: 200;
+      }
+    }
+  
+    .blockItems {
+        display: flex;
+        flex-wrap:wrap ;
+      .c-TableList_row {
+        width: 960px;
+        height: 154px;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        margin-top: 40px;
+  
+        padding-left: 50px;
+        font-size: 36px;
+  
+        .sub_title {
+          display: block;
+          font-size: 40px;
+          text-transform: uppercase;
+          font-family: 'Subway-Bold';
+          font-weight: normal;
+          margin-bottom: 7px;
+          margin-top: -20px;
+          color: #008d43;
+          line-height: 1.1;
+        }
+
+        .prices {
+          display: block;
+          font-family: 'Subway-Heavy';
+          color: #000;
+        }
+
+        .c-Menus_caption-highlight {
+          color: #008d43;
+          display:block;
+        }
+      }
+
+      .c-oven_roasted_turkey {
+        .sub_title:after {
+          content: "NEW";
+          font-family: 'Subway-Super';
+          padding: 8px 10px;
+          position: absolute;
+          height: 31px;
+          top: -3px;
+          color: #004c1d;
+          font-weight: normal;
+          background: #fff200;
+          line-height: 0.8;
+          letter-spacing: -1px;
+          margin-left: 7px;
+        }
+      }
+
+      .c-black_forest_ham {
+        .sub_title:after {
+          content: "NEW";
+          font-family: 'Subway-Super';
+          padding: 8px 10px;
+          position: absolute;
+          height: 31px;
+          top: -3px;
+          color: #004c1d;
+          font-weight: normal;
+          background: #fff200;
+          line-height: 0.8;
+          letter-spacing: -1px;
+          margin-left: 7px;
+        }
+      }
+    }
+  
+    .veggie-patty {
+      .c-TableList_row {
+        width: 384px;
+        height: 154px;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        margin-top: -55px;
+  
+        padding-left: 50px;
+        font-size: 36px;
+  
+        .sub_title {
+          display: block;
+          font-family: 'Subway-Heavy';
+          margin-bottom: 7px;
+        }
+  
+        .prices {
+          display: block;
+          font-family: 'Subway-Heavy';
+          color: #f2b700;
+        }
+      }
+    }
+  
+    .localItems {
+      position: absolute;
+      left: 807px;
+      top: 503px;
+      width: 1000px;
+  
+      .c-TableList_column:nth-child(1) {
+        width: 760px;
+      }
+  
+      .c-Price {
+        font-family: 'Subway-Heavy';
+        color: #f2b700;
+      }
+  
+      .c-Menus_title span {
+        padding: 0;
+      }
+    }
+  
+    .legalContent {
+      font-size: 18px;
+    }
+  
+    .saladType {
+      position: absolute;
+      left: 1010px;
+      top: 627px;
+      font-size: 36px;
+      font-family: 'Subway-Heavy';
+      color: #f2b700;
+    }
+  
+    .salad-price {
+      position: absolute;
+      left: 1650px;
+      top: 600px;
+      font-size: 34px;
+      font-family: 'Subway-Heavy';
+      color: #f2b700;
+    }
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  

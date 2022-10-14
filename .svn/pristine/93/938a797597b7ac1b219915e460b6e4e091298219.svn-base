@@ -1,0 +1,115 @@
+.c-KidsMeal_animation {
+  overflow: hidden;
+  width: 100%;
+  min-width: 760px;
+  height: 432px;
+  padding: 0 35px;
+
+  .figures {
+    z-index: 2;
+    position: absolute;
+    right: 250px;
+    bottom: 40px;
+    height: 200px;
+  }
+
+  .toy {
+    position: relative;
+  }
+
+
+  /* Frame 1 */
+  .you-can-win {
+    text-align: center;
+    opacity: 0;
+  }
+
+  .tablet-and-characters {
+    opacity: 0;
+    position: relative;
+    top: 300px;
+  }
+
+  .fire-tablet {
+    z-index: 4;
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+  }
+
+  .mmlm-step3 {
+    right: 475px;
+  }
+
+  .sequence-1 {
+    height: 432px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0 35px;
+    overflow: hidden;
+  }
+
+  /* Frame 2 */
+  .sequence-2 {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0 35px;
+    height: 432px;
+    overflow: hidden;
+  }
+
+  .toys {
+    position: absolute;
+    top: 370px;
+    left: 0px;
+  }
+
+  .allToys {
+    position: absolute;
+    height: 180px;
+    left: 20px;
+    bottom: 0px;
+  }
+
+  .meal {
+    position: absolute;
+    left: 390px;
+    bottom: 0px;
+    height: 255px;
+    z-index: 0;
+  }
+
+  .findKeepersText {
+    font-family: 'Subway-Heavy';
+
+    .find-title {
+      font-family: 'Subway-Heavy';
+      color: #fff;
+      font-size: 2.35rem;
+      line-height: 1.2;
+      margin-top: 10px;
+    }
+
+    .find-characters {
+      color: #f3bd27;
+      font-size: 2.4rem;
+      margin-top: 5px;
+      line-height: 1.35;
+    }
+  }
+
+  .mmlm-kids-legal {
+    position: absolute;
+    opacity: 0;
+    left: 0px;
+    bottom: 30px;
+    font-size: 20px;
+    padding: 0 35px;
+  }
+
+}

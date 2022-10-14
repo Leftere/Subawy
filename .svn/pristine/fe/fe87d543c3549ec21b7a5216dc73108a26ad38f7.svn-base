@@ -1,0 +1,94 @@
+@keyframes scaleSubSteakClub {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(0, 0, 0) scale(1.12);
+  }
+}
+
+@keyframes subSteakClubPan {
+  from {
+    transform: translate3d(0, 0, 0) scale(1.12);
+  }
+  to {
+    transform: translate3d(40px, 0, 0) scale(1.12);
+  }
+}
+
+@keyframes subSteakClubMove {
+  from {
+    transform: translate3d(40px, 0, 0) scale(1.12);
+  }
+  to {
+    transform: translate3d(500px, -250px, 0) scale(1);
+  }
+}
+
+
+.valueTestSteakClubQuad {
+  background-color: white;
+  backface-visibility: hidden;
+
+  img {
+    height: auto !important;
+  }
+
+  .largeCopy {
+    font-size: 180px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+  }
+
+  .titleMainCopy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+  }
+
+  .mainSub {
+    position: absolute;
+    left: -500px;
+    bottom: 50px;
+
+    animation: scaleSubSteakClub 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3.5s forwards,
+      subSteakClubPan 4s linear 4.8s forwards,
+      subSteakClubMove 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 9s forwards;
+  }
+
+  .frame1Copy {
+    animation: fadeOut 500ms ease-in-out 3.5s forwards;
+  }
+
+
+  .frame2Copy {
+    opacity: 0;
+    animation: fadeIn 500ms ease-in-out 4s forwards,
+      fadeOut 500ms ease-in-out 8.8s forwards;
+  }
+
+  .endingCopy {
+    opacity: 0;
+    animation: fadeIn 500ms ease-in-out 10.5s forwards;
+  }
+
+  .endingPrice {
+    position: absolute;
+    bottom: 88px;
+    font-size: 36px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+    opacity: 0;
+    animation: fadeIn 500ms ease-in-out 10.5s forwards;
+  }
+
+  .price6 {
+    right: 412px;
+  }
+
+  .price12 {
+    right: 79px;
+  }
+}

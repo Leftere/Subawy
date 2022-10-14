@@ -1,0 +1,120 @@
+.CaesarInterrupt {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 7680px;
+  height: 1080px;
+
+  .overlay {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+
+    &.f1 {
+      left: 0;
+    }
+
+    &.f2 {
+      left: 1920px;
+    }
+
+    &.f4 {
+      left: 5760px;
+    }
+  }
+
+  .mask {
+    position: absolute;
+    width: 370px;
+    height: 236px;
+    top: 30px;
+    left: 5236px;
+    background: #fff;
+  }
+
+  .bg,
+  .container {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 3840px;
+    top: 0;
+  }
+
+  .bg {
+    z-index: 99;
+    background: #dd3705;
+  }
+
+  .container {
+    z-index: 100;
+    
+    .wrap-hidden {
+      position: relative;
+      left: 380px;
+      top: 1080px;
+    }
+
+    .wrap {
+      position: relative;
+      left: 380px;
+      top: 318px;
+    }
+
+    .wrap-small {
+      position: relative;
+      top: 30px;
+      left: 1396px;
+      width: 386px;
+      height: 236px;
+    }
+
+    .text {
+      position: absolute;
+    }
+
+    .text1,
+    .text2 {
+      left: 60px;
+      top: 45px;
+    }
+
+    .text3 {
+      left: 59px;
+      top: 103px;
+    }
+
+    .footer1 {
+      left: 1283px;
+      top: 1008px;
+    }
+  }
+}
+
+.l-player-direction-R2L {
+
+  .CaesarInterrupt {
+    .overlay {
+      &.f2 {
+        left: 3840px;
+      }
+    }
+
+    .mask {
+      left: 2370px;
+    }
+
+    .bg,
+    .container {
+      left: 1920px;
+    }
+
+    .container {
+      .wrap-small {
+        left: 440px;
+      }
+    }
+  }
+}

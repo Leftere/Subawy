@@ -1,0 +1,58 @@
+---
+name: Pushing
+menu: RDM
+route: /rdm/pushing
+---
+
+<br/> 
+
+# Pushing to the Boards
+
+When you want to either push a new build to the boards, or update the current build:
+
+```
+yarn push
+```
+
+<br/>
+
+### Enter your filename
+
+If creating a new build, you can just press "enter" here and use the default filename.
+<br/>
+
+### Do you want to create new .mht content, or update existing content on the player?
+```
+New
+Update
+```
+
+New will create an entirely new build of the boards, while Update will modify the existing build.
+
+<br/>
+
+### Update quad or dual player?
+```
+quad
+dual
+```
+You will almost always want to pick "quad" here as that is how the boards are typically tested.
+<br/>
+
+
+### Do you want to *force* display what's in local-data.json as opposed to what is in Director?
+```
+Y/n
+```
+If you are testing with hard coded data from local-data.js, pick Y.
+
+Otherwise, if you are testing the boards with dynaic data from  neocast, choose n.
+<br/>
+
+### Enter the password for the player
+```
+upshot
+```
+<br />
+
+A new build will now be created or updated, and can be viewed in Director.

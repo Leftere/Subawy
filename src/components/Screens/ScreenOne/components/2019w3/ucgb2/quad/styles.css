@@ -1,0 +1,87 @@
+.c-UCGB2 {
+
+  height: 1080px;
+  width: 1920px;
+  display: block;
+  background: #005;
+  background: transparent;
+  position: relative;
+  font-family: 'Subway-Heavy';
+
+  * {
+    position: absolute;
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    width: 500px;
+  }
+
+  .d-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .d-text {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #fff;
+  }
+
+  .d-bg {
+    left: -50px;
+    top: -50px;
+    width: calc(100% + 100px);
+    height: calc(100% + 100px);
+  }
+
+
+  .dn-sub1Price6 {
+    top: 391px;
+    left: 712px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub1Price12 {
+    top: 391px;
+    left: 985px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub2Price6 {
+    top: 634px;
+    left: 45px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub2Price12 {
+    top: 671px;
+    left: 45px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub3Price6 {
+    top: 936px;
+    left: 1006px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub3Price12 {
+    top: 973px;
+    left: 1006px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+
+}

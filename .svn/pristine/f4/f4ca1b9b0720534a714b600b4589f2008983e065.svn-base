@@ -1,0 +1,52 @@
+.c-Promotion-2018w4-ChickenCaesarPromo {
+
+  height: 1080px;
+  width: 100%;
+  display: inline-block;
+  background: #fff;
+  position: relative;
+
+  * {
+    position: absolute;
+  }
+
+  .frame {
+    width: 100%;
+    height: 100%;
+  }
+
+  .frame1 {
+    background: #dd3705;
+  }
+
+  .frame2 {
+    background: #ff8200;
+  }
+
+  .text1 {
+    left: 39px;
+    top: 86px;
+  }
+
+  .text2 {
+    left: 39px;
+    top: 319px;
+  }
+
+  .text4,
+  .text6 {
+    left: 75px;
+    top: 88px;
+  }
+
+  .text7 {
+    left: 87px;
+    top: 99px;
+  }
+
+  .copyright {
+    left: 1434px;
+    top: 1049px; 
+  }
+
+}

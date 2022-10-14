@@ -1,0 +1,152 @@
+@keyframes valueScaledIntoPlace {
+  to {
+    transform: translate3d(0, 0, 0) scale(0.75);
+  }
+}
+
+@keyframes valueTurkeyScaledIntoPlace {
+  to {
+    transform: translate3d(0, 70px, 0) scale(0.75);
+  }
+}
+
+/*
+@keyframes valueScaleBmt {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.75);
+  }
+  to {
+    transform: translate3d(0, -50px, 0) scale(0.85);
+  }
+}
+*/
+@keyframes valueScaleBmtFinal {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.75);
+  }
+  to {
+    transform: translate3d(110px, -120px, 0) scale(1.02);
+  }
+}
+/*
+@keyframes valueScaleTurkey {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.75);
+  }
+  to {
+    transform: translate3d(80px, 50px, 0) scale(0.85);
+  }
+}*/
+
+@keyframes valueScaleTurkeyFinal {
+  from {
+    transform: translate3d(0px, 70px, 0) scale(0.75);
+  }
+  to {
+    transform: translate3d(-50px, 110px, 0) scale(0.96);
+  }
+}
+
+
+.valueTestTurkeyBmtQuad {
+  background-color: white;
+  backface-visibility: hidden;
+  contain: strict;
+
+  img {
+    position: absolute;
+  }
+
+  .largeCopy {
+    font-size: 180px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+  }
+
+  .titleMainCopy {
+    height: auto !important;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    top: 39px;
+    padding-left: 50px;
+    font-size: 120px;
+  }
+
+  .bmt {
+    height: auto !important;
+    transform: translate3d(-1500px, 0, 0) scale(0.75);
+    top: 140px;
+    left: -800px;
+    will-change: transform;
+
+    animation: valueScaledIntoPlace 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 300ms forwards,
+      /*valueScaleBmt 5s ease-in-out 4.5s forwards,*/
+      valueScaleBmtFinal 6.5s ease-in-out 3s forwards;
+  }
+
+  .turkey {
+    height: auto !important;
+    transform: translate3d(1500px, -50px, 0) scale(0.75);
+    bottom: 115px;
+    right: -650px;
+    will-change: transform;
+
+    animation: valueTurkeyScaledIntoPlace 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 300ms forwards,
+      /*valueScaleTurkey 5s ease-in-out 4.5s forwards,*/
+      valueScaleTurkeyFinal 6s ease-in-out 3s forwards;
+  }
+
+
+  .frame1Copy {
+    opacity: 0;
+    will-change: opacity;
+    animation: fadeIn 500ms ease-in-out 1.8s forwards,
+      fadeOut 500ms ease-in-out 3.2s forwards;
+  }
+
+  .frame2Copy {
+    font-size: 117px;
+    opacity: 0;
+    will-change: opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    animation: fadeIn 500ms ease-in-out 3.9s forwards,
+      fadeOut 500ms ease-in-out 6s forwards;
+  }
+
+  .endingCopy {
+    opacity: 0;
+    animation: fadeIn 500ms ease-in-out 9s forwards;
+  }
+
+  .endingPrice {
+    position: absolute;
+    font-size: 36px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+    opacity: 0;
+    animation: fadeIn 500ms ease-in-out 9s forwards;
+  }
+
+  .bmtPrice6 {
+    right: 85px;
+    top: 208px;
+  }
+
+  .bmtPrice12 {
+    right: 85px;
+    top: 293px;
+  }
+
+  .turkeyPrice6 {
+    bottom: 366px;
+    left: 450px;
+  }
+
+  .turkeyPrice12 {
+    bottom: 279px;
+    left: 450px;
+  }
+}

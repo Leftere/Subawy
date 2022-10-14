@@ -1,0 +1,104 @@
+
+.screen-3 {
+  width: 100%;
+  height: 100%;
+
+  .s-Body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 200px);
+  }
+
+  .s-Footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #008938;
+  }
+}
+
+/* .c-freshContent {
+
+  width: 100%;
+  height: 100%;
+
+  .s-Extras {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+  }
+
+  .s-Kids {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+  }
+
+  .s-Fresh {
+    position: absolute;
+    left: 0%;
+    right: 50%;
+    height: 100%;
+  }
+
+}
+
+
+.disclaimer {
+  color: #048a3a;
+  font-family: 'Subway-Medium';
+  font-size: 22px;
+  position: absolute;
+  left: 30px;
+  bottom: 5px;
+}
+
+.trade {
+  color: #048a3a;
+  font-family: 'Subway-Medium';
+  font-size: 9px;
+  position: absolute;
+  left: 800px;
+  bottom: 7px;
+}
+
+.l-screen-reverse {
+  .c-freshContent {
+
+    width: 100%;
+    height: 100%;
+
+    .s-Extras {
+      position: absolute;
+      top: 0;
+      left: 0%;
+      width: 50%;
+      height: 50%;
+    }
+
+    .s-Kids {
+      position: absolute;
+      top: 50%;
+      left: 1.23%;
+      width: 49.1%;
+      height: 50%;
+    }
+
+    .s-Fresh {
+      position: absolute;
+      left: 50%;
+      right: 0%;
+      height: 100%;
+    }
+
+}
+
+} */

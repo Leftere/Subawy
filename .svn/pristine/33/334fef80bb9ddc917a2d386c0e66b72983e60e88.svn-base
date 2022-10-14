@@ -1,0 +1,52 @@
+.pico-ending-frame {
+  position: absolute;
+  height: 1080px;
+  width: 1920px;
+  left: 0px;
+  top: 0px;
+
+  &.quad {
+    transform: translate3d(0, 0, 0);
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+  }
+
+  img {
+    position: absolute;
+    height: 1080px;
+    width: 1920px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .ending-price {
+    font-family: 'Subway-Heavy';
+    font-size: 40px;
+    font-weight: 600;
+    color: #008938;
+  }
+
+  .price1_6 {
+    position: absolute;
+    bottom: 146px;
+    left: 183px;
+  }
+
+  .price1_12 {
+    position: absolute;
+    bottom: 146px;
+    left: 572px;
+  }
+
+  .price2_6 {
+    position: absolute;
+    bottom: 146px;
+    left: 1258px;
+  }
+
+  .price2_12 {
+    position: absolute;
+    bottom: 146px;
+    left: 1647px;
+  }
+}

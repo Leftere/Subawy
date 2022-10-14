@@ -1,0 +1,108 @@
+.c-CiabataFourPromoDual {
+
+  height: 1080px;
+  width: 1920px;
+  display: block;
+  background: #005;
+  background: transparent;
+  position: relative;
+  font-family: 'Subway-Heavy';
+
+  * {
+    position: absolute;
+  }
+
+  .price {
+    font-family: 'Subway-Heavy';
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    width: 500px;
+  }
+
+  .d-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .d-text {
+    font-family: 'Subway-Heavy';
+    font-size: 38px;
+    line-height: 38px;
+    color: #fff;
+  }
+
+  .d-bg {
+    left: -100px;
+    top: 0px;
+    width: auto;
+    height: auto;
+  }
+
+
+  .dn-sub1Price6 {
+    top: 522px;
+    left: 600px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub1Price12 {
+    top: 557px;
+    left: 600px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub2Price6 {
+    top: 779px;
+    left: 45px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub2Price12 {
+    top: 814px;
+    left: 45px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub3Price6 {
+    top: 944px;
+    left: 125px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub3Price12 {
+    top: 981px;
+    left: 125px;
+    white-space: pre;
+    color: #fffffe;
+  }
+
+  .dn-sub_1 {
+    top: 452px;
+    left: 433px;
+  }
+
+  .dn-sub_2 {
+    top: 526px;
+    left: 1066px;
+  }
+
+  .dn-sub_3 {
+    top: 910px;
+    left: 51px;
+  }
+
+
+  .dn-sub_4 {
+    top: 979px;
+    left: 854px;
+  }
+
+
+}

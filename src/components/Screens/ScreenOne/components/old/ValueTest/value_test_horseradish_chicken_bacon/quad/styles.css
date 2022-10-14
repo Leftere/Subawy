@@ -1,0 +1,144 @@
+@keyframes valueScaledIntoPlace {
+  to {
+    transform: translate3d(0, 0, 0) scale(0.75);
+  }
+}
+
+/*@keyframes valueScaleHorseradish {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.75);
+  }
+  to {
+    transform: translate3d(0, -50px, 0) scale(0.85);
+  }
+}
+*/
+@keyframes valueScaleHorseradishFinal {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.75);
+  }
+  to {
+    transform: translate3d(0, -100px, 0) scale(1.05);
+  }
+}
+
+/*@keyframes valueScaleChicken {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.75);
+  }
+  to {
+    transform: translate3d(80px, 50px, 0) scale(0.85);
+  }
+}*/
+
+@keyframes valueScaleChickenFinal {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.75);
+  }
+  to {
+    transform: translate3d(220px, 110px, 0) scale(1);
+  }
+}
+
+
+.valueTestHorseradishQuad {
+  background-color: white;
+  backface-visibility: hidden;
+  contain: strict;
+
+  img {
+    position: absolute;
+  }
+
+  .largeCopy {
+    font-size: 180px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+  }
+
+  .titleMainCopy {
+    height: auto !important;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    top: 39px;
+    padding-left: 50px;
+    font-size: 120px;
+  }
+
+  .horseradishSub {
+    height: auto !important;
+    transform: translate3d(-1500px, 0, 0) scale(0.75);
+    top: 140px;
+    left: -800px;
+    will-change: transform;
+
+    animation: valueScaledIntoPlace 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 300ms forwards,
+      /*valueScaleHorseradish 5s ease-in-out 4.5s forwards,*/
+      valueScaleHorseradishFinal 6.5s ease-in-out 3s forwards;
+  }
+
+  .chickenSub {
+    height: auto !important;
+    transform: translate3d(1500px, 0, 0) scale(0.75);
+    bottom: 115px;
+    right: -750px;
+    will-change: transform;
+
+    animation: valueScaledIntoPlace 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 300ms forwards,
+      /*valueScaleChicken 5s ease-in-out 4.5s forwards,*/
+      valueScaleChickenFinal 6.5s ease-in-out 3s forwards;
+  }
+
+  .frame1Copy {
+    opacity: 0;
+    will-change: opacity;
+    animation: fadeIn 500ms ease-in-out 1.8s forwards,
+      fadeOut 500ms ease-in-out 3.2s forwards;
+  }
+
+  .frame2Copy {
+    font-size: 117px;
+    opacity: 0;
+    will-change: opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    animation: fadeIn 500ms ease-in-out 3.9s forwards,
+      fadeOut 500ms ease-in-out 6s forwards;
+  }
+
+  .endingCopy {
+    opacity: 0;
+    animation: fadeIn 500ms ease-in-out 9s forwards;
+  }
+
+  .endingPrice {
+    position: absolute;
+    font-size: 36px;
+    color: #028940;
+    font-family: 'Subway-Heavy';
+    opacity: 0;
+    animation: fadeIn 500ms ease-in-out 9s forwards;
+  }
+
+  .horseradishPrice6 {
+    right: 369px;
+    top: 385px;
+  }
+
+  .horseradishPrice12 {
+    right: 59px;
+    top: 385px;
+  }
+
+  .chickenPrice6 {
+    bottom: 261px;
+    left: 422px;
+  }
+
+  .chickenPrice12 {
+    bottom: 174px;
+    left: 422px;
+  }
+}
